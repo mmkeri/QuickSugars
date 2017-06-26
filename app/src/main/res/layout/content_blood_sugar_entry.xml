@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mmkeri.quicksugars.BloodSugarEntry"
+    tools:showIn="@layout/activity_blood_sugar_entry">
+
+    <EditText
+        android:id="@+id/entryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:id="@+id/entryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entryText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:onClick="saveEntry"
+        android:text="Accept" />
+</RelativeLayout>
