@@ -15,43 +15,47 @@ import org.joda.time.*;
 public class BloodSugarMeasurementObjectShould {
 
     private BloodSugarMeasurement testBSMeasure;
-    private BloodSugarMeasurement testBSMeasure2;
-    String testDateAndTime;
-    private DateTime jdt;
+    private LocalTime jdt;
     private SimpleDateFormat sdf;
 
     @Before
     public void setUp(){
-        sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        jdt = new DateTime();
-        testDateAndTime = sdf.format(new Date());
-        testBSMeasure2 = new BloodSugarMeasurement(13.5, jdt);
-        //testBSMeasure = new BloodSugarMeasurement(13.5, testDateAndTime);
+        jdt = new LocalTime();
+        testBSMeasure = new BloodSugarMeasurement(13.5, jdt);
     }
 
     @Test
     public void giveTheTimeOfBloodSugarCheck(){
-        assertEquals(jdt, testBSMeasure2.getTimeOfBloodSugarCheck());
-        //assertEquals(testDateAndTime, testBSMeasure.getTimeOfBloodSugarCheck());
+        assertEquals(jdt, testBSMeasure.getTimeOfBloodSugarCheck());
     }
 
     @Test
     public void giveTheValueOfTheBloodSugarCheck(){
-        assertEquals(13.5, testBSMeasure2.getBloodSugarReading(), 0.0);
+        assertEquals(13.5, testBSMeasure.getBloodSugarReading(), 0.0);
     }
      @Test
     public void changeTheBloodSugarMeasurementFromCurrentValueToANewValue(){
-         double oldBSValue = testBSMeasure2.getBloodSugarReading();
-         double newBSValue = testBSMeasure2.changeBSReadingValue(oldBSValue, jdt, 15.5);
-         System.out.println(testDateAndTime);
+         double oldBSValue = testBSMeasure.getBloodSugarReading();
+         double newBSValue = testBSMeasure.changeBSReadingValue(oldBSValue, jdt, 15.5);
          assertEquals(oldBSValue, 13.5, 0.0);
          assertEquals(newBSValue, 15.5, 0.0);
      }
 
      @Test
     public void changeTheBloodSugarMeasurementAdministrationTime(){
-         DateTime testTime = new DateTime(1498406153);
-         DateTime newInputTime = testBSMeasure2.changeBSReadingTime(testBSMeasure2.getBloodSugarReading(), jdt, testTime);
+         LocalTime testTime = new LocalTime(1498406153);
+         LocalTime newInputTime = testBSMeasure.changeBSReadingTime(testBSMeasure.getBloodSugarReading(), jdt, testTime);
          assertEquals(testTime, newInputTime);
+     }
+
+     @Test
+    public void giveTheSameTimeForOriginalJodaObjectAndOneMadeFromItsString(){
+         String time = jdt.toString();
+         int hour = jdt.getHourOfDay();
+         int minutes = jdt.getMinuteOfHour();
+         int seconds = jdt.getSecondOfMinute();
+         String expected = "" + hour + ":" + minutes + ":" + seconds + "";
+         LocalTime other = LocalTime.parse(time);
+         assertEquals(other, jdt);
      }
 }

@@ -1,6 +1,8 @@
 package mmkeri.quicksugars;
 
 import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
+import org.joda.time.LocalTime;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,8 +20,7 @@ public class DayLogObjectShould {
 
     private SimpleDateFormat sdf;
     private SimpleDateFormat sdf2;
-    private String testDate;
-    private String testDateAndTime;
+    private LocalDate testDate;
     private DayLogObject testObject;
     private BloodSugarMeasurement testRecord1;
     private BloodSugarMeasurement getTestRecord2;
@@ -31,28 +32,26 @@ public class DayLogObjectShould {
     private FoodItemRecord spaghetti;
     private WeightMeasurement light;
     private WeightMeasurement heavy;
-    private DateTime testTime;
-    private DateTime testTime2;
+    private LocalTime testTime;
+    private LocalTime testTime2;
 
     @Before
     public void setUp(){
-        sdf = new SimpleDateFormat("yyyy-MM-dd");
-        testDate = sdf.format(new Date());
+        testDate = new LocalDate();
         sdf2 = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        testDateAndTime = sdf2.format(new Date());
-        testTime = new DateTime(1498406153);
-        testTime2 = new DateTime(2015, 11, 25, 12, 45, 30);
+        testTime = new LocalTime(1498406153);
+        testTime2 = new LocalTime(12, 45, 30);
         testObject = new DayLogObject(testDate);
         testRecord1 = new BloodSugarMeasurement(14.5, testTime);
         getTestRecord2 = new BloodSugarMeasurement(12.2, testTime2);
-        dizzinessRecord = new SymptomRecord("Dizziness", testDateAndTime);
-        headacheRecord = new SymptomRecord("Headache", testDateAndTime);
+        dizzinessRecord = new SymptomRecord("Dizziness", testTime);
+        headacheRecord = new SymptomRecord("Headache", testTime);
         metformin = new MedicationRecord("Metformin", 875, testTime, testTime);
         glucophage = new MedicationRecord("Glucophage", 875, testTime, testTime);
-        pizza = new FoodItemRecord("Pizza", testDateAndTime);
-        spaghetti = new FoodItemRecord("Spaghetti", testDateAndTime);
-        light = new WeightMeasurement(120, testDateAndTime);
-        heavy = new WeightMeasurement(175, testDateAndTime);
+        pizza = new FoodItemRecord("Pizza", testTime);
+        spaghetti = new FoodItemRecord("Spaghetti", testTime);
+        light = new WeightMeasurement(120, testTime);
+        heavy = new WeightMeasurement(175, testTime);
     }
 
     @After
@@ -61,7 +60,6 @@ public class DayLogObjectShould {
         sdf = null;
         testDate = null;
         sdf2 = null;
-        testDateAndTime = null;
         dizzinessRecord = null;
         headacheRecord = null;
     }
@@ -110,11 +108,11 @@ public class DayLogObjectShould {
 
     @Test
     public void returnTheCorrectCountOfRecordsWhenOneRecordAddedForSymptoms(){
-        List<SymptomRecord> returnedList = testObject.addNewSymptom(new SymptomRecord("Headache", testDateAndTime));
+        List<SymptomRecord> returnedList = testObject.addNewSymptom(new SymptomRecord("Headache", testTime));
         int result = returnedList.size();
         assertEquals(1, result);
         assertEquals("Headache", returnedList.get(0).getSymptomValue());
-        assertEquals(testDateAndTime, returnedList.get(0).getSymptomInputTime());
+        assertEquals(testTime, returnedList.get(0).getSymptomInputTime());
     }
 
     @Test
@@ -124,16 +122,16 @@ public class DayLogObjectShould {
         int result = returnedList.size();
         assertEquals(2, result);
         assertEquals("Dizziness", returnedList.get(0).getSymptomValue());
-        assertEquals(testDateAndTime, returnedList.get(0).getSymptomInputTime());
+        assertEquals(testTime, returnedList.get(0).getSymptomInputTime());
         assertEquals("Headache", returnedList.get(1).getSymptomValue());
-        assertEquals(testDateAndTime, returnedList.get(1).getSymptomInputTime());
+        assertEquals(testTime, returnedList.get(1).getSymptomInputTime());
     }
 
     @Test
     public void returnTheCorrectCountWhenOneRecordIsDeletedFromAListOfTwo(){
         testObject.addNewSymptom(dizzinessRecord);
         testObject.addNewSymptom(headacheRecord);
-        List<SymptomRecord> returnedList = testObject.deleteSymptom("Headache", testDateAndTime);
+        List<SymptomRecord> returnedList = testObject.deleteSymptom("Headache", testTime);
         assertEquals(1, returnedList.size());
     }
 
@@ -141,8 +139,8 @@ public class DayLogObjectShould {
     public void returnZeroWhenAllRecordsAreDeletedFromTheList(){
         testObject.addNewSymptom(dizzinessRecord);
         testObject.addNewSymptom(headacheRecord);
-        testObject.deleteSymptom("Headache", testDateAndTime);
-        List<SymptomRecord> returnedList = testObject.deleteSymptom("Dizziness", testDateAndTime);
+        testObject.deleteSymptom("Headache", testTime);
+        List<SymptomRecord> returnedList = testObject.deleteSymptom("Dizziness", testTime);
         assertEquals(0, returnedList.size());
     }
 
@@ -193,7 +191,7 @@ public class DayLogObjectShould {
     public void returnTheCorrectCountWhenOneFoodItemIsDeleted(){
         testObject.addNewFoodRecord(pizza);
         int numberBeforeDeletion = testObject.addNewFoodRecord(spaghetti).size();
-        int result = testObject.deleteFoodRecord("Pizza", testDateAndTime).size();
+        int result = testObject.deleteFoodRecord("Pizza", testTime).size();
         assertEquals(2, numberBeforeDeletion);
         assertEquals(1, result);
     }
@@ -202,8 +200,8 @@ public class DayLogObjectShould {
     public void returnZeroWhenAllItemsAreRemovedFromTheRecord(){
         testObject.addNewFoodRecord(pizza);
         int numberBeforeDeletion = testObject.addNewFoodRecord(spaghetti).size();
-        testObject.deleteFoodRecord("Pizza", testDateAndTime);
-        int numberAfterDeletion = testObject.deleteFoodRecord("Spaghetti", testDateAndTime).size();
+        testObject.deleteFoodRecord("Pizza", testTime);
+        int numberAfterDeletion = testObject.deleteFoodRecord("Spaghetti", testTime).size();
         assertEquals(2, numberBeforeDeletion);
         assertEquals(0, numberAfterDeletion);
     }
@@ -224,7 +222,7 @@ public class DayLogObjectShould {
     public void returnTheCorrectCountWhenOneItemIsDeletedFromTheRecord(){
         testObject.addWeightRecord(light);
         int numberBeforeDeletion = testObject.addWeightRecord(heavy).size();
-        int numberAfterDeletion = testObject.deleteWeightRecord(120, testDateAndTime).size();
+        int numberAfterDeletion = testObject.deleteWeightRecord(120, testTime).size();
         assertEquals(1, numberAfterDeletion);
     }
 
@@ -232,8 +230,8 @@ public class DayLogObjectShould {
     public void returnZeroWhenAllItemsAreDeletedFromTheRecord(){
         testObject.addWeightRecord(light);
         int numberBeforeDeletion = testObject.addWeightRecord(heavy).size();
-        testObject.deleteWeightRecord(120, testDateAndTime);
-        int numberAfterDeletion = testObject.deleteWeightRecord(175, testDateAndTime).size();
+        testObject.deleteWeightRecord(120, testTime);
+        int numberAfterDeletion = testObject.deleteWeightRecord(175, testTime).size();
         assertEquals(0, numberAfterDeletion);
     }
 }

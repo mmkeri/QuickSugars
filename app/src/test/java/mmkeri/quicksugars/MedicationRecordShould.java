@@ -1,6 +1,7 @@
 package mmkeri.quicksugars;
 
 import org.joda.time.DateTime;
+import org.joda.time.LocalTime;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,14 +15,14 @@ import static org.junit.Assert.*;
 
 public final class MedicationRecordShould {
 
-    private DateTime currentTime;
-    private DateTime scheduledTime;
+    private LocalTime currentTime;
+    private LocalTime scheduledTime;
     private MedicationRecord testMedRecord;
 
     @Before
     public void setUp(){
-        currentTime = new DateTime();
-        scheduledTime = new DateTime(2017, 9, 11, 14, 45);
+        currentTime = new LocalTime();
+        scheduledTime = new LocalTime(11, 14, 45);
         SimpleDateFormat testDateTime = new SimpleDateFormat("yyyyMMdd_HHmmss");
         testMedRecord = new MedicationRecord("Metformin", 875, scheduledTime, currentTime);
     }
@@ -42,29 +43,27 @@ public final class MedicationRecordShould {
 
     @Test
     public void returnTheCorrectTimeAndDate(){
-        DateTime result = testMedRecord.getActualAdministrationTime();
-        DateTime expected = currentTime;
+        LocalTime result = testMedRecord.getActualAdministrationTime();
+        LocalTime expected = currentTime;
         assertEquals(expected, result);
     }
 
     @Test
     public void identifyTheCorrectMedicationNameAndAdminTimeAndChangeToNewMedicationName(){
-        DateTime innerTestDateTime = new DateTime();
+        LocalTime innerTestTime = new LocalTime();
         SimpleDateFormat innerDateAndTime = new SimpleDateFormat("yyyyMMdd_HHmmss");
         String innerTestDateAndTime = innerDateAndTime.format(new Date());
         String initialMedicationName = testMedRecord.getMedicationName();
-        String newMedicationName = testMedRecord.changeMedicationName(initialMedicationName, testMedRecord.getActualAdministrationTime(), "Glucophage", innerTestDateTime);
+        String newMedicationName = testMedRecord.changeMedicationName(initialMedicationName, testMedRecord.getActualAdministrationTime(), "Glucophage", innerTestTime);
         assertEquals(initialMedicationName, "Metformin");
         assertEquals(newMedicationName, "Glucophage");
     }
 
     @Test
     public void identifyTheCorrectActualAdministrationTimeAndChangeToANewTime(){
-        DateTime innerTestDateTime = new DateTime();
-        SimpleDateFormat innerDateAndTime = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        String innerTestDateAndTime = innerDateAndTime.format(new Date());
-        DateTime newAdminTime = testMedRecord.changeAdministrationTime(testMedRecord.getMedicationName(), testMedRecord.getActualAdministrationTime(), innerTestDateTime);
-        assertEquals(newAdminTime, innerTestDateTime);
+        LocalTime innerTestTime = new LocalTime();
+        LocalTime newAdminTime = testMedRecord.changeAdministrationTime(testMedRecord.getMedicationName(), testMedRecord.getActualAdministrationTime(), innerTestTime);
+        assertEquals(newAdminTime, innerTestTime);
     }
 
     @Test
