@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medications>
+    <medication>
+        <tradename>Hypurion Bovine Neutral</tradename>
+        <genericname>Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Hypurion Porcine Neutral</tradename>
+        <genericname>Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Actrapid</tradename>
+        <genericname>Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Humulin S</tradename>
+        <genericname>Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Insuman Rapid</tradename>
+        <genericname>Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>NovoRapid</tradename>
+        <genericname>Insulin Asprat</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Apidra</tradename>
+        <genericname>Insulin Glulisine</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Humalog</tradename>
+        <genericname>Insulin Lispro</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ/IV</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Tresiba</tradename>
+        <genericname>Insulin Degludec</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Levemir</tradename>
+        <genericname>Insulin Detemir</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Lantus</tradename>
+        <genericname>Insulin Glargine</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Hypurion Bovine Lente</tradename>
+        <genericname>Insulin Zinc Suspension</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Hypurion Bovine Isophane</tradename>
+        <genericname>Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Hypurion Porcine Isophane</tradename>
+        <genericname>Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Insulatard</tradename>
+        <genericname>Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Humulin I</tradename>
+        <genericname>Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Insuman Basal</tradename>
+        <genericname>Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Hypurion Bovine Protamine Zinc</tradename>
+        <genericname>Protamine Zinc Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>NovoMix 30</tradename>
+        <genericname>Biphasic Insulin Aspart</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Humalog Mix25</tradename>
+        <genericname>Biphasic Insulin Lispro</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Humalog Mix50</tradename>
+        <genericname>Biphasic Insulin Lispro</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Hypurion Porcine 30/70 Mix</tradename>
+        <genericname>Biphasic Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Humulin M3</tradename>
+        <genericname>Biphasic Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Insuman Comb 15</tradename>
+        <genericname>Biphasic Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Insuman Comb 25</tradename>
+        <genericname>Biphasic Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Insuman Comb 50</tradename>
+        <genericname>Biphasic Isophane Insulin</genericname>
+        <dose>variable</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>transient oedema</side-effects>
+        <side-effects>local reactions</side-effects>
+        <side-effects>fat hypertrophy</side-effects>
+        <side-effects>hypersensitivity reactions (rare) including rash and urticaria (hives)
+        </side-effects>
+        <side-effects>hypoglycemia (low blood sugar) with overdose</side-effects>
+    </medication>
+    <medication>
+        <tradename>Glibenclamide</tradename>
+        <genericname>Glibenclamide</genericname>
+        <dose>5 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>15 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Glicazide</tradename>
+        <genericname>Glicazide</genericname>
+        <dose>40 mg</dose>
+        <dose>80 mg</dose>
+        <dose>120 mg</dose>
+        <dose>160 mg</dose>
+        <dose>200 mg</dose>
+        <dose>240 mg</dose>
+        <dose>280 mg</dose>
+        <dose>320 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Diamicron</tradename>
+        <genericname>Glicazide</genericname>
+        <dose>40 mg</dose>
+        <dose>80 mg</dose>
+        <dose>120 mg</dose>
+        <dose>160 mg</dose>
+        <dose>200 mg</dose>
+        <dose>240 mg</dose>
+        <dose>280 mg</dose>
+        <dose>320 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Dacadis MR</tradename>
+        <genericname>Gliclazide</genericname>
+        <dose>30 mg</dose>
+        <dose>60 mg</dose>
+        <dose>90 mg</dose>
+        <dose>120 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Vitile XL</tradename>
+        <genericname>Gliclazide</genericname>
+        <dose>30 mg</dose>
+        <dose>60 mg</dose>
+        <dose>90 mg</dose>
+        <dose>120 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Diamicron MR</tradename>
+        <genericname>Glicazide</genericname>
+        <dose>30 mg</dose>
+        <dose>60 mg</dose>
+        <dose>90 mg</dose>
+        <dose>120 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Glimepiride</tradename>
+        <genericname>Glimepiride</genericname>
+        <dose>1 mg</dose>
+        <dose>2 mg</dose>
+        <dose>3 mg</dose>
+        <dose>4 mg</dose>
+        <dose>5 mg</dose>
+        <dose>6 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Amaryl</tradename>
+        <genericname>Glimepiride</genericname>
+        <dose>1 mg</dose>
+        <dose>2 mg</dose>
+        <dose>3 mg</dose>
+        <dose>4 mg</dose>
+        <dose>5 mg</dose>
+        <dose>6 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Glipizide</tradename>
+        <genericname>Glipizide</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>15 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Minodiab</tradename>
+        <genericname>Glipizide</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>15 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Tolbutamide</tradename>
+        <genericname>Tolbutamide</genericname>
+        <dose>0.5 mg</dose>
+        <dose>1 mg</dose>
+        <dose>1.5 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Metformin</tradename>
+        <genericname>Metformin Hydrochloride</genericname>
+        <dose>500 mg</dose>
+        <dose>850 mg</dose>
+        <dose>1000 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Glucophage</tradename>
+        <genericname>Metformin Hydrochloride</genericname>
+        <dose>500 mg</dose>
+        <dose>850 mg</dose>
+        <dose>1000 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Bolamyn SR</tradename>
+        <genericname>Metformin Hydrochloride</genericname>
+        <dose>500 mg</dose>
+        <dose>850 mg</dose>
+        <dose>1000 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>GLucient SR</tradename>
+        <genericname>Metformin Hydrochloride</genericname>
+        <dose>500 mg</dose>
+        <dose>850 mg</dose>
+        <dose>1000 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Metabet SR</tradename>
+        <genericname>Metformin Hydrochloride</genericname>
+        <dose>500 mg</dose>
+        <dose>850 mg</dose>
+        <dose>1000 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Glucophage SR</tradename>
+        <genericname>Metformin Hydrochloride</genericname>
+        <dose>500 mg</dose>
+        <dose>850 mg</dose>
+        <dose>1000 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Glucobay</tradename>
+        <genericname>Acarbose</genericname>
+        <dose>50 mg</dose>
+        <dose>100 mg</dose>
+        <dose>150 mg</dose>
+        <dose>200 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>flatulence</side-effects>
+        <side-effects>soft stools</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>abdominal distension and pain</side-effects>
+        <side-effects>nausea (rarely)</side-effects>
+        <side-effects>abnormal liver function tests (rarely)</side-effects>
+        <side-effects>skin reactions (rarely)</side-effects>
+        <side-effects>oedema (very rarely)</side-effects>
+        <side-effects>jaundice (very rarely)</side-effects>
+        <side-effects>hepatitis (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Vipdomet</tradename>
+        <genericname>Alogliptin with Metformin</genericname>>
+        <dose>12.5 mg/1 g</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>reflux</side-effects>
+        <side-effects>upper respiratory tract symptoms</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>itchiness</side-effects>
+        <side-effects>rash</side-effects>
+        <side-effects>inflamed pancreas (rare)</side-effects>
+        <side-effects>liver dysfunction (rare)</side-effects>
+        <side-effects>hives (rare)</side-effects>
+        <side-effects>sever skin reaction(rare)</side-effects>
+        <side-effects>swelling of lips and tongue (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Vipidia</tradename>
+        <genericname>Alogliptin</genericname>
+        <dose>6.25 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>reflux</side-effects>
+        <side-effects>upper respiratory tract symptoms</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>itchiness</side-effects>
+        <side-effects>rash</side-effects>
+        <side-effects>inflamed pancreas (rare)</side-effects>
+        <side-effects>liver dysfunction (rare)</side-effects>
+        <side-effects>hives (rare)</side-effects>
+        <side-effects>sever skin reaction(rare)</side-effects>
+        <side-effects>swelling of lips and tongue (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Invokana</tradename>
+        <genericname>Canagliflozin</genericname>
+        <dose>100 mg</dose>
+        <dose>200 mg</dose>
+        <dose>300 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>constipation</side-effects>
+        <side-effects>thirst</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>urinary-tract infection</side-effects>
+        <side-effects>low blood sugars</side-effects>
+        <side-effects>genital infection</side-effects>
+        <side-effects>frequency or urgency of urination</side-effects>
+        <side-effects>elevated hematocrit</side-effects>
+        <side-effects>low blood pressure when standing (rare)</side-effects>
+        <side-effects>dizziness (rare)</side-effects>
+        <side-effects>rash (rare)</side-effects>
+        <side-effects>changes in kidney function tests (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Vokanamet</tradename>
+        <genericname>Canagliflozin with Metformin</genericname>
+        <dose>50 mg/850 mg</dose>
+        <dose>50 mg/1 g</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>constipation</side-effects>
+        <side-effects>thirst</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>urinary-tract infection</side-effects>
+        <side-effects>low blood sugars</side-effects>
+        <side-effects>genital infection</side-effects>
+        <side-effects>frequency or urgency of urination</side-effects>
+        <side-effects>elevated hematocrit</side-effects>
+        <side-effects>low blood pressure when standing (rare)</side-effects>
+        <side-effects>dizziness (rare)</side-effects>
+        <side-effects>rash (rare)</side-effects>
+        <side-effects>changes in kidney function tests (rare)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Forxiga</tradename>
+        <genericname>Dapagliflozin</genericname>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>low blood sugar</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>raised lipid levels</side-effects>
+        <side-effects>back pain</side-effects>
+        <side-effects>genital infection</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>frequency or pain of urination</side-effects>
+        <side-effects>thirst</side-effects>
+        <side-effects>sweating</side-effects>
+        <side-effects>nausea (rare)</side-effects>
+        <side-effects>low blood pressure (rare)</side-effects>
+        <side-effects>dizziness (rare)</side-effects>
+        <side-effects>nighttime urination</side-effects>
+        <side-effects>dehydration</side-effects>
+        <side-effects>altered kidney function tests</side-effects>
+    </medication>
+    <medication>
+        <tradename>Xigduo</tradename>
+        <genericname>Dapagliflozin with Metformin</genericname>
+        <dose>5 mg/850 mg</dose>
+        <dose>5 mg/1 g</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>low blood sugar</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>raised lipid levels</side-effects>
+        <side-effects>back pain</side-effects>
+        <side-effects>genital infection</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>frequency or pain of urination</side-effects>
+        <side-effects>thirst</side-effects>
+        <side-effects>sweating</side-effects>
+        <side-effects>nausea (rare)</side-effects>
+        <side-effects>low blood pressure (rare)</side-effects>
+        <side-effects>dizziness (rare)</side-effects>
+        <side-effects>nighttime urination</side-effects>
+        <side-effects>dehydration</side-effects>
+        <side-effects>altered kidney function tests</side-effects>
+    </medication>
+    <medication>
+        <tradename>Jardiance</tradename>
+        <genericname>Empagliflozin</genericname>
+        <dose>10 mg</dose>
+        <dose>25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Oral</routeofadministration>
+        <side-effects>low blood sugar</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>genital infection</side-effects>
+        <side-effects>frequent urination</side-effects>
+        <side-effects>itchiness</side-effects>
+    </medication>
+    <medication>
+        <tradename>Byetta</tradename>
+        <genericname>Exenatide</genericname>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <frequency>twice daily</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>dyspepsia</side-effects>
+        <side-effects>abdominal pain and distension</side-effects>
+        <side-effects>reflux</side-effects>
+        <side-effects>decreased appetite</side-effects>
+        <side-effects>weight loss</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>agitation</side-effects>
+        <side-effects>low blood sugar</side-effects>
+        <side-effects>increased sweating</side-effects>
+        <side-effects>skin reactions at the injection site</side-effects>
+        <side-effects>pancreatitis (less commonly)</side-effects>
+        <side-effects>hair loss (less commonly)</side-effects>
+        <side-effects>anaphylactic reactions (very rarely)</side-effects>
+        <side-effects>constipation (also reported)</side-effects>
+        <side-effects>flatulence (also reported)</side-effects>
+        <side-effects>burping (also reported)</side-effects>
+        <side-effects>dehydration (also reported)</side-effects>
+        <side-effects>taste disturbances (also reported)</side-effects>
+        <side-effects>impaired kidney function (also reported)</side-effects>
+        <side-effects>drowsiness (also reported)</side-effects>
+        <side-effects>rash (also reported)</side-effects>
+        <side-effects>itchiness (also reported)</side-effects>
+        <side-effects>hives (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Bydureon</tradename>
+        <genericname>Exenatide modified release</genericname>
+        <dose>2 mg</dose>
+        <frequency>once weekly</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>dyspepsia</side-effects>
+        <side-effects>abdominal pain and distension</side-effects>
+        <side-effects>reflux</side-effects>
+        <side-effects>decreased appetite</side-effects>
+        <side-effects>weight loss</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>agitation</side-effects>
+        <side-effects>low blood sugar</side-effects>
+        <side-effects>increased sweating</side-effects>
+        <side-effects>skin reactions at the injection site</side-effects>
+        <side-effects>pancreatitis (less commonly)</side-effects>
+        <side-effects>hair loss (less commonly)</side-effects>
+        <side-effects>anaphylactic reactions (very rarely)</side-effects>
+        <side-effects>constipation (also reported)</side-effects>
+        <side-effects>flatulence (also reported)</side-effects>
+        <side-effects>burping (also reported)</side-effects>
+        <side-effects>dehydration (also reported)</side-effects>
+        <side-effects>taste disturbances (also reported)</side-effects>
+        <side-effects>impaired kidney function (also reported)</side-effects>
+        <side-effects>drowsiness (also reported)</side-effects>
+        <side-effects>rash (also reported)</side-effects>
+        <side-effects>itchiness (also reported)</side-effects>
+        <side-effects>hives (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Trajenta</tradename>
+        <genericname>Linagliptin</genericname>
+        <dose>5 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>orally</routeofadministration>
+        <side-effects>cough (less commonly reported)</side-effects>
+        <side-effects>sore throat (less commonly reported)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Jentadueto</tradename>
+        <genericname>Linagliptin with Metformin</genericname>
+        <dose>2.5 mg/850 mg</dose>
+        <dose>2.5 mg/1 g</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>orally</routeofadministration>
+        <side-effects>cough (less commonly reported)</side-effects>
+        <side-effects>sore throat (less commonly reported)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Victoza</tradename>
+        <genericname>Liraglutide</genericname>
+        <dose>0.6 mg</dose>
+        <dose>1.2 mg</dose>
+        <dose>1.8 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>abdominal pain and distension</side-effects>
+        <side-effects>flatulence</side-effects>
+        <side-effects>gastritis</side-effects>
+        <side-effects>reflux</side-effects>
+        <side-effects>decreased appetite</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>fever</side-effects>
+        <side-effects>bronchitis</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>low blood sugars</side-effects>
+        <side-effects>skin reactions at injection site</side-effects>
+        <side-effects>dehydration (less commonly)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+        <side-effects>goitre</side-effects>
+        <side-effects>tongue and lip swelling</side-effects>
+    </medication>
+    <medication>
+        <tradename>Xultophy</tradename>
+        <genericname>Liraglutide with Degludec</genericname>
+        <dose>36 micrograms/1 unit per dose step</dose>
+        <frequency>variable</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>abdominal pain and distension</side-effects>
+        <side-effects>flatulence</side-effects>
+        <side-effects>gastritis</side-effects>
+        <side-effects>reflux</side-effects>
+        <side-effects>decreased appetite</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>fever</side-effects>
+        <side-effects>bronchitis</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>low blood sugars</side-effects>
+        <side-effects>skin reactions at injection site</side-effects>
+        <side-effects>dehydration (less commonly)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+        <side-effects>goitre</side-effects>
+        <side-effects>tongue and lip swelling</side-effects>
+    </medication>
+    <medication>
+        <tradename>Lyzumia</tradename>
+        <genericname>Lixisenatide</genericname>
+        <dose>10 mcg</dose>
+        <dose>20 mcg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>SQ</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>dyspepsia</side-effects>
+        <side-effects>palpitation</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>drowsiness</side-effects>
+        <side-effects>low blood sugar</side-effects>
+        <side-effects>skin reactions at injection site</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>hives (less commonly)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Starlix</tradename>
+        <genericname>Nateglinide</genericname>
+        <dose>60 mg</dose>
+        <dose>120 mg</dose>
+        <dose>180 mg</dose>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>low blood sugar</side-effects>
+        <side-effects>allergic reactions with itchiness, rash and hives</side-effects>
+    </medication>
+    <medication>
+        <tradename>Pioglitazone</tradename>
+        <genericname>Pioglitazone</genericname>
+        <dose>15 mg</dose>
+        <dose>30 mg</dose>
+        <dose>45 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>gastro-intestinal disturbances</side-effects>
+        <side-effects>weight gain</side-effects>
+        <side-effects>oedema</side-effects>
+        <side-effects>anaemia</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>blood in the urine</side-effects>
+        <side-effects>impotence</side-effects>
+        <side-effects>lowb lood sugars (less commonly)</side-effects>
+        <side-effects>fatigue (less commonly)</side-effects>
+        <side-effects>insomnia (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>altered blood lipid readings (less commonly)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Actos</tradename>
+        <genericname>Pioglitazone</genericname>
+        <dose>15 mg</dose>
+        <dose>30 mg</dose>
+        <dose>45 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>gastro-intestinal disturbances</side-effects>
+        <side-effects>weight gain</side-effects>
+        <side-effects>oedema</side-effects>
+        <side-effects>anaemia</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>blood in the urine</side-effects>
+        <side-effects>impotence</side-effects>
+        <side-effects>lowb lood sugars (less commonly)</side-effects>
+        <side-effects>fatigue (less commonly)</side-effects>
+        <side-effects>insomnia (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>altered blood lipid readings (less commonly)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Competact</tradename>
+        <genericname>Pioglitazone with Metformin</genericname>
+        <dose>15 mg/850 mg</dose>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>gastro-intestinal disturbances</side-effects>
+        <side-effects>weight gain</side-effects>
+        <side-effects>oedema</side-effects>
+        <side-effects>anaemia</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>blood in the urine</side-effects>
+        <side-effects>impotence</side-effects>
+        <side-effects>lowb lood sugars (less commonly)</side-effects>
+        <side-effects>fatigue (less commonly)</side-effects>
+        <side-effects>insomnia (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>altered blood lipid readings (less commonly)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Repaglinide</tradename>
+        <genericname>Repaglinide</genericname>
+        <dose>500 mcg</dose>
+        <dose>1 mg</dose>
+        <dose>2 mg</dose>
+        <frequency>before meals</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>low blood sugars (rarely)</side-effects>
+        <side-effects>allergic reactions including itchiness, rash, hives and visual disturbances</side-effects>
+    </medication>
+    <medication>
+        <tradename>Prandin</tradename>
+        <genericname>Repaglinide</genericname>
+        <dose>500 mcg</dose>
+        <dose>1 mg</dose>
+        <dose>2 mg</dose>
+        <frequency>before meals</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>constipation</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>low blood sugars (rarely)</side-effects>
+        <side-effects>allergic reactions including itchiness, rash, hives and visual disturbances</side-effects>
+    </medication>
+    <medication>
+        <tradename>Onglyza</tradename>
+        <genericname>Saxagliptin</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>vomiting</side-effects>
+        <side-effects>dyspepsia</side-effects>
+        <side-effects>gastritis</side-effects>
+        <side-effects>oedema of the extremities</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>upper respiratory tract infection</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>gastroenteritis</side-effects>
+        <side-effects>sinusitis</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>low blood sugars</side-effects>
+        <side-effects>muscle aches/pains</side-effects>
+        <side-effects>abnormal lipids and triglycerides(less commonly)</side-effects>
+        <side-effects>pancreatitis (less commonly)</side-effects>
+        <side-effects>erectile dysfunction (less commonly)</side-effects>
+        <side-effects>joint pains (less commonly)</side-effects>
+        <side-effects>allergic reactions or anaphylaxis (less commonly)</side-effects>
+        <side-effects>rash (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Komboglyze</tradename>
+        <genericname>Saxagliptin with Metformin</genericname>
+        <dose>2.5 mg/850 mg</dose>
+        <dose>2.5 mg/1 g</dose>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>vomiting</side-effects>
+        <side-effects>dyspepsia</side-effects>
+        <side-effects>gastritis</side-effects>
+        <side-effects>oedema of the extremities</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>upper respiratory tract infection</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>gastroenteritis</side-effects>
+        <side-effects>sinusitis</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>low blood sugars</side-effects>
+        <side-effects>muscle aches/pains</side-effects>
+        <side-effects>abnormal lipids and triglycerides(less commonly)</side-effects>
+        <side-effects>pancreatitis (less commonly)</side-effects>
+        <side-effects>erectile dysfunction (less commonly)</side-effects>
+        <side-effects>joint pains (less commonly)</side-effects>
+        <side-effects>allergic reactions or anaphylaxis (less commonly)</side-effects>
+        <side-effects>rash (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Januvia</tradename>
+        <genericname>Sitagliptin</genericname>
+        <dose>25 mg</dose>
+        <dose>50 mg</dose>
+        <dose>100 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>oedema of the extremities</side-effects>
+        <side-effects>upper respiratory tract infection</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>pain</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>anorexia (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>drowsiness (less commonly)</side-effects>
+        <side-effects>dizziness (less commonly)</side-effects>
+        <side-effects>low blood sugars (less commonly)</side-effects>
+        <side-effects>osteoarthritis (less commonly)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+        <side-effects>rash (also reported)</side-effects>
+        <side-effects>severe skin reactions (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Janumet</tradename>
+        <genericname>Sitagliptin with Metformin</genericname>
+        <dose>50 mg/1 g</dose>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>oedema of the extremities</side-effects>
+        <side-effects>upper respiratory tract infection</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>pain</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>anorexia (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>drowsiness (less commonly)</side-effects>
+        <side-effects>dizziness (less commonly)</side-effects>
+        <side-effects>low blood sugars (less commonly)</side-effects>
+        <side-effects>osteoarthritis (less commonly)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+        <side-effects>rash (also reported)</side-effects>
+        <side-effects>severe skin reactions (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Galvus</tradename>
+        <genericname>Vildagliptin</genericname>
+        <dose>50 mg</dose>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>tremor</side-effects>
+        <side-effects>weakness or lack of energy</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>constipation (less commonly)</side-effects>
+        <side-effects>low blood sugars (less commonly)</side-effects>
+        <side-effects>joint pains (less commonly)</side-effects>
+        <side-effects>liver dysfunction (rarely)</side-effects>
+        <side-effects>sore throat (very rarely)</side-effects>
+        <side-effects>upper respiratory tract infection (very rarely)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+        <side-effects>severe skin reactions (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Eucreas</tradename>
+        <genericname>Vildagliptin with Metformin</genericname>
+        <dose>50 mg/850 mg</dose>
+        <dose>50 mg/1 g</dose>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>tremor</side-effects>
+        <side-effects>weakness or lack of energy</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>constipation (less commonly)</side-effects>
+        <side-effects>low blood sugars (less commonly)</side-effects>
+        <side-effects>joint pains (less commonly)</side-effects>
+        <side-effects>liver dysfunction (rarely)</side-effects>
+        <side-effects>sore throat (very rarely)</side-effects>
+        <side-effects>upper respiratory tract infection (very rarely)</side-effects>
+        <side-effects>pancreatitis (also reported)</side-effects>
+        <side-effects>severe skin reactions (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>GlucaGen HypoKit</tradename>
+        <genericname>Glocagon</genericname>
+        <dose>1 mg</dose>
+        <frequency>as needed</frequency>
+        <routeofadministration>SQ/IM</routeofadministration>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>low potassium</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>allergic reactions (rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename></tradename>
+        <genericname></genericname>
+        <dose></dose>
+        <routeofadministration></routeofadministration>
+        <side-effects></side-effects>
+    </medication>
+</medications>

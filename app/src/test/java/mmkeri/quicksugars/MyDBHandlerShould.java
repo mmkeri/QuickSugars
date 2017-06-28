@@ -10,7 +10,9 @@ import org.joda.time.*;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.test.AndroidTestCase;
+import android.test.RenamingDelegatingContext;
 
 import com.google.gson.Gson;
 
@@ -23,37 +25,24 @@ public class MyDBHandlerShould extends AndroidTestCase{
     private SQLiteDatabase.CursorFactory cursorFactory;
     private BloodSugarMeasurement bsMeasure;
     private DayLogObject logObject;
+    private SQLiteDatabase db;
+    private static final String TEST_FILE_PREFIX = "test_";
 
     @Before
     public void setUp() throws Exception{
+        RenamingDelegatingContext context
+                = new RenamingDelegatingContext(getContext(), TEST_FILE_PREFIX);
         testDate = new LocalDate();
         testTime = new LocalTime();
         testLogObject = new DayLogObject(testDate);
         bsMeasure = new BloodSugarMeasurement(12.5, testTime);
         logObject = new DayLogObject(testDate);
+        testDBHandler = new MyDBHandler(context);
     }
 
     @After
     public void cleanUp() throws Exception{
-        testDBHandler.close();
+        testDBHandler.deleteDatabase();
     }
-    /*
-    public void testDropDB(){
-        assertTrue(mContext.deleteDatabase(MyDBHandler.TABLE_LOGS));
-    }
-    */
-    /*
-    public void testCreateDB(){
-        testDBHandler = new MyDBHandler(mContext);
-        SQLiteDatabase db = testDBHandler.getWritableDatabase();
-        assertTrue(db.isOpen());
-        db.close();
-    }
-    */
-    public void serializeAndDeserializeObjectCorrectly(){
-        Gson gson = new Gson();
-        String serialResult = gson.toJson(logObject, DayLogObject.class);
-        DayLogObject result = gson.fromJson(serialResult, DayLogObject.class);
-        assertEquals(logObject.getId(), result.getId());
-    }
+
 }
