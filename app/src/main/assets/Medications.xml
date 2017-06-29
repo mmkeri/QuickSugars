@@ -5,7 +5,9 @@
         <genericname>Insulin</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IM</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -18,7 +20,9 @@
         <genericname>Insulin</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IM</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -31,7 +35,9 @@
         <genericname>Insulin</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IM</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -44,7 +50,9 @@
         <genericname>Insulin</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IM</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -57,7 +65,9 @@
         <genericname>Insulin</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IM/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IM</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -70,7 +80,8 @@
         <genericname>Insulin Asprat</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -83,7 +94,8 @@
         <genericname>Insulin Glulisine</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -96,7 +108,8 @@
         <genericname>Insulin Lispro</genericname>
         <dose>variable</dose>
         <frequency>variable</frequency>
-        <routeofadministration>SQ/IV</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IV</routeofadministration>
         <side-effects>transient oedema</side-effects>
         <side-effects>local reactions</side-effects>
         <side-effects>fat hypertrophy</side-effects>
@@ -347,7 +360,7 @@
         <dose>12.5 mg</dose>
         <dose>15 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -369,7 +382,7 @@
         <dose>320 mg</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -391,7 +404,7 @@
         <dose>320 mg</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -408,7 +421,7 @@
         <dose>90 mg</dose>
         <dose>120 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -425,7 +438,7 @@
         <dose>90 mg</dose>
         <dose>120 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -442,7 +455,7 @@
         <dose>90 mg</dose>
         <dose>120 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -461,7 +474,7 @@
         <dose>5 mg</dose>
         <dose>6 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -480,7 +493,7 @@
         <dose>5 mg</dose>
         <dose>6 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -500,7 +513,7 @@
         <dose>15 mg</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -520,7 +533,7 @@
         <dose>15 mg</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -537,7 +550,7 @@
         <dose>1.5 mg</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -555,7 +568,7 @@
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
         <frequency>three times daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -579,7 +592,7 @@
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
         <frequency>three times daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -603,7 +616,7 @@
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
         <frequency>three times daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -627,7 +640,7 @@
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
         <frequency>three times daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -651,7 +664,7 @@
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
         <frequency>three times daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -675,7 +688,7 @@
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
         <frequency>three times daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -699,7 +712,7 @@
         <dose>200 mg</dose>
         <frequency>daily</frequency>
         <frequency>three times daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>flatulence</side-effects>
         <side-effects>soft stools</side-effects>
         <side-effects>diarrhoea</side-effects>
@@ -717,7 +730,7 @@
         <dose>12.5 mg/1 g</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>abdominal pain</side-effects>
         <side-effects>reflux</side-effects>
         <side-effects>upper respiratory tract symptoms</side-effects>
@@ -729,6 +742,20 @@
         <side-effects>hives (rare)</side-effects>
         <side-effects>sever skin reaction(rare)</side-effects>
         <side-effects>swelling of lips and tongue (rare)</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>Vipidia</tradename>
@@ -737,7 +764,7 @@
         <dose>12.5 mg</dose>
         <dose>25 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>abdominal pain</side-effects>
         <side-effects>reflux</side-effects>
         <side-effects>upper respiratory tract symptoms</side-effects>
@@ -757,7 +784,7 @@
         <dose>200 mg</dose>
         <dose>300 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>constipation</side-effects>
         <side-effects>thirst</side-effects>
         <side-effects>nausea</side-effects>
@@ -778,7 +805,7 @@
         <dose>50 mg/1 g</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>constipation</side-effects>
         <side-effects>thirst</side-effects>
         <side-effects>nausea</side-effects>
@@ -791,6 +818,20 @@
         <side-effects>dizziness (rare)</side-effects>
         <side-effects>rash (rare)</side-effects>
         <side-effects>changes in kidney function tests (rare)</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>Forxiga</tradename>
@@ -798,7 +839,7 @@
         <dose>5 mg</dose>
         <dose>10 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>low blood sugar</side-effects>
         <side-effects>constipation</side-effects>
         <side-effects>raised lipid levels</side-effects>
@@ -822,7 +863,7 @@
         <dose>5 mg/1 g</dose>
         <frequency>daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>low blood sugar</side-effects>
         <side-effects>constipation</side-effects>
         <side-effects>raised lipid levels</side-effects>
@@ -838,6 +879,20 @@
         <side-effects>nighttime urination</side-effects>
         <side-effects>dehydration</side-effects>
         <side-effects>altered kidney function tests</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>Jardiance</tradename>
@@ -845,7 +900,7 @@
         <dose>10 mg</dose>
         <dose>25 mg</dose>
         <frequency>daily</frequency>
-        <routeofadministration>Oral</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>low blood sugar</side-effects>
         <side-effects>urinary tract infection</side-effects>
         <side-effects>genital infection</side-effects>
@@ -926,7 +981,7 @@
         <genericname>Linagliptin</genericname>
         <dose>5 mg</dose>
         <frequency>once daily</frequency>
-        <routeofadministration>orally</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>cough (less commonly reported)</side-effects>
         <side-effects>sore throat (less commonly reported)</side-effects>
         <side-effects>pancreatitis (also reported)</side-effects>
@@ -938,10 +993,24 @@
         <dose>2.5 mg/1 g</dose>
         <frequency>once daily</frequency>
         <frequency>twice daily</frequency>
-        <routeofadministration>orally</routeofadministration>
+        <routeofadministration>Orally</routeofadministration>
         <side-effects>cough (less commonly reported)</side-effects>
         <side-effects>sore throat (less commonly reported)</side-effects>
         <side-effects>pancreatitis (also reported)</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>Victoza</tradename>
@@ -1104,6 +1173,20 @@
         <side-effects>vertigo (less commonly)</side-effects>
         <side-effects>sweating (less commonly)</side-effects>
         <side-effects>altered blood lipid readings (less commonly)</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>Repaglinide</tradename>
@@ -1192,6 +1275,20 @@
         <side-effects>joint pains (less commonly)</side-effects>
         <side-effects>allergic reactions or anaphylaxis (less commonly)</side-effects>
         <side-effects>rash (also reported)</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>Januvia</tradename>
@@ -1238,6 +1335,20 @@
         <side-effects>pancreatitis (also reported)</side-effects>
         <side-effects>rash (also reported)</side-effects>
         <side-effects>severe skin reactions (also reported)</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>Galvus</tradename>
@@ -1279,13 +1390,28 @@
         <side-effects>upper respiratory tract infection (very rarely)</side-effects>
         <side-effects>pancreatitis (also reported)</side-effects>
         <side-effects>severe skin reactions (also reported)</side-effects>
+        <side-effects>Plus side-effects associated with Metformin</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>anorexia</side-effects>
+        <side-effects>abdominal pain</side-effects>
+        <side-effects>taste disturbance</side-effects>
+        <side-effects>skin redness</side-effects>
+        <side-effects>rash and hives</side-effects>
+        <side-effects>liver inflammation (rare)</side-effects>
+        <side-effects>decreased vitamin B12 absorption</side-effects>
+        <side-effects>Hypersensitivity reactions in the first 6 to 8 weeks of use:
+            allergic skin reactions, fever, and jaundice</side-effects>
+        <side-effects>blood disorders (rare)</side-effects>
     </medication>
     <medication>
         <tradename>GlucaGen HypoKit</tradename>
         <genericname>Glocagon</genericname>
         <dose>1 mg</dose>
         <frequency>as needed</frequency>
-        <routeofadministration>SQ/IM</routeofadministration>
+        <routeofadministration>SQ</routeofadministration>
+        <routeofadministration>IM</routeofadministration>
         <side-effects>nausea</side-effects>
         <side-effects>vomiting</side-effects>
         <side-effects>abdominal pain</side-effects>
