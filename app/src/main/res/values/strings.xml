@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">QuickSugars</string>
     <string name="action_settings">Settings</string>
+    <string name="blood_sugar_entry">Blood Sugar Entry</string>
+    <string name="medication_selection">Select Medications for Tracking</string>
+    <string name="weight_entry">Weight Measurements</string>
+    <string name="food_items">Food Record</string>
+    <string name="symptom_record">Symptom Record</string>
+    <string name="medication_record">Medication Tracking</string>
 </resources>

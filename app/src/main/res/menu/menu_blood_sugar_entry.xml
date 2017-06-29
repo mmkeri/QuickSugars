@@ -2,9 +2,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="mmkeri.quicksugars.BloodSugarEntry">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+    <item android:id="@+id/blood_sugar_entry"
+        android:title="@string/blood_sugar_entry" />
+    <item android:id="@+id/medication_selection"
+        android:title="@string/medication_selection"/>
+    <item android:id="@+id/medication_record"
+        android:title="@string/medication_record"/>
+    <item android:id="@+id/food_items"
+        android:title="@string/food_items"/>
+    <item android:id="@+id/symptom_record"
+        android:title="@string/symptom_record"/>
+    <item android:id="@+id/weight_record"
+        android:title="@string/weight_entry"/>
 </menu>
