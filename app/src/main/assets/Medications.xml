@@ -1420,6 +1420,586 @@
         <side-effects>allergic reactions (rarely)</side-effects>
     </medication>
     <medication>
+        <tradename>Captopril</tradename>
+        <genericname>Captopril</genericname>
+        <dose>6.25 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>25 mg</dose>
+        <dose>37.5 mg</dose>
+        <dose>50 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>sleep difficulties</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>pallor (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>mouth sores (rarely)</side-effects>
+        <side-effects>appetite loss (rarely)</side-effects>
+        <side-effects>swelling and/or pain of the tongue (very rarely)</side-effects>
+        <side-effects>peptic ulcer (very rarely)</side-effects>
+        <side-effects>fainting (very rarely)</side-effects>
+        <side-effects>stroke-like events (very rarely)</side-effects>
+        <side-effects>heart attack (very rarely)</side-effects>
+        <side-effects>lung dysfunction (very rarely)</side-effects>
+        <side-effects>confusion (very rarely)</side-effects>
+        <side-effects>depression (very rarely)</side-effects>
+        <side-effects>impotence (very rarely)</side-effects>
+        <side-effects>swelling of the breast tissue (very rarely)</side-effects>
+        <side-effects>elevated sodium levels in the blood (very rarely)</side-effects>
+        <side-effects>blurred vision (very rarely)</side-effects>
+        <side-effects>eye sensitivities to light (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Capoten</tradename>
+        <genericname>Captopril</genericname>
+        <dose>6.25 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>25 mg</dose>
+        <dose>37.5 mg</dose>
+        <dose>50 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>sleep difficulties</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>pallor (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>mouth sores (rarely)</side-effects>
+        <side-effects>appetite loss (rarely)</side-effects>
+        <side-effects>swelling and/or pain of the tongue (very rarely)</side-effects>
+        <side-effects>peptic ulcer (very rarely)</side-effects>
+        <side-effects>fainting (very rarely)</side-effects>
+        <side-effects>stroke-like events (very rarely)</side-effects>
+        <side-effects>heart attack (very rarely)</side-effects>
+        <side-effects>lung dysfunction (very rarely)</side-effects>
+        <side-effects>confusion (very rarely)</side-effects>
+        <side-effects>depression (very rarely)</side-effects>
+        <side-effects>impotence (very rarely)</side-effects>
+        <side-effects>swelling of the breast tissue (very rarely)</side-effects>
+        <side-effects>elevated sodium levels in the blood (very rarely)</side-effects>
+        <side-effects>blurred vision (very rarely)</side-effects>
+        <side-effects>eye sensitivities to light (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Noyada</tradename>
+        <genericname>Captopril</genericname>
+        <dose>6.25 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>25 mg</dose>
+        <dose>37.5 mg</dose>
+        <dose>50 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>sleep difficulties</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>pallor (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>mouth sores (rarely)</side-effects>
+        <side-effects>appetite loss (rarely)</side-effects>
+        <side-effects>swelling and/or pain of the tongue (very rarely)</side-effects>
+        <side-effects>peptic ulcer (very rarely)</side-effects>
+        <side-effects>fainting (very rarely)</side-effects>
+        <side-effects>stroke-like events (very rarely)</side-effects>
+        <side-effects>heart attack (very rarely)</side-effects>
+        <side-effects>lung dysfunction (very rarely)</side-effects>
+        <side-effects>confusion (very rarely)</side-effects>
+        <side-effects>depression (very rarely)</side-effects>
+        <side-effects>impotence (very rarely)</side-effects>
+        <side-effects>swelling of the breast tissue (very rarely)</side-effects>
+        <side-effects>elevated sodium levels in the blood (very rarely)</side-effects>
+        <side-effects>blurred vision (very rarely)</side-effects>
+        <side-effects>eye sensitivities to light (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Co-zidocapt</tradename>
+        <genericname>Captopril with hydrochlorothiazide</genericname>
+        <dose>12.5 mg/25 mg</dose>
+        <dose>25 mg/50 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>sleep difficulties</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>pallor (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>mouth sores (rarely)</side-effects>
+        <side-effects>appetite loss (rarely)</side-effects>
+        <side-effects>swelling and/or pain of the tongue (very rarely)</side-effects>
+        <side-effects>peptic ulcer (very rarely)</side-effects>
+        <side-effects>fainting (very rarely)</side-effects>
+        <side-effects>stroke-like events (very rarely)</side-effects>
+        <side-effects>heart attack (very rarely)</side-effects>
+        <side-effects>lung dysfunction (very rarely)</side-effects>
+        <side-effects>confusion (very rarely)</side-effects>
+        <side-effects>depression (very rarely)</side-effects>
+        <side-effects>impotence (very rarely)</side-effects>
+        <side-effects>swelling of the breast tissue (very rarely)</side-effects>
+        <side-effects>elevated sodium levels in the blood (very rarely)</side-effects>
+        <side-effects>blurred vision (very rarely)</side-effects>
+        <side-effects>eye sensitivities to light (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Capozide</tradename>
+        <genericname>Captopril with Hydrochlorothiazide</genericname>
+        <dose>25 mg/50 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <frequency>three times daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>sleep difficulties</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>pallor (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>mouth sores (rarely)</side-effects>
+        <side-effects>appetite loss (rarely)</side-effects>
+        <side-effects>swelling and/or pain of the tongue (very rarely)</side-effects>
+        <side-effects>peptic ulcer (very rarely)</side-effects>
+        <side-effects>fainting (very rarely)</side-effects>
+        <side-effects>stroke-like events (very rarely)</side-effects>
+        <side-effects>heart attack (very rarely)</side-effects>
+        <side-effects>lung dysfunction (very rarely)</side-effects>
+        <side-effects>confusion (very rarely)</side-effects>
+        <side-effects>depression (very rarely)</side-effects>
+        <side-effects>impotence (very rarely)</side-effects>
+        <side-effects>swelling of the breast tissue (very rarely)</side-effects>
+        <side-effects>elevated sodium levels in the blood (very rarely)</side-effects>
+        <side-effects>blurred vision (very rarely)</side-effects>
+        <side-effects>eye sensitivities to light (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Enalapril Maleate</tradename>
+        <genericname>Enalapril Maleate</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>15 mg</dose>
+        <dose>20 mg</dose>
+        <dose>25 mg</dose>
+        <dose>30 mg</dose>
+        <dose>35 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>physical weakness or lack of energy</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>peptic ulcer (less commonly)</side-effects>
+        <side-effects>loss of appetite (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>confusion (less commonly)</side-effects>
+        <side-effects>nervousness (less commonly)</side-effects>
+        <side-effects>drowsiness (less commonly)</side-effects>
+        <side-effects>insomnia (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>muscle cramps (less commonly)</side-effects>
+        <side-effects>ringing in the ears (less commonly)</side-effects>
+        <side-effects>hair loss (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>low blood sodium levels (less commonly)</side-effects>
+        <side-effects>sore mouth (rarely)</side-effects>
+        <side-effects>tongue swelling and/or pain (rarely)</side-effects>
+        <side-effects>Raynaud's syndrome (rarely)</side-effects>
+        <side-effects>lung abnormalities (rarely)</side-effects>
+        <side-effects>dream abnormalities (rarely)</side-effects>
+        <side-effects>swelling of breasts tissue (rarely)</side-effects>
+        <side-effects>severe skin reactions (rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Innovace</tradename>
+        <genericname>Enalapril Maleate</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>15 mg</dose>
+        <dose>20 mg</dose>
+        <dose>25 mg</dose>
+        <dose>30 mg</dose>
+        <dose>35 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>physical weakness or lack of energy</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>peptic ulcer (less commonly)</side-effects>
+        <side-effects>loss of appetite (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>confusion (less commonly)</side-effects>
+        <side-effects>nervousness (less commonly)</side-effects>
+        <side-effects>drowsiness (less commonly)</side-effects>
+        <side-effects>insomnia (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>muscle cramps (less commonly)</side-effects>
+        <side-effects>ringing in the ears (less commonly)</side-effects>
+        <side-effects>hair loss (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>low blood sodium levels (less commonly)</side-effects>
+        <side-effects>sore mouth (rarely)</side-effects>
+        <side-effects>tongue swelling and/or pain (rarely)</side-effects>
+        <side-effects>Raynaud's syndrome (rarely)</side-effects>
+        <side-effects>lung abnormalities (rarely)</side-effects>
+        <side-effects>dream abnormalities (rarely)</side-effects>
+        <side-effects>swelling of breasts tissue (rarely)</side-effects>
+        <side-effects>severe skin reactions (rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Innozide</tradename>
+        <genericname>Enalapril Maleate with Hydrochlorotiazide</genericname>
+        <dose>20 mg/12.5 mg</dose>
+        <dose>40 mg/25 mg</dose>
+        <frequency>once daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>physical weakness or lack of energy</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>peptic ulcer (less commonly)</side-effects>
+        <side-effects>loss of appetite (less commonly)</side-effects>
+        <side-effects>heart palpitations (less commonly)</side-effects>
+        <side-effects>abnormal heart rhythms (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>confusion (less commonly)</side-effects>
+        <side-effects>nervousness (less commonly)</side-effects>
+        <side-effects>drowsiness (less commonly)</side-effects>
+        <side-effects>insomnia (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>muscle cramps (less commonly)</side-effects>
+        <side-effects>ringing in the ears (less commonly)</side-effects>
+        <side-effects>hair loss (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>low blood sodium levels (less commonly)</side-effects>
+        <side-effects>sore mouth (rarely)</side-effects>
+        <side-effects>tongue swelling and/or pain (rarely)</side-effects>
+        <side-effects>Raynaud's syndrome (rarely)</side-effects>
+        <side-effects>lung abnormalities (rarely)</side-effects>
+        <side-effects>dream abnormalities (rarely)</side-effects>
+        <side-effects>swelling of breasts tissue (rarely)</side-effects>
+        <side-effects>severe skin reactions (rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Fosinopril Sodium</tradename>
+        <genericname>Fosinopril Sodium</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>chest pain</side-effects>
+        <side-effects>musculoskeletal pain</side-effects>
+    </medication>
+    <medication>
+        <tradename>Tanatril</tradename>
+        <genericname>Imidapril Hydrochloride</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>15 mg</dose>
+        <dose>20 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>tongue swelling and/or pain</side-effects>
+        <side-effects>bronchitis</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>confusion</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>ringing in the ears</side-effects>
+        <side-effects>impotence</side-effects>
+    </medication>
+    <medication>
+        <tradename>Lisinopril</tradename>
+        <genericname>Lisinopril</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>15 mg</dose>
+        <dose>20 mg</dose>
+        <dose>25 mg</dose>
+        <dose>30 mg</dose>
+        <dose>35 mg</dose>
+        <dose>40 mg</dose>
+        <dose>45 mg</dose>
+        <dose>50 mg</dose>
+        <dose>55 mg</dose>
+        <dose>60 mg</dose>
+        <dose>65 mg</dose>
+        <dose>70 mg</dose>
+        <dose>75 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>stroke (less commonly)</side-effects>
+        <side-effects>heart attack (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>confusion (less commonly)</side-effects>
+        <side-effects>mood changes (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>sleep disturbances (less commonly)</side-effects>
+        <side-effects>weakness or loss of energy (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>dry mouth (rarely)</side-effects>
+        <side-effects>swollen breast tissue (rarely)</side-effects>
+        <side-effects>hair loss (rarely)</side-effects>
+        <side-effects>psoriasis (rarely)</side-effects>
+        <side-effects>pulmonary dysfunction (very rarely)</side-effects>
+        <side-effects>profuse sweating (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Zestril</tradename>
+        <genericname>Lisinopril</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>15 mg</dose>
+        <dose>20 mg</dose>
+        <dose>25 mg</dose>
+        <dose>30 mg</dose>
+        <dose>35 mg</dose>
+        <dose>40 mg</dose>
+        <dose>45 mg</dose>
+        <dose>50 mg</dose>
+        <dose>55 mg</dose>
+        <dose>60 mg</dose>
+        <dose>65 mg</dose>
+        <dose>70 mg</dose>
+        <dose>75 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>stroke (less commonly)</side-effects>
+        <side-effects>heart attack (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>confusion (less commonly)</side-effects>
+        <side-effects>mood changes (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>sleep disturbances (less commonly)</side-effects>
+        <side-effects>weakness or loss of energy (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>dry mouth (rarely)</side-effects>
+        <side-effects>swollen breast tissue (rarely)</side-effects>
+        <side-effects>hair loss (rarely)</side-effects>
+        <side-effects>psoriasis (rarely)</side-effects>
+        <side-effects>pulmonary dysfunction (very rarely)</side-effects>
+        <side-effects>profuse sweating (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Carace Plus</tradename>
+        <genericname>Lisinopril with Hydrochlorothiazide</genericname>
+        <dose>20 mg/12.5 mg</dose>
+        <dose>40 mg/25 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>stroke (less commonly)</side-effects>
+        <side-effects>heart attack (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>confusion (less commonly)</side-effects>
+        <side-effects>mood changes (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>sleep disturbances (less commonly)</side-effects>
+        <side-effects>weakness or loss of energy (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>dry mouth (rarely)</side-effects>
+        <side-effects>swollen breast tissue (rarely)</side-effects>
+        <side-effects>hair loss (rarely)</side-effects>
+        <side-effects>psoriasis (rarely)</side-effects>
+        <side-effects>pulmonary dysfunction (very rarely)</side-effects>
+        <side-effects>profuse sweating (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Zestoretic</tradename>
+        <genericname>Lisinopril with Hydrochlorothiazide</genericname>
+        <dose>10 mg/12.5 mg</dose>
+        <dose>20 mg/12.5 mg</dose>
+        <dose>20 mg/25 mg</dose>
+        <dose>40 mg/25 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>stroke (less commonly)</side-effects>
+        <side-effects>heart attack (less commonly)</side-effects>
+        <side-effects>Raynaud's syndrome (less commonly)</side-effects>
+        <side-effects>confusion (less commonly)</side-effects>
+        <side-effects>mood changes (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>sleep disturbances (less commonly)</side-effects>
+        <side-effects>weakness or loss of energy (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>dry mouth (rarely)</side-effects>
+        <side-effects>swollen breast tissue (rarely)</side-effects>
+        <side-effects>hair loss (rarely)</side-effects>
+        <side-effects>psoriasis (rarely)</side-effects>
+        <side-effects>pulmonary dysfunction (very rarely)</side-effects>
+        <side-effects>profuse sweating (very rarely)</side-effects>
+        <side-effects>severe skin reactions (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Perdix</tradename>
+        <genericname>Moexipril Hydrochlorothiazide</genericname>
+        <dose>3.75 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>15 mg</dose>
+        <dose>22.5 mg</dose>
+        <dose>30 mg</dose>
+        <frequency>once daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>abnormal heart rhythms</side-effects>
+        <side-effects>accelerate heart rate</side-effects>
+        <side-effects>palpitations</side-effects>
+        <side-effects>chest pain</side-effects>
+        <side-effects>fainting</side-effects>
+        <side-effects>flushing</side-effects>
+        <side-effects>stroke</side-effects>
+        <side-effects>heart attack</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>appetite and weight changes</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>confusion</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness</side-effects>
+        <side-effects>drowsiness</side-effects>
+        <side-effects>sleep disturbance</side-effects>
+        <side-effects>impotence</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>ringing in the ears</side-effects>
+        <side-effects>sweating</side-effects>
+        <side-effects>severe skin reactions</side-effects>
+        <side-effects>hair loss</side-effects>
+    </medication>
+    <medication>
         <tradename></tradename>
         <genericname></genericname>
         <dose></dose>

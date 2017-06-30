@@ -18,12 +18,10 @@ import static org.junit.Assert.*;
 
 public class DayLogObjectShould {
 
-    private SimpleDateFormat sdf;
-    private SimpleDateFormat sdf2;
     private LocalDate testDate;
     private DayLogObject testObject;
     private BloodSugarMeasurement testRecord1;
-    private BloodSugarMeasurement getTestRecord2;
+    private BloodSugarMeasurement testRecord2;
     private SymptomRecord dizzinessRecord;
     private SymptomRecord headacheRecord;
     private MedicationRecord metformin;
@@ -38,12 +36,11 @@ public class DayLogObjectShould {
     @Before
     public void setUp(){
         testDate = new LocalDate();
-        sdf2 = new SimpleDateFormat("yyyyMMdd_HHmmss");
         testTime = new LocalTime(1498406153);
         testTime2 = new LocalTime(12, 45, 30);
         testObject = new DayLogObject(testDate);
         testRecord1 = new BloodSugarMeasurement(14.5, testTime);
-        getTestRecord2 = new BloodSugarMeasurement(12.2, testTime2);
+        testRecord2 = new BloodSugarMeasurement(12.2, testTime2);
         dizzinessRecord = new SymptomRecord("Dizziness", testTime);
         headacheRecord = new SymptomRecord("Headache", testTime);
         metformin = new MedicationRecord("Metformin", 875, testTime, testTime);
@@ -57,9 +54,7 @@ public class DayLogObjectShould {
     @After
     public void cleanUp(){
         testObject = null;
-        sdf = null;
         testDate = null;
-        sdf2 = null;
         dizzinessRecord = null;
         headacheRecord = null;
     }
@@ -91,7 +86,7 @@ public class DayLogObjectShould {
     @Test
     public void returnTheCorrectCountWhenARecordIsDeleted(){
         testObject.addNewBSMeasurement(testRecord1);
-        int preDeletionSize = testObject.addNewBSMeasurement(getTestRecord2).size();
+        int preDeletionSize = testObject.addNewBSMeasurement(testRecord2).size();
         int postDeletionSize = testObject.deleteBloodSugarMeasurement(14.5, testTime).size();
         assertEquals(2, preDeletionSize);
         assertEquals(1, postDeletionSize);
@@ -100,7 +95,7 @@ public class DayLogObjectShould {
     @Test
     public void returnZeroIfAllRecordsAreDelted(){
         testObject.addNewBSMeasurement(testRecord1);
-        testObject.addNewBSMeasurement(getTestRecord2);
+        testObject.addNewBSMeasurement(testRecord2);
         testObject.deleteBloodSugarMeasurement(14.5, testTime);
         int result = testObject.deleteBloodSugarMeasurement(12.2, testTime2).size();
         assertEquals(0, result);
