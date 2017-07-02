@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/weightrecordid"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mmkeri.quicksugars.WeightRecordEntry"
+    tools:showIn="@layout/activity_weight_record_entry">
+
+    <EditText
+        android:id="@+id/weightEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter weight here"
+        android:layout_above="@+id/weightEntryButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/weightEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveEntry"
+        android:text="Tap to enter todays weight"
+        android:layout_above="@+id/changeToPreviousWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/changeToPreviousWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/graph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:onClick="changeToPreviousWeightEntry"
+        android:text="Tap to enter entry from previous day"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/previousWeightEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter weight here"
+        android:layout_above="@+id/weightEntryButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/previousWeightEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveEntry"
+        android:text="Tap to enter historical weight"
+        android:layout_above="@+id/changeToPreviousWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/changeToCurrentWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/graph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:onClick="changeToCurrentWeightEntry"
+        android:text="Tap to change to todays weight entry page"
+        android:visibility="invisible" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:id="@+id/graph"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

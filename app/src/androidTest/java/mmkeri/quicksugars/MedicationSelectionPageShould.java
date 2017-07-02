@@ -3,18 +3,18 @@ package mmkeri.quicksugars;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 
-/**
- * Created by mmkeri on 30/06/2017.
- */
-
+@RunWith(AndroidJUnit4.class)
 public class MedicationSelectionPageShould {
 
     ArrayList<MedicationObject> returnedList;

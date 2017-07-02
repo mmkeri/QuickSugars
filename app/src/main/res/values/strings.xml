@@ -7,4 +7,8 @@
     <string name="food_items">Food Record</string>
     <string name="symptom_record">Symptom Record</string>
     <string name="medication_record">Medication Tracking</string>
+    <string name="entries_complete">Entries Complete</string>
+    <string name="title_activity_weight_record_entry">weight_record_entry</string>
+    <string name="today_weight_button">Tap to enter todays weight</string>
+    <string name="previous_weight_button">Tap to enter weight from previous day</string>
 </resources>

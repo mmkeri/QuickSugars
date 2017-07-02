@@ -3,16 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="368dp"
-    android:layout_height="495dp"
+    android:layout_height="485dp"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp">
     tools:context="mmkeri.quicksugars.MedicationSelectionPage">
 
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/testbutton"
+        android:text="@string/entries_complete"
+        android:layout_alignParentBottom="true"/>
     <ListView
         android:id="@+id/medicationSelection"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/testbutton"/>
+
 </RelativeLayout>
 
