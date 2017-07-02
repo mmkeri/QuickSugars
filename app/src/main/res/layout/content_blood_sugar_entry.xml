@@ -27,6 +27,6 @@
         android:layout_below="@+id/entryText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="114dp"
-        android:onClick="saveEntry"
+        android:onClick="saveTodayEntry"
         android:text="Accept" />
 </RelativeLayout>

@@ -25,7 +25,7 @@
         android:id="@+id/weightEntryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="saveEntry"
+        android:onClick="saveTodayEntry"
         android:text="Tap to enter todays weight"
         android:layout_above="@+id/changeToPreviousWeight"
         android:layout_centerHorizontal="true"
@@ -47,11 +47,23 @@
         android:id="@+id/previousWeightEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:gravity="center_vertical|center_horizontal"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Enter weight here"
-        android:layout_above="@+id/weightEntryButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Date: yyyymmdd"
+        android:layout_below="@id/previousWeightEntry"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"/>
 
@@ -59,21 +71,22 @@
         android:id="@+id/previousWeightEntryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="saveEntry"
+        android:onClick="savePreviousEntry"
         android:text="Tap to enter historical weight"
-        android:layout_above="@+id/changeToPreviousWeight"
         android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dateInput"
         android:layout_marginBottom="30dp"
         android:visibility="invisible"/>
 
     <Button
         android:id="@+id/changeToCurrentWeight"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="15dp"
         android:layout_above="@+id/graph"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="60dp"
         android:onClick="changeToCurrentWeightEntry"
+        android:layout_below="@id/previousWeightEntryButton"
         android:text="Tap to change to todays weight entry page"
         android:visibility="invisible" />
 
