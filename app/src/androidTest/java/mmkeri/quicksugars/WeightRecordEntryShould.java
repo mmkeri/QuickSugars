@@ -1,10 +1,16 @@
 package mmkeri.quicksugars;
 
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.view.View;
 
+import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
+import com.jjoe64.graphview.series.Series;
 
 import org.joda.time.LocalDate;
 import org.junit.After;
@@ -38,9 +44,22 @@ public class WeightRecordEntryShould {
     private DataPoint point1;
     private DataPoint point2;
     private DataPoint point3;
+    private GraphView testGraphView;
+    private Series<DataPoint> testSeries;
+    private MyDBHandler testHandler;
+    private SQLiteDatabase testDatabase;
 
     @Before
     public void setUp(){
+
+        //Context context = InstrumentationRegistry.getContext();
+        Context context = InstrumentationRegistry.getTargetContext();
+        testHandler = new MyDBHandler(context);
+
+        // cause the database to be opened or created
+        SQLiteDatabase db = testHandler.getWritableDatabase();
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
+        testHandler.onCreate(db);
 
         mWeightRecordActivity = mActivityRule.getActivity();
         point1 = new DataPoint(date1, weight1);
@@ -54,6 +73,7 @@ public class WeightRecordEntryShould {
         point1 = null;
         point2 = null;
         point3 = null;
+        testHandler.deleteDatabase();
     }
 
     @Test
@@ -64,5 +84,12 @@ public class WeightRecordEntryShould {
         mWeightRecordActivity.addGraphPoint(weight2, secondDate);
         mWeightRecordActivity.addGraphPoint(weight3, thirdDate);
         assertEquals(1, 1);
+    }
+
+    @Test
+    public void returnACountOfOneWhenTheseAreAddedUsingAddTodayEntry(){
+        testDatabase = mWeightRecordActivity.saveTodayEntry(mWeightRecordActivity.getCurrentFocus());
+        int result = testDatabase.rawQuery("SELECT * FROM logRecords", null).getCount();
+        assertEquals(1, result);
     }
 }
