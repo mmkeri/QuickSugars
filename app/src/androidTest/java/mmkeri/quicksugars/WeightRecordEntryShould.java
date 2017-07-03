@@ -1,6 +1,7 @@
 package mmkeri.quicksugars;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
@@ -13,13 +14,17 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 import com.jjoe64.graphview.series.Series;
 
 import org.joda.time.LocalDate;
+import org.joda.time.LocalTime;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.rules.ExpectedException;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -41,13 +46,12 @@ public class WeightRecordEntryShould {
     private double weight1 = 65;
     private double weight2 = 70;
     private double weight3 = 40;
-    private DataPoint point1;
-    private DataPoint point2;
-    private DataPoint point3;
-    private GraphView testGraphView;
-    private Series<DataPoint> testSeries;
+    private LocalTime defaultTime = new LocalTime(12, 01, 01);
     private MyDBHandler testHandler;
-    private SQLiteDatabase testDatabase;
+    private SQLiteDatabase testDB;
+    private WeightMeasurement weightRecord1;
+    private WeightMeasurement weightRecord2;
+
 
     @Before
     public void setUp(){
@@ -62,18 +66,16 @@ public class WeightRecordEntryShould {
         testHandler.onCreate(db);
 
         mWeightRecordActivity = mActivityRule.getActivity();
-        point1 = new DataPoint(date1, weight1);
-        point2 = new DataPoint(date2, weight2);
-        point3 = new DataPoint(date3, weight3);
+
+        weightRecord1 = new WeightMeasurement(65, defaultTime);
+        weightRecord2 = new WeightMeasurement(70, defaultTime);
     }
 
     @After
     public void cleanUp(){
         mActivityRule = null;
-        point1 = null;
-        point2 = null;
-        point3 = null;
         testHandler.deleteDatabase();
+        testDB = null;
     }
 
     @Test
@@ -87,9 +89,78 @@ public class WeightRecordEntryShould {
     }
 
     @Test
-    public void returnACountOfOneWhenTheseAreAddedUsingAddTodayEntry(){
-        testDatabase = mWeightRecordActivity.saveTodayEntry(mWeightRecordActivity.getCurrentFocus());
-        int result = testDatabase.rawQuery("SELECT * FROM logRecords", null).getCount();
+    public void convertDateToIntCorrectly(){
+        int result = mWeightRecordActivity.convertLocalDateToInt(firstDate);
+        assertEquals(20170101, result);
+    }
+
+    @Test
+    public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddTodaysRecordToDB(){
+        mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
+        testDB = mWeightRecordActivity.addTodaysRecordToDB(20170106, 70, defaultTime);
+        int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
+        assertEquals(2, result);
+    }
+
+    @Test
+    public void returnCountOfOneWhenASingleRecordIsAddedUsingAddTodaysRecordToDB(){
+        testDB = mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
+        int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
+    }
+
+    @Test
+    public void returnCountOfOneWhenTwoRecordsEnteredOnTheSameDayUsingAddTodaysRecordToDB(){
+        mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
+        testDB = mWeightRecordActivity.addTodaysRecordToDB(20170105, 70, defaultTime);
+        int result = testDB.rawQuery("SELECT * FROM logRecords;", null).getCount();
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddPreviousRecordToDB(){
+        mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
+        testDB = mWeightRecordActivity.addPreviousRecordToDB(20170106, 70, defaultTime);
+        int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
+        assertEquals(2, result);
+    }
+
+    @Test
+    public void returnCountOfOneWhenASingleRecordIsAddedUsingAddPreviousRecordToDB(){
+        testDB = mWeightRecordActivity.addPreviousRecordToDB(20170105, 65, defaultTime);
+        int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void convertAnIntToLocalDateCorrectly(){
+        LocalDate result = mWeightRecordActivity.convertDateAsIntToLocalDate(20170101);
+        assertEquals(firstDate, result);
+    }
+
+    @Test(expected = NumberFormatException.class)
+    public void throwAnExceptionWhenAnInvalidIntIsSubmittedAsADate(){
+        mWeightRecordActivity.convertDateAsIntToLocalDate(22001201);
+    }
+
+    @Test
+    public void convertALocalDateObjectToIntCorrectly(){
+        int result = mWeightRecordActivity.convertLocalDateToInt(firstDate);
+        assertEquals(20170101, result);
+    }
+
+    @Test
+    public void returnAnAccurateListOfWeightMeasurementsWhenGetWeightMeasureIsCalled(){
+        ArrayList<WeightMeasurement> expected = new ArrayList<>();
+        expected.add(weightRecord1);
+        expected.add(weightRecord2);
+        SQLiteDatabase one = mWeightRecordActivity.addTodaysRecordToDB(20170101, 65, defaultTime);
+        SQLiteDatabase two = mWeightRecordActivity.addTodaysRecordToDB(20170101, 70, defaultTime);
+        List<WeightMeasurement> result = mWeightRecordActivity.
+                getWeightMeasure(mWeightRecordActivity.convertDateAsIntToLocalDate(20170101));
+        assertEquals(expected.get(0).getWeightValue(), result.get(0).getWeightValue());
+        assertEquals(expected.get(0).getInputTime(), result.get(0).getInputTime());
+        assertEquals(expected.get(1).getWeightValue(), result.get(1).getWeightValue());
+        assertEquals(expected.get(1).getInputTime(), result.get(1).getInputTime());
     }
 }
