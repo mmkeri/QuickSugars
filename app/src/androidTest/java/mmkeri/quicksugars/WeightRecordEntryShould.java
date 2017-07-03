@@ -156,8 +156,9 @@ public class WeightRecordEntryShould {
         expected.add(weightRecord2);
         SQLiteDatabase one = mWeightRecordActivity.addTodaysRecordToDB(20170101, 65, defaultTime);
         SQLiteDatabase two = mWeightRecordActivity.addTodaysRecordToDB(20170101, 70, defaultTime);
+        LocalDate testDate = new LocalDate(2017, 01, 01);
         List<WeightMeasurement> result = mWeightRecordActivity.
-                getWeightMeasure(mWeightRecordActivity.convertDateAsIntToLocalDate(20170101));
+                getWeightMeasure(testDate);
         assertEquals(expected.get(0).getWeightValue(), result.get(0).getWeightValue());
         assertEquals(expected.get(0).getInputTime(), result.get(0).getInputTime());
         assertEquals(expected.get(1).getWeightValue(), result.get(1).getWeightValue());
