@@ -13,10 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="131dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:gravity="center_vertical|center_horizontal"
         android:inputType="numberDecimal"
+        android:hint="Enter reading here"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
 
@@ -26,7 +27,80 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/entryText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="114dp"
+        android:layout_marginTop="50dp"
         android:onClick="saveTodayEntry"
-        android:text="Accept" />
+        android:text="Tap to enter reading" />
+
+    <Button
+        android:id="@+id/changeToPreviousBSEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="changeToPreviousBSEntry"
+        android:layout_below="@id/entryButton"
+        android:text="Tap to enter a reading from a previous day/time"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/previousBloodSugarEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Blood Sugar here"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/previousBSEntryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Time: HHmmSS"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/previousBloodSugarEntry"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/previousBSEntryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Date: YYYYmmDD"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/previousBSEntryTime"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/previousBSEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="savePreviousBSEntry"
+        android:text="Tap to enter historical blood sugar reading"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/previousBSEntryDate"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/changeToCurrentBSEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/graph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="changeToCurrentBSEntry"
+        android:layout_below="@id/previousBSEntryButton"
+        android:text="Tap to change to todays blood sugar entry page"
+        android:visibility="invisible" />
 </RelativeLayout>
