@@ -100,6 +100,10 @@ public class WeightRecordEntryShould {
         testDB = mWeightRecordActivity.addTodaysRecordToDB(20170106, 70, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
+        List<WeightMeasurement> resultList1 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 05));
+        List<WeightMeasurement> resultList2 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 06));
+        assertEquals(65.0, resultList1.get(0).getWeightValue());
+        assertEquals(70.0, resultList2.get(0).getWeightValue());
     }
 
     @Test
@@ -107,6 +111,7 @@ public class WeightRecordEntryShould {
         testDB = mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
+
     }
 
     @Test
@@ -123,6 +128,10 @@ public class WeightRecordEntryShould {
         testDB = mWeightRecordActivity.addPreviousRecordToDB(20170106, 70, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
+        List<WeightMeasurement> resultList1 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 05));
+        List<WeightMeasurement> resultList2 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 06));
+        assertEquals(65.0, resultList1.get(0).getWeightValue());
+        assertEquals(70.0, resultList2.get(0).getWeightValue());
     }
 
     @Test

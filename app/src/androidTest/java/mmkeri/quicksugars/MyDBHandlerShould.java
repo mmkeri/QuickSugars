@@ -13,22 +13,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.joda.time.*;
 
-import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.test.AndroidTestCase;
-import android.test.RenamingDelegatingContext;
 
 import com.google.gson.Gson;
 
-import org.junit.Test;
-import org.junit.experimental.theories.suppliers.TestedOn;
 import org.junit.runner.RunWith;
-
-import java.util.logging.LogRecord;
-
-import static org.junit.Assert.*;
 
 /**
  * Instrumentation test, which will execute on an Android device.
@@ -101,7 +91,7 @@ public class MyDBHandlerShould {
 
     @Test
     public void returnTheCorrectCountOfRecordsInTheDatabaseUsingAddLogRecordIfOnlyOneRecordAdded(){
-        SQLiteDatabase returnedDatabase = testDBHandler.addLogRecord(logObject);
+        SQLiteDatabase returnedDatabase = testDBHandler.putLogRecord(logObject);
         int result = returnedDatabase.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
     }
@@ -110,8 +100,8 @@ public class MyDBHandlerShould {
     public void returnTheCorrectCountOfRecordsWhenTwoRecordsAreAdded(){
         logObject.addNewBSMeasurement(bsMeasure);
         testPastLogObject.addNewBSMeasurement(testPastBSMeasure);
-        testDBHandler.addLogRecord(logObject);
-        SQLiteDatabase returnedDatabase = testDBHandler.addLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(logObject);
+        SQLiteDatabase returnedDatabase = testDBHandler.putLogRecord(testPastLogObject);
         int result = returnedDatabase.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
     }
@@ -119,7 +109,7 @@ public class MyDBHandlerShould {
     @Test
     public void returnTheSameRecordAddedUsingAddLogRecord(){
         logObject.addNewBSMeasurement(bsMeasure);
-        SQLiteDatabase returnedDatabase = testDBHandler.addLogRecord(logObject);
+        SQLiteDatabase returnedDatabase = testDBHandler.putLogRecord(logObject);
         Cursor cursor = returnedDatabase.rawQuery("SELECT * FROM logRecords", null);
         assertEquals(1, cursor.getCount());
         cursor.moveToFirst();
@@ -135,8 +125,8 @@ public class MyDBHandlerShould {
         Gson gson = new Gson();
         logObject.addNewBSMeasurement(bsMeasure);
         testPastLogObject.addNewBSMeasurement(testPastBSMeasure);
-        testDBHandler.addLogRecord(logObject);
-        SQLiteDatabase returnedDatabase = testDBHandler.addLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(logObject);
+        SQLiteDatabase returnedDatabase = testDBHandler.putLogRecord(testPastLogObject);
         Cursor cursor = returnedDatabase.rawQuery("SELECT * FROM logRecords", null);
         cursor.moveToFirst();
         String firstRecord = cursor.getString(1);
@@ -154,8 +144,8 @@ public class MyDBHandlerShould {
     public void deleteARecordCorrectlyAndGiveCountOfOneWhenTwoRecordsPreviouslyEntered(){
         logObject.addNewBSMeasurement(bsMeasure);
         testPastLogObject.addNewBSMeasurement(testPastBSMeasure);
-        testDBHandler.addLogRecord(logObject);
-        SQLiteDatabase databaseWithTwoREcords = testDBHandler.addLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(logObject);
+        SQLiteDatabase databaseWithTwoREcords = testDBHandler.putLogRecord(testPastLogObject);
         int countBeforeDeletion = databaseWithTwoREcords.rawQuery("SELECT * FROM logRecords", null).getCount();
         SQLiteDatabase databaseAfterDeletion = testDBHandler.deleteRecord(testPastLogObject.getId());
         int countAfterDeletion = databaseAfterDeletion.rawQuery("SELECT * FROM logRecords", null).getCount();
@@ -165,7 +155,7 @@ public class MyDBHandlerShould {
     @Test
     public void zeroWhenTheLastRecordIsDeletedFromTheDatabase(){
         logObject.addNewBSMeasurement(bsMeasure);
-        testDBHandler.addLogRecord(logObject);
+        testDBHandler.putLogRecord(logObject);
         SQLiteDatabase returnedDatabase = testDBHandler.deleteRecord(logObject.getId());
         int countAfterDeletion = returnedDatabase.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(0, countAfterDeletion);
@@ -175,8 +165,8 @@ public class MyDBHandlerShould {
     public void returnTheCorrectRecordWhenGetRecordIsCalled(){
         logObject.addNewBSMeasurement(bsMeasure);
         testPastLogObject.addNewBSMeasurement(testPastBSMeasure);
-        testDBHandler.addLogRecord(logObject);
-        testDBHandler.addLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(logObject);
+        testDBHandler.putLogRecord(testPastLogObject);
         DayLogObject returnedLogObject = testDBHandler.getLogObject(testPastLogObject.getId());
         assertEquals(testPastLogObject.getId(), returnedLogObject.getId());
         assertEquals(testPastLogObject.getCurrentDate(), returnedLogObject.getCurrentDate());
@@ -186,11 +176,11 @@ public class MyDBHandlerShould {
     public void notRemoveTheRecordWhenGetRecordIsCalled(){
         logObject.addNewBSMeasurement(bsMeasure);
         testPastLogObject.addNewBSMeasurement(testPastBSMeasure);
-        testDBHandler.addLogRecord(logObject);
-        SQLiteDatabase db = testDBHandler.addLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(logObject);
+        SQLiteDatabase db = testDBHandler.putLogRecord(testPastLogObject);
         int countBeforeCallingMethod = db.rawQuery("SELECT * FROM logRecords", null).getCount();
         testDBHandler.getLogObject(logObject.getId());
-        db = testDBHandler.addLogRecord(testFutureLogObject);
+        db = testDBHandler.putLogRecord(testFutureLogObject);
         int countAfterMethodAndAddingOneRecord = db.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, countBeforeCallingMethod);
         assertEquals(3, countAfterMethodAndAddingOneRecord);
