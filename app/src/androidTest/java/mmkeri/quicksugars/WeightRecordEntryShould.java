@@ -1,17 +1,10 @@
 package mmkeri.quicksugars;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
-import android.view.View;
-
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.LineGraphSeries;
-import com.jjoe64.graphview.series.Series;
 
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
@@ -20,7 +13,6 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.rules.ExpectedException;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -90,7 +82,7 @@ public class WeightRecordEntryShould {
 
     @Test
     public void convertDateToIntCorrectly(){
-        int result = mWeightRecordActivity.convertLocalDateToInt(firstDate);
+        int result = DateConversion.convertLocalDateToInt(firstDate);
         assertEquals(20170101, result);
     }
 
@@ -148,18 +140,18 @@ public class WeightRecordEntryShould {
 
     @Test
     public void convertAnIntToLocalDateCorrectly(){
-        LocalDate result = mWeightRecordActivity.convertDateAsIntToLocalDate(20170101);
+        LocalDate result = DateConversion.convertDateAsIntToLocalDate(20170101);
         assertEquals(firstDate, result);
     }
 
     @Test(expected = NumberFormatException.class)
     public void throwAnExceptionWhenAnInvalidIntIsSubmittedAsADate(){
-        mWeightRecordActivity.convertDateAsIntToLocalDate(22001201);
+        DateConversion.convertDateAsIntToLocalDate(22001201);
     }
 
     @Test
     public void convertALocalDateObjectToIntCorrectly(){
-        int result = mWeightRecordActivity.convertLocalDateToInt(firstDate);
+        int result = DateConversion.convertLocalDateToInt(firstDate);
         assertEquals(20170101, result);
     }
 

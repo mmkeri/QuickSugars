@@ -11,4 +11,5 @@
     <string name="title_activity_weight_record_entry">weight_record_entry</string>
     <string name="today_weight_button">Tap to enter todays weight</string>
     <string name="previous_weight_button">Tap to enter weight from previous day</string>
+    <string name="title_activity_medication_edditing_page">MedicationEdditingPage</string>
 </resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/drugTradeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="Trade Name" />
+
+    <TextView
+        android:id="@+id/drugGenericName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/drugTradeName"
+        android:layout_alignBottom="@+id/drugTradeName"
+        android:layout_marginLeft="118dp"
+        android:layout_marginStart="118dp"
+        android:layout_toEndOf="@+id/drugTradeName"
+        android:layout_toRightOf="@+id/drugTradeName"
+        android:text="Generic Name" />
+
+    <TextView
+        android:id="@+id/Dose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/drugTradeName"
+        android:layout_alignRight="@+id/drugTradeName"
+        android:layout_below="@+id/drugTradeName"
+        android:layout_marginTop="11dp"
+        android:text="Dose" />
+
+    <TextView
+        android:id="@+id/Route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Dose"
+        android:layout_alignLeft="@+id/drugGenericName"
+        android:layout_alignStart="@+id/drugGenericName"
+        android:text="Route" />
+
+    <TextView
+        android:id="@+id/Frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Dose"
+        android:layout_alignRight="@+id/Dose"
+        android:layout_below="@+id/Dose"
+        android:layout_marginTop="16dp"
+        android:text="Frequency" />
+
+    <TextView
+        android:id="@+id/Times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Route"
+        android:layout_alignRight="@+id/Route"
+        android:layout_alignTop="@+id/Frequency"
+        android:text="Time" />
+
+    <Spinner
+        android:id="@+id/routeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Route"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/Route"
+        android:layout_toRightOf="@+id/Route" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/routeSpinner"
+        android:layout_alignStart="@+id/routeSpinner"
+        android:layout_alignTop="@+id/Times" />
+
+    <Spinner
+        android:id="@+id/doseSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Times"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/Dose"
+        android:layout_toRightOf="@+id/Dose" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doseSpinner"
+        android:layout_alignStart="@+id/doseSpinner"
+        android:layout_below="@+id/doseSpinner" />
+</RelativeLayout>
