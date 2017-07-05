@@ -71,13 +71,15 @@
         android:layout_toEndOf="@+id/Route"
         android:layout_toRightOf="@+id/Route" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="wrap_content"
+
+    <mmkeri.quicksugars.MultiSpinner
+        android:id="@+id/timeSpinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/routeSpinner"
         android:layout_alignStart="@+id/routeSpinner"
-        android:layout_alignTop="@+id/Times" />
+        android:layout_alignTop="@+id/Times"
+        android:entries="@array/times" />
 
     <Spinner
         android:id="@+id/doseSpinner"
@@ -90,7 +92,7 @@
         android:layout_toRightOf="@+id/Dose" />
 
     <Spinner
-        android:id="@+id/spinner4"
+        android:id="@+id/frequencySpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/doseSpinner"
