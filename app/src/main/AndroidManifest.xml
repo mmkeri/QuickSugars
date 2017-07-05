@@ -29,6 +29,10 @@
         <activity
             android:name=".MedicationEdditingPage"
             android:label="@string/title_activity_medication_edditing_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FoodItemEntry"
+            android:label="@string/title_activity_food_item_entry"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
