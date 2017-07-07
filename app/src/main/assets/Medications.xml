@@ -3069,6 +3069,500 @@
         <side-effects>hypersensitivity reactions including rash and itchiness (also reported)</side-effects>
     </medication>
     <medication>
+        <tradename>Atorvastatin</tradename>
+        <genericname>Atorvastatin</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <dose>50 mg</dose>
+        <dose>60 mg</dose>
+        <dose>70 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>inflammation of the throat and nasal passages</side-effects>
+        <side-effects>bloody nose</side-effects>
+        <side-effects>deep throat pain</side-effects>
+        <side-effects>back pain</side-effects>
+        <side-effects>blurred vision (less commonly)</side-effects>
+        <side-effects>fever (less commonly)</side-effects>
+        <side-effects>anorexia (less commonly)</side-effects>
+        <side-effects>general feeling of being unwell (less commonly)</side-effects>
+        <side-effects>chest pain (less commonly)</side-effects>
+        <side-effects>weight gain (less commonly)</side-effects>
+        <side-effects>low blood sugars (less commonly)</side-effects>
+        <side-effects>ringing in the ears (less commonly)</side-effects>
+        <side-effects>swelling of the extremities (less commonly)</side-effects>
+        <side-effects>neck pain (less commonly)</side-effects>
+        <side-effects>severe skin reactions (rarely)</side-effects>
+        <side-effects>swelling of breast tissue in men (very rarely)</side-effects>
+        <side-effects>hearing loss (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Lipitor</tradename>
+        <genericname>Atorvastatin</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <dose>50 mg</dose>
+        <dose>60 mg</dose>
+        <dose>70 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>inflammation of the throat and nasal passages</side-effects>
+        <side-effects>bloody nose</side-effects>
+        <side-effects>deep throat pain</side-effects>
+        <side-effects>back pain</side-effects>
+        <side-effects>blurred vision (less commonly)</side-effects>
+        <side-effects>fever (less commonly)</side-effects>
+        <side-effects>anorexia (less commonly)</side-effects>
+        <side-effects>general feeling of being unwell (less commonly)</side-effects>
+        <side-effects>chest pain (less commonly)</side-effects>
+        <side-effects>weight gain (less commonly)</side-effects>
+        <side-effects>low blood sugars (less commonly)</side-effects>
+        <side-effects>ringing in the ears (less commonly)</side-effects>
+        <side-effects>swelling of the extremities (less commonly)</side-effects>
+        <side-effects>neck pain (less commonly)</side-effects>
+        <side-effects>severe skin reactions (rarely)</side-effects>
+        <side-effects>swelling of breast tissue in men (very rarely)</side-effects>
+        <side-effects>hearing loss (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Fluvastatin</tradename>
+        <genericname>Fluvastatin</genericname>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+    </medication>
+    <medication>
+        <tradename>Lescol</tradename>
+        <genericname>Fluvastatin</genericname>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+    </medication>
+    <medication>
+        <tradename>Fluvastatin Modified Release</tradename>
+        <genericname>Fluvastatin</genericname>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+    </medication>
+    <medication>
+        <tradename>Lescol XL</tradename>
+        <genericname>Fluvastatin</genericname>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+    </medication>
+    <medication>
+        <tradename>Pravastatin</tradename>
+        <genericname>Pravastatin</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>abnormal urination including pain with urination, urination at night and frequent urination(less commonly)</side-effects>
+        <side-effects>severe damage to liver (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Lipostat</tradename>
+        <genericname>Pravastatin</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>abnormal urination including pain with urination, urination at night and frequent urination(less commonly)</side-effects>
+        <side-effects>severe damage to liver (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Crestor</tradename>
+        <genericname>Rosuvastatin</genericname>
+        <dose>5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>15 mg</dose>
+        <dose>20 mg</dose>
+        <dose>25 mg</dose>
+        <dose>30 mg</dose>
+        <dose>35 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>protein in the urine</side-effects>
+        <side-effects>swelling of the breast tissue in men (very rarely)</side-effects>
+        <side-effects>blood in the urine (very rarely)</side-effects>
+        <side-effects>oedema (also reported)</side-effects>
+        <side-effects>severe skin reaction (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Simvastatin</tradename>
+        <genericname>Simvastatin</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <dose>50 mg</dose>
+        <dose>60 mg</dose>
+        <dose>70 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>low red blood cell count (rarely)</side-effects>
+        <side-effects>inflammation and pain of the tendons (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Zocor</tradename>
+        <genericname>Simvastatin</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <dose>50 mg</dose>
+        <dose>60 mg</dose>
+        <dose>70 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>low red blood cell count (rarely)</side-effects>
+        <side-effects>inflammation and pain of the tendons (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Inegy</tradename>
+        <genericname>Simvastatin with Ezetimibe</genericname>
+        <dose>20 mg/10 mg</dose>
+        <dose>40 mg/10 mg</dose>
+        <dose>80 mg/10 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>muscle weakness</side-effects>
+        <side-effects>inflammation of the muscles</side-effects>
+        <side-effects>severe inflammation and break-down of the muscles</side-effects>
+        <side-effects>elevated liver function tests</side-effects>
+        <side-effects>liver inflammation with jaundice/yellowing (rarely)</side-effects>
+        <side-effects>pancreatitis (very rarely)</side-effects>
+        <side-effects>liver failure (very rarely)</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>sleep disturbances</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>dizziness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>numbness in the extremities</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>peripheral neuropathy</side-effects>
+        <side-effects>amnesia</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>sexual dysfunction</side-effects>
+        <side-effects>low platelet counts</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>visual disturbances</side-effects>
+        <side-effects>hair loss</side-effects>
+        <side-effects>hypersensitivity reactions uncluding rash, itchiness and hives</side-effects>
+        <side-effects>interstitial lung disease (very rarely)</side-effects>
+        <side-effects>elevated blood sugars possbily leading to diabetes in those at risk</side-effects>
+        <side-effects>low red blood cell count (rarely)</side-effects>
+        <side-effects>inflammation and pain of the tendons (also reported)</side-effects>
+    </medication>
+    <medication>
         <tradename></tradename>
         <genericname></genericname>
         <dose></dose>
