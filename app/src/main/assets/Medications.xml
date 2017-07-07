@@ -2912,7 +2912,162 @@
         <side-effects>fainting (also reported)</side-effects>
         <side-effects>abnormal physical weakness or lack of energy (also reported)</side-effects>
     </medication>
-
+    <medication>
+        <tradename>Micardis Plus</tradename>
+        <genericname>Telmisartan with Hydrochlorothiazide</genericname>
+        <dose>40 mg/12.5 mg</dose>
+        <dose>80 mg/12.5 mg</dose>
+        <dose>80 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>chest pain</side-effects>
+        <side-effects>flu-like symptoms including sore throat and sinusitis</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>back pain</side-effects>
+        <side-effects>leg cramps</side-effects>
+        <side-effects>eczema</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>flatulence (less commonly)</side-effects>
+        <side-effects>anxiety (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>tendinitis-like symptoms (less commonly)</side-effects>
+        <side-effects>abnormal vision (less commonly)</side-effects>
+        <side-effects>increased sweating (less commonly)</side-effects>
+        <side-effects>slowed heart rate (rarely)</side-effects>
+        <side-effects>accelerated heart rate (rarely)</side-effects>
+        <side-effects>shortness of breath (rarely)</side-effects>
+        <side-effects>insomnia (rarely)</side-effects>
+        <side-effects>depression (rarely)</side-effects>
+        <side-effects>blood disorders (rarely)</side-effects>
+        <side-effects>increase in uric acid in the blood (rarely)</side-effects>
+        <side-effects>rash (rarely)</side-effects>
+        <side-effects>itchiness (rarely)</side-effects>
+        <side-effects>fainting (also reported)</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Valsartan</tradename>
+        <genericname>Valsartan</genericname>
+        <dose>20 mg</dose>
+        <dose>40 mg</dose>
+        <dose>60 mg</dose>
+        <dose>80 mg</dose>
+        <dose>100 mg</dose>
+        <dose>120 mg</dose>
+        <dose>140 mg</dose>
+        <dose>160 mg</dose>
+        <dose>180 mg</dose>
+        <dose>200 mg</dose>
+        <dose>220 mg</dose>
+        <dose>240 mg</dose>
+        <dose>260 mg</dose>
+        <dose>280 mg</dose>
+        <dose>300 mg</dose>
+        <dose>320 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>renal impairment</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>fainting (less commonly)</side-effects>
+        <side-effects>fatigue (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>acute kidney failure (less commonly)</side-effects>
+        <side-effects>low white blood cell counts (less commonly)</side-effects>
+        <side-effects>low platelet counts (less commonly)</side-effects>
+        <side-effects>muscle aches (less commonly)</side-effects>
+        <side-effects>hypersensitivity reactions including rash and itchiness (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Diovan</tradename>
+        <genericname>Valsartan</genericname>
+        <dose>20 mg</dose>
+        <dose>40 mg</dose>
+        <dose>60 mg</dose>
+        <dose>80 mg</dose>
+        <dose>100 mg</dose>
+        <dose>120 mg</dose>
+        <dose>140 mg</dose>
+        <dose>160 mg</dose>
+        <dose>180 mg</dose>
+        <dose>200 mg</dose>
+        <dose>220 mg</dose>
+        <dose>240 mg</dose>
+        <dose>260 mg</dose>
+        <dose>280 mg</dose>
+        <dose>300 mg</dose>
+        <dose>320 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>renal impairment</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>fainting (less commonly)</side-effects>
+        <side-effects>fatigue (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>acute kidney failure (less commonly)</side-effects>
+        <side-effects>low white blood cell counts (less commonly)</side-effects>
+        <side-effects>low platelet counts (less commonly)</side-effects>
+        <side-effects>muscle aches (less commonly)</side-effects>
+        <side-effects>hypersensitivity reactions including rash and itchiness (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Valsartan with Hydrochlorothiazide</tradename>
+        <genericname>Valsartan with HYdrochlorothiazide</genericname>
+        <dose>80 mg/12.5 mg</dose>
+        <dose>160 mg/12.5 mg</dose>
+        <dose>160 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>renal impairment</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>fainting (less commonly)</side-effects>
+        <side-effects>fatigue (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>acute kidney failure (less commonly)</side-effects>
+        <side-effects>low white blood cell counts (less commonly)</side-effects>
+        <side-effects>low platelet counts (less commonly)</side-effects>
+        <side-effects>muscle aches (less commonly)</side-effects>
+        <side-effects>hypersensitivity reactions including rash and itchiness (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Co-Diovan</tradename>
+        <genericname>Valsartan with HYdrochlorothiazide</genericname>
+        <dose>80 mg/12.5 mg</dose>
+        <dose>160 mg/12.5 mg</dose>
+        <dose>160 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>renal impairment</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>fainting (less commonly)</side-effects>
+        <side-effects>fatigue (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>acute kidney failure (less commonly)</side-effects>
+        <side-effects>low white blood cell counts (less commonly)</side-effects>
+        <side-effects>low platelet counts (less commonly)</side-effects>
+        <side-effects>muscle aches (less commonly)</side-effects>
+        <side-effects>hypersensitivity reactions including rash and itchiness (also reported)</side-effects>
+    </medication>
     <medication>
         <tradename></tradename>
         <genericname></genericname>
