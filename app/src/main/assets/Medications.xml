@@ -2743,6 +2743,177 @@
         <side-effects>sensitivity to light (also reported)</side-effects>
     </medication>
     <medication>
+        <tradename>Olmetec</tradename>
+        <genericname>Olmesartan Medoxomil</genericname>
+        <dose>10 mg</dose>
+        <dose>20 mg</dose>
+        <dose>30 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>chest pains</side-effects>
+        <side-effects>swelling of the extremities</side-effects>
+        <side-effects>elevated blood triglycerides</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>flu-like symptoms</side-effects>
+        <side-effects>cough</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>runny nose</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>blood in the urine</side-effects>
+        <side-effects>elevated urea levels in the blood</side-effects>
+        <side-effects>joint swelling/pain</side-effects>
+        <side-effects>muscle/joint pains</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>low platelet counts (very rarely)</side-effects>
+        <side-effects>muscle plain (very rarely)</side-effects>
+        <side-effects>itchiness (very rarely)</side-effects>
+        <side-effects>hives (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Sevikar</tradename>
+        <genericname>Olmesartan Medoxomil with amlodipine</genericname>
+        <dose>20 mg/5 mg</dose>
+        <dose>40 mg/5 mg</dose>
+        <dose>40 mg/10 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>chest pains</side-effects>
+        <side-effects>swelling of the extremities</side-effects>
+        <side-effects>elevated blood triglycerides</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>flu-like symptoms</side-effects>
+        <side-effects>cough</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>runny nose</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>blood in the urine</side-effects>
+        <side-effects>elevated urea levels in the blood</side-effects>
+        <side-effects>joint swelling/pain</side-effects>
+        <side-effects>muscle/joint pains</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>low platelet counts (very rarely)</side-effects>
+        <side-effects>muscle plain (very rarely)</side-effects>
+        <side-effects>itchiness (very rarely)</side-effects>
+        <side-effects>hives (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Sevikar HCT</tradename>
+        <genericname>Olmesartan Medoxomil with Amlodipine and Hydrochlorothiazide</genericname>
+        <dose>20 mg/5 mg/12.5 mg</dose>
+        <dose>40 mg/5 mg/12.5 mg</dose>
+        <dose>40 mg/10 mg/12.5 mg</dose>
+        <dose>40 mg/5 mg/25 mg</dose>
+        <dose>40 mg/10 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>chest pains</side-effects>
+        <side-effects>swelling of the extremities</side-effects>
+        <side-effects>elevated blood triglycerides</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>flu-like symptoms</side-effects>
+        <side-effects>cough</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>runny nose</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>blood in the urine</side-effects>
+        <side-effects>elevated urea levels in the blood</side-effects>
+        <side-effects>joint swelling/pain</side-effects>
+        <side-effects>muscle/joint pains</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>low platelet counts (very rarely)</side-effects>
+        <side-effects>muscle plain (very rarely)</side-effects>
+        <side-effects>itchiness (very rarely)</side-effects>
+        <side-effects>hives (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Olmetec Plus</tradename>
+        <genericname>Olmesartan Medoxomil with Hydrochlorothiazide</genericname>
+        <dose>20 mg/12.5 mg</dose>
+        <dose>20 mg/25 mg</dose>
+        <dose>40 mg/12.5</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>chest pains</side-effects>
+        <side-effects>swelling of the extremities</side-effects>
+        <side-effects>elevated blood triglycerides</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>flu-like symptoms</side-effects>
+        <side-effects>cough</side-effects>
+        <side-effects>sore throat</side-effects>
+        <side-effects>runny nose</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>blood in the urine</side-effects>
+        <side-effects>elevated urea levels in the blood</side-effects>
+        <side-effects>joint swelling/pain</side-effects>
+        <side-effects>muscle/joint pains</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>low platelet counts (very rarely)</side-effects>
+        <side-effects>muscle plain (very rarely)</side-effects>
+        <side-effects>itchiness (very rarely)</side-effects>
+        <side-effects>hives (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Micardis</tradename>
+        <genericname>Telmisartan</genericname>
+        <dose>20 mg</dose>
+        <dose>40 mg</dose>
+        <dose>60 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>gastrointestinal disturbances</side-effects>
+        <side-effects>chest pain</side-effects>
+        <side-effects>flu-like symptoms including sore throat and sinusitis</side-effects>
+        <side-effects>urinary tract infection</side-effects>
+        <side-effects>joint pains</side-effects>
+        <side-effects>muscle pains</side-effects>
+        <side-effects>back pain</side-effects>
+        <side-effects>leg cramps</side-effects>
+        <side-effects>eczema</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>flatulence (less commonly)</side-effects>
+        <side-effects>anxiety (less commonly)</side-effects>
+        <side-effects>vertigo (less commonly)</side-effects>
+        <side-effects>tendinitis-like symptoms (less commonly)</side-effects>
+        <side-effects>abnormal vision (less commonly)</side-effects>
+        <side-effects>increased sweating (less commonly)</side-effects>
+        <side-effects>slowed heart rate (rarely)</side-effects>
+        <side-effects>accelerated heart rate (rarely)</side-effects>
+        <side-effects>shortness of breath (rarely)</side-effects>
+        <side-effects>insomnia (rarely)</side-effects>
+        <side-effects>depression (rarely)</side-effects>
+        <side-effects>blood disorders (rarely)</side-effects>
+        <side-effects>increase in uric acid in the blood (rarely)</side-effects>
+        <side-effects>rash (rarely)</side-effects>
+        <side-effects>itchiness (rarely)</side-effects>
+        <side-effects>fainting (also reported)</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy (also reported)</side-effects>
+    </medication>
+
+    <medication>
         <tradename></tradename>
         <genericname></genericname>
         <dose></dose>
