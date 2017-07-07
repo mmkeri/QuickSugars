@@ -2000,9 +2000,753 @@
         <side-effects>hair loss</side-effects>
     </medication>
     <medication>
+        <tradename>Perindopril</tradename>
+        <genericname>Perindopril erbumine</genericname>
+        <dose>2 mg</dose>
+        <dose>4 mg</dose>
+        <dose>6 mg</dose>
+        <dose>8 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>mood and sleep disturbances</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+    </medication>
+    <medication>
+        <tradename>Coversyl Arginine</tradename>
+        <genericname>Perindopril arginine</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>10 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>mood and sleep disturbances</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+    </medication>
+    <medication>
+        <tradename>Coversyl Arginine Plus</tradename>
+        <genericname>Perindopril arginine with indapamide</genericname>
+        <dose>5 mg/1.25 mg</dose>
+        <dose>10 mg/2.5 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>mood and sleep disturbances</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+    </medication>
+    <medication>
+        <tradename>Quinapril</tradename>
+        <genericname>Quinapril</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>15 mg</dose>
+        <dose>17.5 mg</dose>
+        <dose>20 mg</dose>
+        <dose>22.5 mg</dose>
+        <dose>25 mg</dose>
+        <dose>27.5 mg</dose>
+        <dose>30 mg</dose>
+        <dose>32.5 mg</dose>
+        <dose>35 mg</dose>
+        <dose>37.5 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>chest pain</side-effects>
+        <side-effects>oedema</side-effects>
+        <side-effects>flatulence</side-effects>
+        <side-effects>nervousness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>insomnia</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>impotence</side-effects>
+        <side-effects>back pain</side-effects>
+    </medication>
+    <medication>
+        <tradename>Accupro</tradename>
+        <genericname>Quinapril</genericname>
+        <dose>2.5 mg</dose>
+        <dose>5 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>10 mg</dose>
+        <dose>12.5 mg</dose>
+        <dose>15 mg</dose>
+        <dose>17.5 mg</dose>
+        <dose>20 mg</dose>
+        <dose>22.5 mg</dose>
+        <dose>25 mg</dose>
+        <dose>27.5 mg</dose>
+        <dose>30 mg</dose>
+        <dose>32.5 mg</dose>
+        <dose>35 mg</dose>
+        <dose>37.5 mg</dose>
+        <dose>40 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>chest pain</side-effects>
+        <side-effects>oedema</side-effects>
+        <side-effects>flatulence</side-effects>
+        <side-effects>nervousness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>insomnia</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>impotence</side-effects>
+        <side-effects>back pain</side-effects>
+    </medication>
+    <medication>
+        <tradename>Accuretic</tradename>
+        <genericname>Quinapril with hydrochlorothiazide</genericname>
+        <dose>10 mg/12.5 mg</dose>
+        <dose>20 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <frequency>twice daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy</side-effects>
+        <side-effects>chest pain</side-effects>
+        <side-effects>oedema</side-effects>
+        <side-effects>flatulence</side-effects>
+        <side-effects>nervousness</side-effects>
+        <side-effects>depression</side-effects>
+        <side-effects>insomnia</side-effects>
+        <side-effects>blurred vision</side-effects>
+        <side-effects>impotence</side-effects>
+        <side-effects>back pain</side-effects>
+    </medication>
+    <medication>
+        <tradename>Ramipril</tradename>
+        <genericname>Ramipril</genericname>
+        <dose>1.25 mg</dose>
+        <dose>2.5 mg</dose>
+        <dose>3.75 mg</dose>
+        <dose>5 mg</dose>
+        <dose>6.25 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>8.75 mg</dose>
+        <dose>10 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>inflammed and sore mouth</side-effects>
+        <side-effects>fainting</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>bronchitis</side-effects>
+        <side-effects>muscle cramps</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>irregular heart rhythms (less commonly)</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>angina/chest pain (less commonly)</side-effects>
+        <side-effects>heart attack (less commonly)</side-effects>
+        <side-effects>swelling of the extremities (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>loss of appetite (less commonly)</side-effects>
+        <side-effects>nervousness (less commonly)</side-effects>
+        <side-effects>depression (less commonly)</side-effects>
+        <side-effects>anxiety (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>decreased libido (less commonly)</side-effects>
+        <side-effects>changes to eye-sight (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>confusion (rarely)</side-effects>
+        <side-effects>tremor (rarely)</side-effects>
+        <side-effects>redness of the eyes (rarely)</side-effects>
+        <side-effects>impaired hearing (rarely)</side-effects>
+        <side-effects>ringing in the ears (rarely)</side-effects>
+        <side-effects>loss of fingernails (rarely)</side-effects>
+        <side-effects>stroke (also reported)</side-effects>
+        <side-effects>precipitation or worsening of Raynaud's syndrome (also reported)</side-effects>
+        <side-effects>sleep disturbance (also reported)</side-effects>
+        <side-effects>swelling of the breast tissue in men (also reported)</side-effects>
+        <side-effects>low blood sodium (also reported)</side-effects>
+        <side-effects>severe skin reactions (also reported)</side-effects>
+        <side-effects>hair loss (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Tritace</tradename>
+        <genericname>Ramipril</genericname>
+        <dose>1.25 mg</dose>
+        <dose>2.5 mg</dose>
+        <dose>3.75 mg</dose>
+        <dose>5 mg</dose>
+        <dose>6.25 mg</dose>
+        <dose>7.5 mg</dose>
+        <dose>8.75 mg</dose>
+        <dose>10 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>inflammed and sore mouth</side-effects>
+        <side-effects>fainting</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>bronchitis</side-effects>
+        <side-effects>muscle cramps</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>irregular heart rhythms (less commonly)</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>angina/chest pain (less commonly)</side-effects>
+        <side-effects>heart attack (less commonly)</side-effects>
+        <side-effects>swelling of the extremities (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>loss of appetite (less commonly)</side-effects>
+        <side-effects>nervousness (less commonly)</side-effects>
+        <side-effects>depression (less commonly)</side-effects>
+        <side-effects>anxiety (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>decreased libido (less commonly)</side-effects>
+        <side-effects>changes to eye-sight (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>confusion (rarely)</side-effects>
+        <side-effects>tremor (rarely)</side-effects>
+        <side-effects>redness of the eyes (rarely)</side-effects>
+        <side-effects>impaired hearing (rarely)</side-effects>
+        <side-effects>ringing in the ears (rarely)</side-effects>
+        <side-effects>loss of fingernails (rarely)</side-effects>
+        <side-effects>stroke (also reported)</side-effects>
+        <side-effects>precipitation or worsening of Raynaud's syndrome (also reported)</side-effects>
+        <side-effects>sleep disturbance (also reported)</side-effects>
+        <side-effects>swelling of the breast tissue in men (also reported)</side-effects>
+        <side-effects>low blood sodium (also reported)</side-effects>
+        <side-effects>severe skin reactions (also reported)</side-effects>
+        <side-effects>hair loss (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Triapin</tradename>
+        <genericname>Ramipril with felodipine</genericname>
+        <dose>5 mg/5 mg</dose>
+        <dose>10 mg/10 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>inflammed and sore mouth</side-effects>
+        <side-effects>fainting</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>bronchitis</side-effects>
+        <side-effects>muscle cramps</side-effects>
+        <side-effects>dry mouth (less commonly)</side-effects>
+        <side-effects>irregular heart rhythms (less commonly)</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>angina/chest pain (less commonly)</side-effects>
+        <side-effects>heart attack (less commonly)</side-effects>
+        <side-effects>swelling of the extremities (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>loss of appetite (less commonly)</side-effects>
+        <side-effects>nervousness (less commonly)</side-effects>
+        <side-effects>depression (less commonly)</side-effects>
+        <side-effects>anxiety (less commonly)</side-effects>
+        <side-effects>impotence (less commonly)</side-effects>
+        <side-effects>decreased libido (less commonly)</side-effects>
+        <side-effects>changes to eye-sight (less commonly)</side-effects>
+        <side-effects>sweating (less commonly)</side-effects>
+        <side-effects>confusion (rarely)</side-effects>
+        <side-effects>tremor (rarely)</side-effects>
+        <side-effects>redness of the eyes (rarely)</side-effects>
+        <side-effects>impaired hearing (rarely)</side-effects>
+        <side-effects>ringing in the ears (rarely)</side-effects>
+        <side-effects>loss of fingernails (rarely)</side-effects>
+        <side-effects>stroke (also reported)</side-effects>
+        <side-effects>precipitation or worsening of Raynaud's syndrome (also reported)</side-effects>
+        <side-effects>sleep disturbance (also reported)</side-effects>
+        <side-effects>swelling of the breast tissue in men (also reported)</side-effects>
+        <side-effects>low blood sodium (also reported)</side-effects>
+        <side-effects>severe skin reactions (also reported)</side-effects>
+        <side-effects>hair loss (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Trandolapril</tradename>
+        <genericname>Trandolapril</genericname>
+        <dose>500 mcg</dose>
+        <dose>1 mg</dose>
+        <dose>1.5 mg</dose>
+        <dose>2 mg</dose>
+        <dose>2.5 mg</dose>
+        <dose>3 mg</dose>
+        <dose>3.5 mg</dose>
+        <dose>4 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>worsening kidney function</side-effects>
+        <side-effects>anaphylaxis/allergic reactions</side-effects>
+        <side-effects>low blood pressure</side-effects>
+        <side-effects>slowing/blockage of intestinal tract</side-effects>
+        <side-effects>fainting</side-effects>
+        <side-effects>shortness of breath</side-effects>
+        <side-effects>bronchitis</side-effects>
+        <side-effects>dry mouth</side-effects>
+        <side-effects>irregular heart rhythms</side-effects>
+        <side-effects>accelerated heart rate</side-effects>
+        <side-effects>palpitations</side-effects>
+        <side-effects>angina/chest</side-effects>
+        <side-effects>heart attack</side-effects>
+        <side-effects>swelling of the brain</side-effects>
+        <side-effects>abnormal physical weakness or lack of energy </side-effects>
+        <side-effects>nervousness</side-effects>
+        <side-effects>hot flushes</side-effects>
+        <side-effects>sweating</side-effects>
+        <side-effects>stroke-like symptoms</side-effects>
+        <side-effects>sleep disturbance</side-effects>
+        <side-effects>hair loss</side-effects>
+    </medication>
+    <medication>
+        <tradename>Edarbi</tradename>
+        <genericname>Azilsartan Medoxomil</genericname>
+        <dose>20 mg</dose>
+        <dose>40 mg</dose>
+        <dose>60 mg</dose>
+        <dose>80 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>diarrhoea</side-effects>
+        <side-effects>evidence of muscle irritation on lab tests</side-effects>
+        <side-effects>swelling of the extremities (less commonly)</side-effects>
+        <side-effects>feeling of general discomfort (less commonly)</side-effects>
+        <side-effects>worsening of kidney function tests (less commonly)</side-effects>
+        <side-effects>elevated levels of urea in the blood (less commonly)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Candesartan Cilexetil</tradename>
+        <genericname>Candesartan Cilexetil</genericname>
+        <dose>4 mg</dose>
+        <dose>8 mg</dose>
+        <dose>12 mg</dose>
+        <dose>16 mg</dose>
+        <dose>20 mg</dose>
+        <dose>24 mg</dose>
+        <dose>28 mg</dose>
+        <dose>32 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>vertigo</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>nausea (very rarely)</side-effects>
+        <side-effects>inflammation of the liver (very rarely)</side-effects>
+        <side-effects>cough (very rarely)</side-effects>
+        <side-effects>blood disorders (very rarely)</side-effects>
+        <side-effects>low blood sodium levels (very rarely)</side-effects>
+        <side-effects>back pain (very rarely)</side-effects>
+        <side-effects>joint aches (very rarely)</side-effects>
+        <side-effects>muscle aches (very rarely)</side-effects>
+        <side-effects>rash (very rarely)</side-effects>
+        <side-effects>hives (very rarely)</side-effects>
+        <side-effects>itchiness (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Amias</tradename>
+        <genericname>Candesartan Cilexetil</genericname>
+        <dose>4 mg</dose>
+        <dose>8 mg</dose>
+        <dose>12 mg</dose>
+        <dose>16 mg</dose>
+        <dose>20 mg</dose>
+        <dose>24 mg</dose>
+        <dose>28 mg</dose>
+        <dose>32 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>vertigo</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>nausea (very rarely)</side-effects>
+        <side-effects>inflammation of the liver (very rarely)</side-effects>
+        <side-effects>cough (very rarely)</side-effects>
+        <side-effects>blood disorders (very rarely)</side-effects>
+        <side-effects>low blood sodium levels (very rarely)</side-effects>
+        <side-effects>back pain (very rarely)</side-effects>
+        <side-effects>joint aches (very rarely)</side-effects>
+        <side-effects>muscle aches (very rarely)</side-effects>
+        <side-effects>rash (very rarely)</side-effects>
+        <side-effects>hives (very rarely)</side-effects>
+        <side-effects>itchiness (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Teveten</tradename>
+        <genericname>Eprosartan</genericname>
+        <dose>300 mg</dose>
+        <dose>600 mg</dose>
+        <dose>800 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>vertigo</side-effects>
+        <side-effects>headache</side-effects>
+        <side-effects>nausea (very rarely)</side-effects>
+        <side-effects>inflammation of the liver (very rarely)</side-effects>
+        <side-effects>cough (very rarely)</side-effects>
+        <side-effects>blood disorders (very rarely)</side-effects>
+        <side-effects>low blood sodium levels (very rarely)</side-effects>
+        <side-effects>back pain (very rarely)</side-effects>
+        <side-effects>joint aches (very rarely)</side-effects>
+        <side-effects>muscle aches (very rarely)</side-effects>
+        <side-effects>rash (very rarely)</side-effects>
+        <side-effects>hives (very rarely)</side-effects>
+        <side-effects>itchiness (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Irbesartan</tradename>
+        <genericname>Irbesartan</genericname>
+        <dose>75 mg</dose>
+        <dose>150 mg</dose>
+        <dose>225 mg</dose>
+        <dose>300 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>pain in the muscles and joints</side-effects>
+        <side-effects>diarrhoea (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>heartburn (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>chest pain (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>sexual dysfunction (less commonly)</side-effects>
+        <side-effects>rash (rarely)</side-effects>
+        <side-effects>hives (rarely)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>muscle pains (very rarely)</side-effects>
+        <side-effects>joint pains (very rarely)</side-effects>
+        <side-effects>ringing in the ears (very rarely)</side-effects>
+        <side-effects>taste disturbance (very rarely)</side-effects>
+        <side-effects>inflammation of the liver (very rarely)</side-effects>
+        <side-effects>kidney dysfunction (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Aprovel</tradename>
+        <genericname>Irbesartan</genericname>
+        <dose>75 mg</dose>
+        <dose>150 mg</dose>
+        <dose>225 mg</dose>
+        <dose>300 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>pain in the muscles and joints</side-effects>
+        <side-effects>diarrhoea (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>heartburn (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>chest pain (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>sexual dysfunction (less commonly)</side-effects>
+        <side-effects>rash (rarely)</side-effects>
+        <side-effects>hives (rarely)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>muscle pains (very rarely)</side-effects>
+        <side-effects>joint pains (very rarely)</side-effects>
+        <side-effects>ringing in the ears (very rarely)</side-effects>
+        <side-effects>taste disturbance (very rarely)</side-effects>
+        <side-effects>inflammation of the liver (very rarely)</side-effects>
+        <side-effects>kidney dysfunction (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Irbesartan with Hydrochlorothiazide</tradename>
+        <genericname>Irbesartan with Hydrochlorothiazide</genericname>
+        <dose>75 mg/6.25 mg</dose>
+        <dose>150 mg/12.5 mg</dose>
+        <dose>225 mg/18.75 mg</dose>
+        <dose>300 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>pain in the muscles and joints</side-effects>
+        <side-effects>diarrhoea (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>heartburn (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>chest pain (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>sexual dysfunction (less commonly)</side-effects>
+        <side-effects>rash (rarely)</side-effects>
+        <side-effects>hives (rarely)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>muscle pains (very rarely)</side-effects>
+        <side-effects>joint pains (very rarely)</side-effects>
+        <side-effects>ringing in the ears (very rarely)</side-effects>
+        <side-effects>taste disturbance (very rarely)</side-effects>
+        <side-effects>inflammation of the liver (very rarely)</side-effects>
+        <side-effects>kidney dysfunction (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>CoAprovel</tradename>
+        <genericname>Irbesartan with Hydrochlorothiazide</genericname>
+        <dose>75 mg/6.25 mg</dose>
+        <dose>150 mg/12.5 mg</dose>
+        <dose>225 mg/18.75 mg</dose>
+        <dose>300 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>nausea</side-effects>
+        <side-effects>vomiting</side-effects>
+        <side-effects>fatigue</side-effects>
+        <side-effects>pain in the muscles and joints</side-effects>
+        <side-effects>diarrhoea (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>heartburn (less commonly)</side-effects>
+        <side-effects>flushing (less commonly)</side-effects>
+        <side-effects>accelerated heart rate (less commonly)</side-effects>
+        <side-effects>chest pain (less commonly)</side-effects>
+        <side-effects>cough (less commonly)</side-effects>
+        <side-effects>sexual dysfunction (less commonly)</side-effects>
+        <side-effects>rash (rarely)</side-effects>
+        <side-effects>hives (rarely)</side-effects>
+        <side-effects>headache (very rarely)</side-effects>
+        <side-effects>muscle pains (very rarely)</side-effects>
+        <side-effects>joint pains (very rarely)</side-effects>
+        <side-effects>ringing in the ears (very rarely)</side-effects>
+        <side-effects>taste disturbance (very rarely)</side-effects>
+        <side-effects>inflammation of the liver (very rarely)</side-effects>
+        <side-effects>kidney dysfunction (very rarely)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Losartan Potassium</tradename>
+        <genericname>Losartan Potassium</genericname>
+        <dose>12.5 mg</dose>
+        <dose>25 mg</dose>
+        <dose>37.5 mg</dose>
+        <dose>50 mg</dose>
+        <dose>62.5 mg</dose>
+        <dose>75 mg</dose>
+        <dose>87.5 mg</dose>
+        <dose>100 mg</dose>
+        <dose>112.5 mg</dose>
+        <dose>125 mg</dose>
+        <dose>137.5 mg</dose>
+        <dose>150 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>vertigo</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>oedema (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>sleep disorders (less commonly)</side-effects>
+        <side-effects>general feeling of being unwell (less commonly)</side-effects>
+        <side-effects>itchiness (less commonly)</side-effects>
+        <side-effects>hives (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>inflammation of the liver (rarely)</side-effects>
+        <side-effects>atrial fibrillation (rarely)</side-effects>
+        <side-effects>stroke (rarely)</side-effects>
+        <side-effects>fainting (rarely)</side-effects>
+        <side-effects>numbness in the extremities (rarely)</side-effects>
+        <side-effects>inflammation of the pancreas (also reported)</side-effects>
+        <side-effects>anaphylaxis (also reported)</side-effects>
+        <side-effects>cough (also reported)</side-effects>
+        <side-effects>depression (also reported)</side-effects>
+        <side-effects>erectile dysfunction (also reported)</side-effects>
+        <side-effects>low red blood cell counts (also reported)</side-effects>
+        <side-effects>low platelet counts (also reported)</side-effects>
+        <side-effects>low sodium levels in the blood (also reported)</side-effects>
+        <side-effects>pains in the joints (also reported)</side-effects>
+        <side-effects>pains in the muscles (also reported)</side-effects>
+        <side-effects>kidney dysfunction (also reported)</side-effects>
+        <side-effects>severe swelling/inflammation of the muscles (also reported)</side-effects>
+        <side-effects>ringing in the ears (also reported)</side-effects>
+        <side-effects>sensitivity to light (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Cozaar</tradename>
+        <genericname>Losartan Potassium</genericname>
+        <dose>12.5 mg</dose>
+        <dose>25 mg</dose>
+        <dose>37.5 mg</dose>
+        <dose>50 mg</dose>
+        <dose>62.5 mg</dose>
+        <dose>75 mg</dose>
+        <dose>87.5 mg</dose>
+        <dose>100 mg</dose>
+        <dose>112.5 mg</dose>
+        <dose>125 mg</dose>
+        <dose>137.5 mg</dose>
+        <dose>150 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>vertigo</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>oedema (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>sleep disorders (less commonly)</side-effects>
+        <side-effects>general feeling of being unwell (less commonly)</side-effects>
+        <side-effects>itchiness (less commonly)</side-effects>
+        <side-effects>hives (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>inflammation of the liver (rarely)</side-effects>
+        <side-effects>atrial fibrillation (rarely)</side-effects>
+        <side-effects>stroke (rarely)</side-effects>
+        <side-effects>fainting (rarely)</side-effects>
+        <side-effects>numbness in the extremities (rarely)</side-effects>
+        <side-effects>inflammation of the pancreas (also reported)</side-effects>
+        <side-effects>anaphylaxis (also reported)</side-effects>
+        <side-effects>cough (also reported)</side-effects>
+        <side-effects>depression (also reported)</side-effects>
+        <side-effects>erectile dysfunction (also reported)</side-effects>
+        <side-effects>low red blood cell counts (also reported)</side-effects>
+        <side-effects>low platelet counts (also reported)</side-effects>
+        <side-effects>low sodium levels in the blood (also reported)</side-effects>
+        <side-effects>pains in the joints (also reported)</side-effects>
+        <side-effects>pains in the muscles (also reported)</side-effects>
+        <side-effects>kidney dysfunction (also reported)</side-effects>
+        <side-effects>severe swelling/inflammation of the muscles (also reported)</side-effects>
+        <side-effects>ringing in the ears (also reported)</side-effects>
+        <side-effects>sensitivity to light (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Losartan Potassium with Hydrochlorothiazide</tradename>
+        <genericname>Losartan Potassium with Hydrochlorothiazide</genericname>
+        <dose>100 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>vertigo</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>oedema (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>sleep disorders (less commonly)</side-effects>
+        <side-effects>general feeling of being unwell (less commonly)</side-effects>
+        <side-effects>itchiness (less commonly)</side-effects>
+        <side-effects>hives (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>inflammation of the liver (rarely)</side-effects>
+        <side-effects>atrial fibrillation (rarely)</side-effects>
+        <side-effects>stroke (rarely)</side-effects>
+        <side-effects>fainting (rarely)</side-effects>
+        <side-effects>numbness in the extremities (rarely)</side-effects>
+        <side-effects>inflammation of the pancreas (also reported)</side-effects>
+        <side-effects>anaphylaxis (also reported)</side-effects>
+        <side-effects>cough (also reported)</side-effects>
+        <side-effects>depression (also reported)</side-effects>
+        <side-effects>erectile dysfunction (also reported)</side-effects>
+        <side-effects>low red blood cell counts (also reported)</side-effects>
+        <side-effects>low platelet counts (also reported)</side-effects>
+        <side-effects>low sodium levels in the blood (also reported)</side-effects>
+        <side-effects>pains in the joints (also reported)</side-effects>
+        <side-effects>pains in the muscles (also reported)</side-effects>
+        <side-effects>kidney dysfunction (also reported)</side-effects>
+        <side-effects>severe swelling/inflammation of the muscles (also reported)</side-effects>
+        <side-effects>ringing in the ears (also reported)</side-effects>
+        <side-effects>sensitivity to light (also reported)</side-effects>
+    </medication>
+    <medication>
+        <tradename>Cozaar-Comp</tradename>
+        <genericname>Losartan Potassium with Hydrochlorothiazide</genericname>
+        <dose>100 mg/25 mg</dose>
+        <frequency>daily</frequency>
+        <routeofadministration>Orally</routeofadministration>
+        <side-effects>symptomatic low blood pressure including dizziness</side-effects>
+        <side-effects>elevated blood potassium levels</side-effects>
+        <side-effects>vertigo</side-effects>
+        <side-effects>gastrointestinal disturbances (less commonly)</side-effects>
+        <side-effects>chest pains (less commonly)</side-effects>
+        <side-effects>palpitations (less commonly)</side-effects>
+        <side-effects>oedema (less commonly)</side-effects>
+        <side-effects>shortness of breath (less commonly)</side-effects>
+        <side-effects>headache (less commonly)</side-effects>
+        <side-effects>sleep disorders (less commonly)</side-effects>
+        <side-effects>general feeling of being unwell (less commonly)</side-effects>
+        <side-effects>itchiness (less commonly)</side-effects>
+        <side-effects>hives (less commonly)</side-effects>
+        <side-effects>rash (less commonly)</side-effects>
+        <side-effects>inflammation of the liver (rarely)</side-effects>
+        <side-effects>atrial fibrillation (rarely)</side-effects>
+        <side-effects>stroke (rarely)</side-effects>
+        <side-effects>fainting (rarely)</side-effects>
+        <side-effects>numbness in the extremities (rarely)</side-effects>
+        <side-effects>inflammation of the pancreas (also reported)</side-effects>
+        <side-effects>anaphylaxis (also reported)</side-effects>
+        <side-effects>cough (also reported)</side-effects>
+        <side-effects>depression (also reported)</side-effects>
+        <side-effects>erectile dysfunction (also reported)</side-effects>
+        <side-effects>low red blood cell counts (also reported)</side-effects>
+        <side-effects>low platelet counts (also reported)</side-effects>
+        <side-effects>low sodium levels in the blood (also reported)</side-effects>
+        <side-effects>pains in the joints (also reported)</side-effects>
+        <side-effects>pains in the muscles (also reported)</side-effects>
+        <side-effects>kidney dysfunction (also reported)</side-effects>
+        <side-effects>severe swelling/inflammation of the muscles (also reported)</side-effects>
+        <side-effects>ringing in the ears (also reported)</side-effects>
+        <side-effects>sensitivity to light (also reported)</side-effects>
+    </medication>
+    <medication>
         <tradename></tradename>
         <genericname></genericname>
         <dose></dose>
+        <frequency></frequency>
         <routeofadministration></routeofadministration>
         <side-effects></side-effects>
     </medication>
