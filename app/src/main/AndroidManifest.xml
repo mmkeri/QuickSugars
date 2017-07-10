@@ -3,6 +3,7 @@
     package="mmkeri.quicksugars">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -27,7 +28,7 @@
             android:label="@string/title_activity_weight_record_entry"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MedicationEdditingPage"
+            android:name=".MedicationEditingPage"
             android:label="@string/title_activity_medication_edditing_page"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

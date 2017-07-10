@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="mmkeri.quicksugars.MedicationEdditingPage"
+    tools:context="mmkeri.quicksugars.MedicationEditingPage"
     tools:showIn="@layout/activity_medication_edditing_page">
 
 </RelativeLayout>
