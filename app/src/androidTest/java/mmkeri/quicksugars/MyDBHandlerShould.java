@@ -20,6 +20,8 @@ import com.google.gson.Gson;
 
 import org.junit.runner.RunWith;
 
+import java.util.ArrayList;
+
 /**
  * Instrumentation test, which will execute on an Android device.
  *
@@ -45,8 +47,9 @@ public class MyDBHandlerShould {
     private BloodSugarMeasurement bsMeasure;
     private BloodSugarMeasurement testPastBSMeasure;
     private DayLogObject logObject;
-    private SQLiteDatabase db;
-    private static final String TEST_FILE_PREFIX = "test_";
+    private FoodItemWithNutrients testFoodItem;
+    private FoodItemWithNutrients testFoodItem2;
+    private FoodItemWithNutrients testFoodItem3;
 
     @Before
     public void setUp() throws Exception{
@@ -58,6 +61,7 @@ public class MyDBHandlerShould {
         // cause the database to be opened or created
         SQLiteDatabase db = testDBHandler.getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS);
         testDBHandler.onCreate(db);
 
         //RenamingDelegatingContext context
@@ -73,7 +77,9 @@ public class MyDBHandlerShould {
         bsMeasure = new BloodSugarMeasurement(12.5, testTime);
         testPastBSMeasure = new BloodSugarMeasurement(10.5, testPastTime);
         logObject = new DayLogObject(testDate);
-
+        testFoodItem = new FoodItemWithNutrients("apple", "1.2", "2.3", "3.4", "45", "55");
+        testFoodItem2 = new FoodItemWithNutrients("orange", "2.3", "3.4", "4.5", "56", "67");
+        testFoodItem3 = new FoodItemWithNutrients("Bramley_apple", "1.1", "2.2", "3.3", "44", "55");
     }
 
     @After
@@ -184,5 +190,49 @@ public class MyDBHandlerShould {
         int countAfterMethodAndAddingOneRecord = db.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, countBeforeCallingMethod);
         assertEquals(3, countAfterMethodAndAddingOneRecord);
+    }
+
+    @Test
+    public void returnTheCorrectCountOfRecordsInTheDatabaseUsingPutFoodRecordIfOnlyOneRecordAdded(){
+        SQLiteDatabase returnedDatabase = testDBHandler.putFoodRecord(testFoodItem);
+        int result = returnedDatabase.rawQuery("SELECT * FROM foodItems", null).getCount();
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void returnTheCorrectCountOfRecordsWhenTwoRecordsAreAddedToFoodTable(){
+        testDBHandler.putFoodRecord(testFoodItem);
+        SQLiteDatabase returnedDatabase = testDBHandler.putFoodRecord(testFoodItem2);
+        int result = returnedDatabase.rawQuery("SELECT * FROM foodItems", null).getCount();
+        assertEquals(2, result);
+    }
+
+    @Test
+    public void returnACountOfOneWhenQueriedWithAp(){
+        testDBHandler.putFoodRecord(testFoodItem);
+        testDBHandler.putFoodRecord(testFoodItem2);
+        ArrayList<FoodItemWithNutrients> returnedList = testDBHandler.getFoodName("Ap");
+        assertEquals(1, returnedList.size());
+    }
+
+    @Test
+    public void returnACountOfTwoWhenQueriedWithApAndTwoAppleRecordsAdded(){
+        testDBHandler.putFoodRecord(testFoodItem);
+        testDBHandler.putFoodRecord(testFoodItem3);
+        ArrayList<FoodItemWithNutrients> returnedList = testDBHandler.getFoodName("AP");
+        assertEquals(2, returnedList.size());
+    }
+
+    @Test
+    public void returnTheExpectedResultsOfTheQuery(){
+        testDBHandler.putFoodRecord(testFoodItem2);
+        ArrayList<FoodItemWithNutrients> returnedList = testDBHandler.getFoodName("or");
+        assertEquals(1, returnedList.size());
+        assertEquals("orange", returnedList.get(0).getFoodName());
+        assertEquals("2.3", returnedList.get(0).getProtein());
+        assertEquals("3.4", returnedList.get(0).getCarbohydrate());
+        assertEquals("4.5", returnedList.get(0).getFat());
+        assertEquals("56", returnedList.get(0).getKilocals());
+        assertEquals("67", returnedList.get(0).getKilojoules());
     }
 }

@@ -9,9 +9,15 @@
     <item android:id="@+id/medication_record"
         android:title="@string/medication_record"/>
     <item android:id="@+id/food_items"
-        android:title="@string/food_items"/>
+        android:title="Food Item Entry"/>
     <item android:id="@+id/symptom_record"
         android:title="@string/symptom_record"/>
     <item android:id="@+id/weight_record"
         android:title="@string/weight_entry"/>
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:visible="false"/>
 </menu>

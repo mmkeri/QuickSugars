@@ -64,4 +64,5 @@
         <item>2330</item>
     </string-array>
     <string name="title_activity_food_item_entry">FoodItemEntry</string>
+    <string name="title_activity_search_food_items">SearchFoodItems</string>
 </resources>

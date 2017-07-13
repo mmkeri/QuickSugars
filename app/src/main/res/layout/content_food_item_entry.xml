@@ -93,5 +93,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp" />
 
+    <Button
+        android:id="@+id/goToSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previousFoodItemEntry"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToSearchPage"
+        android:text="Button" />
+
 
 </RelativeLayout>
