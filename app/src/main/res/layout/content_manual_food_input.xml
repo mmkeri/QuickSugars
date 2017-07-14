@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mmkeri.quicksugars.ManualFoodInput"
+    tools:showIn="@layout/activity_manual_food_input">
+
+    <EditText
+        android:id="@+id/foodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/carbText"
+        android:layout_alignLeft="@+id/carbText"
+        android:layout_alignStart="@+id/carbText"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Food Item"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <EditText
+        android:id="@+id/carbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/proteinText"
+        android:layout_alignLeft="@+id/proteinText"
+        android:layout_alignStart="@+id/proteinText"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Carbohydrates (g)"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <EditText
+        android:id="@+id/proteinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fatText"
+        android:layout_alignLeft="@+id/fatText"
+        android:layout_alignStart="@+id/fatText"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Protein (g)"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <EditText
+        android:id="@+id/fatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kiloCalText"
+        android:layout_alignLeft="@+id/kiloCalText"
+        android:layout_alignStart="@+id/kiloCalText"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Fat (g)"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <EditText
+        android:id="@+id/kiloCalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kiloJoulesText"
+        android:layout_alignLeft="@+id/kiloJoulesText"
+        android:layout_alignStart="@+id/kiloJoulesText"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="KiloCal"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <EditText
+        android:id="@+id/kiloJoulesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enterButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="KiloJoules"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="returnResult"
+        android:text="Enter"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="416dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+</RelativeLayout>

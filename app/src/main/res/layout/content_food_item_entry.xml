@@ -9,28 +9,28 @@
     tools:context="mmkeri.quicksugars.WeightRecordEntry"
     tools:showIn="@layout/activity_food_item_entry">
 
-    <EditText
+    <TextView
         android:id="@+id/foodItemEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical|center_horizontal"
         android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Manually entered food item"
         android:inputType="textPersonName"
-        android:hint="Enter food item here"
-        android:layout_above="@+id/foodItemEntryButton"
+        android:visibility="visible"
+        android:layout_below="@+id/manualFoodInput"
         android:layout_centerHorizontal="true"
-        android:visibility="visible"/>
+        android:layout_marginTop="31dp" />
 
     <Button
         android:id="@+id/foodItemEntryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="saveCurrentEntry"
+        android:onClick="saveTodayEntry"
         android:text="Tap to enter food item"
-        android:layout_above="@+id/changeToPreviousFoodItem"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:visibility="visible"/>
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/changeToPreviousFoodItem"
@@ -39,22 +39,23 @@
         android:onClick="changeToPreviousFoodItemEntry"
         android:text="Tap to enter food item from previous day"
         android:visibility="visible"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/previousFoodItemEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignBaseline="@+id/foodItemEntry"
+        android:layout_alignBottom="@+id/foodItemEntry"
+        android:layout_alignLeft="@+id/dateInput"
+        android:layout_alignStart="@+id/dateInput"
         android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Manually entered food item"
         android:inputType="textPersonName"
-        android:hint="Enter food item here"
-        android:visibility="invisible"
-        android:layout_above="@+id/foodItemEntry"
-        android:layout_alignLeft="@+id/foodItemEntry"
-        android:layout_alignStart="@+id/foodItemEntry"
-        android:layout_marginBottom="26dp" />
+        android:visibility="invisible" />
 
     <EditText
         android:id="@+id/dateInput"
@@ -65,21 +66,20 @@
         android:inputType="textPersonName"
         android:hint="Date: yyyymmdd"
         android:visibility="invisible"
-        android:layout_alignBaseline="@+id/foodItemEntry"
-        android:layout_alignBottom="@+id/foodItemEntry"
-        android:layout_alignLeft="@+id/foodItemEntry"
-        android:layout_alignStart="@+id/foodItemEntry" />
+        android:layout_above="@+id/previousFoodItemEntryButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
 
     <Button
         android:id="@+id/previousFoodItemEntryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="savePreviousFoodItemEntry"
-        android:text="Tap to enter food item"
-        android:visibility="invisible"
         android:layout_above="@+id/changeToPreviousFoodItem"
         android:layout_alignLeft="@+id/foodItemEntryButton"
-        android:layout_alignStart="@+id/foodItemEntryButton" />
+        android:layout_alignStart="@+id/foodItemEntryButton"
+        android:onClick="savePreviousEntry"
+        android:text="Tap to enter food item"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/changeToCurrentFoodItemEntry"
@@ -97,10 +97,30 @@
         android:id="@+id/goToSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/previousFoodItemEntry"
-        android:layout_centerHorizontal="true"
         android:onClick="goToSearchPage"
-        android:text="Button" />
+        android:text="Tap to search for food item"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/foodSearchResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goToSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Result of search" />
+
+    <Button
+        android:id="@+id/manualFoodInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodSearchResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:onClick="goToManualInput"
+        android:text="Tap to enter food info manually" />
 
 
 </RelativeLayout>
