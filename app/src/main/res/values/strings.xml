@@ -66,4 +66,8 @@
     <string name="title_activity_food_item_entry">FoodItemEntry</string>
     <string name="title_activity_search_food_items">SearchFoodItems</string>
     <string name="title_activity_manual_food_input">ManualFoodInput</string>
+    <string name="title_activity_alarm_receiver">AlarmReceiver</string>
+    <string name="title_activity_completion_of_medication_notification">
+        CompletionOfMedicationNotification
+    </string>
 </resources>
