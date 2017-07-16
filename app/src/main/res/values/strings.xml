@@ -70,4 +70,5 @@
     <string name="title_activity_completion_of_medication_notification">
         CompletionOfMedicationNotification
     </string>
+    <string name="title_activity_delayed_medication_timer">DelayedMedicationTimer</string>
 </resources>

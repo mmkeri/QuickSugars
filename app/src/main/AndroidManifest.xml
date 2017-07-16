@@ -59,9 +59,14 @@
         <activity
             android:name=".CompletionOfMedicationNotification"
             android:label="@string/title_activity_completion_of_medication_notification"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
-        <receiver android:name=".AlarmReceiver"/>
+        <receiver android:name=".AlarmReceiver" />
+
+        <activity
+            android:name=".DelayedMedicationTimer"
+            android:label="@string/title_activity_delayed_medication_timer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_completion_of_medication_notification">
 
     <Button
-        android:id="@+id/SetMedTakenButton"
+        android:id="@+id/setMedTakenButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,7 +21,7 @@
         android:id="@+id/setDelayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/SetMedTakenButton"
+        android:layout_below="@+id/setMedTakenButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
         android:text="Delay taking medication" />
