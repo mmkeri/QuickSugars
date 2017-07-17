@@ -66,6 +66,10 @@
         <activity
             android:name=".DelayedMedicationTimer"
             android:label="@string/title_activity_delayed_medication_timer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Graphs"
+            android:label="@string/title_activity_graphs"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
