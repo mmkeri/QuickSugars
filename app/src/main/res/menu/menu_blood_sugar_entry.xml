@@ -14,6 +14,8 @@
         android:title="@string/symptom_record"/>
     <item android:id="@+id/weight_record"
         android:title="@string/weight_entry"/>
+    <item android:id="@+id/graph_page"
+        android:title="Graph of Past Three Months"/>
     <item android:id="@+id/search"
         android:title="Search"
         android:icon="@drawable/ic_search"
