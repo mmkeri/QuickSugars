@@ -13,6 +13,7 @@
     <string name="previous_weight_button">Tap to enter weight from previous day</string>
     <string name="title_activity_medication_edditing_page">MedicationEdditingPage</string>
     <string name="search_hint">Enter a food item for search</string>
+    <string name="scheduled_medication_list">ScheduledMedicationsList</string>
     <string-array name="times">
         <item>0000</item>
         <item>0030</item>
@@ -73,4 +74,5 @@
     <string name="title_activity_delayed_medication_timer">DelayedMedicationTimer</string>
     <string name="title_activity_graphs">Graphs</string>
     <string name="title_activity_blood_sugar_check_reminder">BloodSugarCheckReminder</string>
+    <string name="title_activity_scheduled_medications_list">ScheduledMedicationsList</string>
 </resources>

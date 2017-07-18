@@ -26,7 +26,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MedicationSelectionPage" />
+        <activity android:name=".MedicationSelectionPage">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
         <activity
             android:name=".WeightRecordEntry"
             android:label="@string/title_activity_weight_record_entry"
@@ -62,7 +70,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <receiver android:name=".AlarmReceiver" />
-        <receiver android:name=".BSAlarmReceiver"/>
+        <receiver android:name=".BSAlarmReceiver" />
 
         <activity
             android:name=".DelayedMedicationTimer"
@@ -75,6 +83,10 @@
         <activity
             android:name=".BloodSugarCheckReminder"
             android:label="@string/title_activity_blood_sugar_check_reminder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScheduledMedicationsList"
+            android:label="@string/title_activity_scheduled_medications_list"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

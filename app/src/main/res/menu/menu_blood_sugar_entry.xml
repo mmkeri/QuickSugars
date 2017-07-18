@@ -22,4 +22,6 @@
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="collapseActionView|ifRoom"
         android:visible="false"/>
+    <item android:id="@+id/scheduled_medication_list"
+        android:title="Scheduled Medication List"/>
 </menu>

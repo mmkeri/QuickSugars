@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:text="Medication Name" />
+
+    <TextView
+        android:id="@+id/scheduledMedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/scheduledMedName"
+        android:layout_toStartOf="@+id/scheduledMedName"
+        android:text="Scheduled time" />
+
+    <TextView
+        android:id="@+id/scheduledMedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scheduledMedName"
+        android:layout_alignStart="@+id/scheduledMedName"
+        android:layout_alignTop="@+id/textView8"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/frequencySelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/scheduledMedTime"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/scheduledMedTime"
+        android:layout_toRightOf="@+id/scheduledMedTime"
+        android:text="TextView" />
+</RelativeLayout>
