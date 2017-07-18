@@ -72,4 +72,5 @@
     </string>
     <string name="title_activity_delayed_medication_timer">DelayedMedicationTimer</string>
     <string name="title_activity_graphs">Graphs</string>
+    <string name="title_activity_blood_sugar_check_reminder">BloodSugarCheckReminder</string>
 </resources>

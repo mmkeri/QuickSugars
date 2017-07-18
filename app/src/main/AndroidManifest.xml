@@ -62,6 +62,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".BSAlarmReceiver"/>
 
         <activity
             android:name=".DelayedMedicationTimer"
@@ -70,6 +71,10 @@
         <activity
             android:name=".Graphs"
             android:label="@string/title_activity_graphs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BloodSugarCheckReminder"
+            android:label="@string/title_activity_blood_sugar_check_reminder"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

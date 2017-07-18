@@ -103,4 +103,13 @@
         android:layout_below="@id/previousBSEntryButton"
         android:text="Tap to change to todays blood sugar entry page"
         android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/setDelayedBSCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Tap to set a reminder to check blood sugar" />
 </RelativeLayout>
