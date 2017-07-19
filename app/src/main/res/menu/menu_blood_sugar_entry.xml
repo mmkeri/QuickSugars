@@ -6,8 +6,6 @@
         android:title="@string/blood_sugar_entry" />
     <item android:id="@+id/medication_selection"
         android:title="@string/medication_selection"/>
-    <item android:id="@+id/medication_record"
-        android:title="@string/medication_record"/>
     <item android:id="@+id/food_items"
         android:title="Food Item Entry"/>
     <item android:id="@+id/symptom_record"
