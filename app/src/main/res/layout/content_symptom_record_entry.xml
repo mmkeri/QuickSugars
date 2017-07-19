@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,4 +8,84 @@
     tools:context="mmkeri.quicksugars.SymptomRecordEntry"
     tools:showIn="@layout/activity_symptom_record_entry">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/todaySymptom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter symptom experienced today"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/todayTimeEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/todaySymptomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to enter symptom for today"
+        android:layout_alignBottom="@+id/previousSymptom"
+        android:layout_alignRight="@+id/previousSymptomButton"
+        android:layout_alignEnd="@+id/previousSymptomButton"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="58dp" />
+
+    <EditText
+        android:id="@+id/previousSymptom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter symptom for previous day"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/previousTimeEntry"
+        android:layout_alignLeft="@+id/todaySymptom"
+        android:layout_alignStart="@+id/todaySymptom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <EditText
+        android:id="@+id/previousDateEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_below="@+id/previousSymptom"
+        android:layout_alignLeft="@+id/previousSymptom"
+        android:layout_alignStart="@+id/previousSymptom"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:id="@+id/previousSymptomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to enter symptom from previously"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <EditText
+        android:id="@+id/previousTimeEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/previousSymptomButton"
+        android:layout_alignLeft="@+id/previousSymptom"
+        android:layout_alignStart="@+id/previousSymptom"
+        android:layout_marginBottom="78dp"
+        android:ems="10"
+        android:hint="Enter time symptom experienced"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/todayTimeEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/todaySymptomButton"
+        android:layout_alignLeft="@+id/todaySymptom"
+        android:layout_alignStart="@+id/todaySymptom"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Enter time symptom experienced"
+        android:inputType="time" />
+</RelativeLayout>
