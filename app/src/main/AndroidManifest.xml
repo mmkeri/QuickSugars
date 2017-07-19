@@ -92,6 +92,10 @@
         <activity
             android:name=".SymptomRecordEntry"
             android:label="@string/title_activity_symptom_record_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectEntriesToEdit"
+            android:label="@string/title_activity_edit_entries"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

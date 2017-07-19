@@ -76,4 +76,5 @@
     <string name="title_activity_blood_sugar_check_reminder">BloodSugarCheckReminder</string>
     <string name="title_activity_scheduled_medications_list">ScheduledMedicationsList</string>
     <string name="title_activity_symptom_record_entry">SymptomRecordEntry</string>
+    <string name="title_activity_edit_entries">EditEntries</string>
 </resources>

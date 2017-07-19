@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mmkeri.quicksugars.SelectEntriesToEdit"
+    tools:showIn="@layout/activity_select_entries_to_edit">
+
+    <Button
+        android:id="@+id/editBSEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="Tap to edit blood sugar entries" />
+
+    <Button
+        android:id="@+id/editWeightEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editBSEntries"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Tap to edit weight entries" />
+
+    <Button
+        android:id="@+id/editSymptomEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editWeightEntries"
+        android:layout_alignRight="@+id/editWeightEntries"
+        android:layout_below="@+id/editWeightEntries"
+        android:layout_marginTop="65dp"
+        android:text="Tap to edit Symptom entries" />
+
+    <Button
+        android:id="@+id/editFoodItemEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editSymptomEntries"
+        android:layout_alignRight="@+id/editSymptomEntries"
+        android:layout_below="@+id/editSymptomEntries"
+        android:layout_marginTop="56dp"
+        android:text="Tap to edit food item entries" />
+</RelativeLayout>
