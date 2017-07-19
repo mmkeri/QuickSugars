@@ -14,6 +14,7 @@
     <string name="title_activity_medication_edditing_page">MedicationEdditingPage</string>
     <string name="search_hint">Enter a food item for search</string>
     <string name="scheduled_medication_list">ScheduledMedicationsList</string>
+    <string name="select_entries_to_edit">SelectEntriesToEdit</string>
     <string-array name="times">
         <item>0000</item>
         <item>0030</item>
@@ -77,4 +78,5 @@
     <string name="title_activity_scheduled_medications_list">ScheduledMedicationsList</string>
     <string name="title_activity_symptom_record_entry">SymptomRecordEntry</string>
     <string name="title_activity_edit_entries">EditEntries</string>
+    <string name="title_activity_edit_selected_entry">EditSelectedEntry</string>
 </resources>

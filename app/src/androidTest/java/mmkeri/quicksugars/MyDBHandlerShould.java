@@ -50,6 +50,8 @@ public class MyDBHandlerShould {
     private FoodItemWithNutrients testFoodItem;
     private FoodItemWithNutrients testFoodItem2;
     private FoodItemWithNutrients testFoodItem3;
+    private int firstDateAsInt = 20170401;
+    private int secondDateAsInt = 20170612;
 
     @Before
     public void setUp() throws Exception{
@@ -74,8 +76,8 @@ public class MyDBHandlerShould {
         testFutureTime = new LocalTime(15, 15, 15);
         testPastLogObject = new DayLogObject(testPastDate);
         testFutureLogObject = new DayLogObject(testFutureDate);
-        bsMeasure = new BloodSugarMeasurement(12.5, testTime);
-        testPastBSMeasure = new BloodSugarMeasurement(10.5, testPastTime);
+        bsMeasure = new BloodSugarMeasurement(12.5, testTime, firstDateAsInt);
+        testPastBSMeasure = new BloodSugarMeasurement(10.5, testPastTime, secondDateAsInt);
         logObject = new DayLogObject(testDate);
         testFoodItem = new FoodItemWithNutrients("apple", "1.2", "2.3", "3.4", "45", "55");
         testFoodItem2 = new FoodItemWithNutrients("orange", "2.3", "3.4", "4.5", "56", "67");

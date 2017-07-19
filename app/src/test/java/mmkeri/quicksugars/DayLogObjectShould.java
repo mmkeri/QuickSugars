@@ -32,15 +32,19 @@ public class DayLogObjectShould {
     private WeightMeasurement heavy;
     private LocalTime testTime;
     private LocalTime testTime2;
+    private int testDateAsInt1;
+    private int testDateAsInt2;
 
     @Before
     public void setUp(){
         testDate = new LocalDate();
         testTime = new LocalTime(1498406153);
         testTime2 = new LocalTime(12, 45, 30);
+        testDateAsInt1 = 20170515;
+        testDateAsInt2 = 20170615;
         testObject = new DayLogObject(testDate);
-        testRecord1 = new BloodSugarMeasurement(14.5, testTime);
-        testRecord2 = new BloodSugarMeasurement(12.2, testTime2);
+        testRecord1 = new BloodSugarMeasurement(14.5, testTime, testDateAsInt1);
+        testRecord2 = new BloodSugarMeasurement(12.2, testTime2, testDateAsInt2);
         dizzinessRecord = new SymptomRecord("Dizziness", testTime);
         headacheRecord = new SymptomRecord("Headache", testTime);
         metformin = new MedicationRecord("Metformin", 875, testTime, testTime);
@@ -66,7 +70,7 @@ public class DayLogObjectShould {
 
     @Test
     public void addANewBloodSugarMeasurementToTheLogCorrectlyWithOneRecordAdded(){
-        List<BloodSugarMeasurement> result = testObject.addNewBSMeasurement(new BloodSugarMeasurement(14.5, testTime));
+        List<BloodSugarMeasurement> result = testObject.addNewBSMeasurement(new BloodSugarMeasurement(14.5, testTime, testDateAsInt1));
         assertEquals(1, result.size());
         assertEquals(14.5, result.get(0).getBloodSugarReading(), 0.0);
         assertEquals(testTime, result.get(0).getTimeOfBloodSugarCheck());
@@ -74,8 +78,8 @@ public class DayLogObjectShould {
 
     @Test
     public void returnTheCorrectResultsWhenTwoRecordsAreAddedForBloodSugarMeasurements(){
-        testObject.addNewBSMeasurement(new BloodSugarMeasurement(14.5, testTime));
-        List<BloodSugarMeasurement> results = testObject.addNewBSMeasurement(new BloodSugarMeasurement(12.2, testTime2));
+        testObject.addNewBSMeasurement(new BloodSugarMeasurement(14.5, testTime, testDateAsInt1));
+        List<BloodSugarMeasurement> results = testObject.addNewBSMeasurement(new BloodSugarMeasurement(12.2, testTime2, testDateAsInt2));
         assertEquals(2, results.size());
         assertEquals(14.5, results.get(0).getBloodSugarReading(), 0.0);
         assertEquals(testTime, results.get(0).getTimeOfBloodSugarCheck());

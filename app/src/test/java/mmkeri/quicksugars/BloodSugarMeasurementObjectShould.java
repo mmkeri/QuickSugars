@@ -17,11 +17,12 @@ public class BloodSugarMeasurementObjectShould {
     private BloodSugarMeasurement testBSMeasure;
     private LocalTime jdt;
     private SimpleDateFormat sdf;
+    private int dateAsInt = 20170615;
 
     @Before
     public void setUp(){
         jdt = new LocalTime();
-        testBSMeasure = new BloodSugarMeasurement(13.5, jdt);
+        testBSMeasure = new BloodSugarMeasurement(13.5, jdt, dateAsInt);
     }
 
     @Test

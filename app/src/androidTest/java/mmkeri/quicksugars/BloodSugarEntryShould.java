@@ -32,6 +32,9 @@ public class BloodSugarEntryShould {
     private LocalDate firstDate = new LocalDate(2017, 1, 1);
     private LocalDate secondDate = new LocalDate(2017, 2, 1);
     private LocalDate thirdDate = new LocalDate(2017, 3, 1);
+    private int firstDateAsInt = 20170101;
+    private int secondDateAsInt = 20170201;
+    private int thirdDateAsInt = 20170301;
     private Date date1 = firstDate.toDate();
     private Date date2 = secondDate.toDate();
     private Date date3 = thirdDate.toDate();
@@ -58,8 +61,8 @@ public class BloodSugarEntryShould {
         testHandler.onCreate(db);
 
         mBloodSugarEntry = mActivityRule.getActivity();
-        bsEntry1 = new BloodSugarMeasurement(12.2, testTime);
-        bsEntry2 = new BloodSugarMeasurement(14.4, testTime);
+        bsEntry1 = new BloodSugarMeasurement(12.2, testTime, firstDateAsInt);
+        bsEntry2 = new BloodSugarMeasurement(14.4, testTime, secondDateAsInt);
     }
 
     @After
