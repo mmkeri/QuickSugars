@@ -43,6 +43,7 @@ public class WeightRecordEntryShould {
     private SQLiteDatabase testDB;
     private WeightMeasurement weightRecord1;
     private WeightMeasurement weightRecord2;
+    private int testDateAsInt = 20170501;
 
 
     @Before
@@ -59,8 +60,8 @@ public class WeightRecordEntryShould {
 
         mWeightRecordActivity = mActivityRule.getActivity();
 
-        weightRecord1 = new WeightMeasurement(65, defaultTime);
-        weightRecord2 = new WeightMeasurement(70, defaultTime);
+        weightRecord1 = new WeightMeasurement(65, defaultTime, testDateAsInt);
+        weightRecord2 = new WeightMeasurement(70, defaultTime, testDateAsInt);
     }
 
     @After

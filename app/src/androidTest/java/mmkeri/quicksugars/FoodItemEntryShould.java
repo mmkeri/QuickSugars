@@ -31,9 +31,6 @@ public class FoodItemEntryShould {
     private LocalDate firstDate = new LocalDate(2017, 1, 1);
     private LocalDate secondDate = new LocalDate(2017, 2, 1);
     private LocalDate thirdDate = new LocalDate(2017, 3, 1);
-    private Date date1 = firstDate.toDate();
-    private Date date2 = secondDate.toDate();
-    private Date date3 = thirdDate.toDate();
     private String item1 = "Bannana";
     private String item2 = "Apple";
     private String item3 = "Orange";
@@ -42,6 +39,7 @@ public class FoodItemEntryShould {
     private SQLiteDatabase testDB;
     private FoodItemRecord foodItemRecord1;
     private FoodItemRecord foodItemRecord2;
+    private int testDateAsInt = 20170501;
 
 
     @Before
@@ -58,8 +56,8 @@ public class FoodItemEntryShould {
 
         mFoodRecordActivity = mActivityRule.getActivity();
 
-        foodItemRecord1 = new FoodItemRecord(item1, defaultTime);
-        foodItemRecord2 = new FoodItemRecord(item2, defaultTime);
+        foodItemRecord1 = new FoodItemRecord(item1, defaultTime, testDateAsInt);
+        foodItemRecord2 = new FoodItemRecord(item2, defaultTime, testDateAsInt);
     }
 
     @After
