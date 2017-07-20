@@ -45,14 +45,14 @@ public class DayLogObjectShould {
         testObject = new DayLogObject(testDate);
         testRecord1 = new BloodSugarMeasurement(14.5, testTime, testDateAsInt1);
         testRecord2 = new BloodSugarMeasurement(12.2, testTime2, testDateAsInt2);
-        dizzinessRecord = new SymptomRecord("Dizziness", testTime);
-        headacheRecord = new SymptomRecord("Headache", testTime);
+        dizzinessRecord = new SymptomRecord("Dizziness", testTime, testDateAsInt1);
+        headacheRecord = new SymptomRecord("Headache", testTime, testDateAsInt2);
         metformin = new MedicationRecord("Metformin", 875, testTime, testTime);
         glucophage = new MedicationRecord("Glucophage", 875, testTime, testTime);
-        pizza = new FoodItemRecord("Pizza", testTime);
-        spaghetti = new FoodItemRecord("Spaghetti", testTime);
-        light = new WeightMeasurement(120, testTime);
-        heavy = new WeightMeasurement(175, testTime);
+        pizza = new FoodItemRecord("Pizza", testTime, testDateAsInt1);
+        spaghetti = new FoodItemRecord("Spaghetti", testTime, testDateAsInt2);
+        light = new WeightMeasurement(120, testTime, testDateAsInt1);
+        heavy = new WeightMeasurement(175, testTime, testDateAsInt2);
     }
 
     @After
@@ -107,7 +107,7 @@ public class DayLogObjectShould {
 
     @Test
     public void returnTheCorrectCountOfRecordsWhenOneRecordAddedForSymptoms(){
-        List<SymptomRecord> returnedList = testObject.addNewSymptom(new SymptomRecord("Headache", testTime));
+        List<SymptomRecord> returnedList = testObject.addNewSymptom(new SymptomRecord("Headache", testTime, testDateAsInt1));
         int result = returnedList.size();
         assertEquals(1, result);
         assertEquals("Headache", returnedList.get(0).getSymptomValue());

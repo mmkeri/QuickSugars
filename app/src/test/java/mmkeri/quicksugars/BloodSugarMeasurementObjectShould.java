@@ -16,7 +16,6 @@ public class BloodSugarMeasurementObjectShould {
 
     private BloodSugarMeasurement testBSMeasure;
     private LocalTime jdt;
-    private SimpleDateFormat sdf;
     private int dateAsInt = 20170615;
 
     @Before
