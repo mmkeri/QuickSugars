@@ -57,8 +57,10 @@ public class BloodSugarEntryShould {
 
         // cause the database to be opened or created
         SQLiteDatabase db = testHandler.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
-        testHandler.onCreate(db);
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS + ";");
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS + ";");
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS + ";");
+        //testHandler.onCreate(db);
 
         mBloodSugarEntry = mActivityRule.getActivity();
         bsEntry1 = new BloodSugarMeasurement(12.2, testTime, firstDateAsInt);
@@ -75,9 +77,10 @@ public class BloodSugarEntryShould {
     @Test
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddTodaysRecordToDB(){
         mBloodSugarEntry.addTodaysReadingToDB(20170105, 12.2, testTime);
-        testDB = mBloodSugarEntry.addTodaysReadingToDB(20170106, 14.4, testTime);
+        mBloodSugarEntry.addTodaysReadingToDB(20170106, 14.4, testTime);
+        testDB = mBloodSugarEntry.addTodaysReadingToDB(20170203, 15.2, testTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
-        assertEquals(2, result);
+        assertEquals(3, result);
         List<BloodSugarMeasurement> resultList1 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 05));
         List<BloodSugarMeasurement> resultList2 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 06));
         assertEquals(12.2, resultList1.get(0).getBloodSugarReading());
@@ -122,23 +125,6 @@ public class BloodSugarEntryShould {
         assertEquals(1, result);
         List<BloodSugarMeasurement> resultList1 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 05));
         assertEquals(12.2, resultList1.get(0).getBloodSugarReading());
-    }
-
-    @Test
-    public void convertAnIntToLocalDateCorrectly(){
-        LocalDate result = DateConversion.convertDateAsIntToLocalDate(20170101);
-        assertEquals(firstDate, result);
-    }
-
-    @Test(expected = NumberFormatException.class)
-    public void throwAnExceptionWhenAnInvalidIntIsSubmittedAsADate(){
-        DateConversion.convertDateAsIntToLocalDate(22001201);
-    }
-
-    @Test
-    public void convertALocalDateObjectToIntCorrectly(){
-        int result = DateConversion.convertLocalDateToInt(firstDate);
-        assertEquals(20170101, result);
     }
 
     @Test
