@@ -33,20 +33,6 @@ public class BloodSugarMeasurementObjectShould {
     public void giveTheValueOfTheBloodSugarCheck(){
         assertEquals(13.5, testBSMeasure.getBloodSugarReading(), 0.0);
     }
-     @Test
-    public void changeTheBloodSugarMeasurementFromCurrentValueToANewValue(){
-         double oldBSValue = testBSMeasure.getBloodSugarReading();
-         double newBSValue = testBSMeasure.changeBSReadingValue(oldBSValue, jdt, 15.5);
-         assertEquals(oldBSValue, 13.5, 0.0);
-         assertEquals(newBSValue, 15.5, 0.0);
-     }
-
-     @Test
-    public void changeTheBloodSugarMeasurementAdministrationTime(){
-         LocalTime testTime = new LocalTime(1498406153);
-         LocalTime newInputTime = testBSMeasure.changeBSReadingTime(testBSMeasure.getBloodSugarReading(), jdt, testTime);
-         assertEquals(testTime, newInputTime);
-     }
 
      @Test
     public void giveTheSameTimeForOriginalJodaObjectAndOneMadeFromItsString(){
