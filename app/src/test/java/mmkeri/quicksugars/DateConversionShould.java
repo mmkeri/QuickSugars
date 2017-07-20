@@ -29,4 +29,15 @@ public class DateConversionShould {
         int result = DateConversion.convertLocalDateToInt(firstDate);
         assertEquals(20170101, result);
     }
+
+    @Test
+    public void convertAnIntegerRepresentationOfADateToAStringCorrectly(){
+        String result = DateConversion.convertDateAsIntToString(20170101);
+        assertEquals("1/1/2017", result);
+    }
+
+    @Test(expected = NumberFormatException.class)
+    public void throwAnExceptionWhenAnInvalidIntegerIsSubmittedAsADate(){
+        String result = DateConversion.convertDateAsIntToString(10500101);
+    }
 }
