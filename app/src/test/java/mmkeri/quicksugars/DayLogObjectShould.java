@@ -28,12 +28,15 @@ public class DayLogObjectShould {
     private MedicationRecord glucophage;
     private FoodItemRecord pizza;
     private FoodItemRecord spaghetti;
+    private FoodItemRecord apple;
     private WeightMeasurement light;
     private WeightMeasurement heavy;
     private LocalTime testTime;
     private LocalTime testTime2;
     private int testDateAsInt1;
     private int testDateAsInt2;
+    private FoodItemWithNutrients testFoodItemWithNutrients;
+    private FoodItemWithNutrients testFoodItemWithNutrients2;
 
     @Before
     public void setUp(){
@@ -53,6 +56,9 @@ public class DayLogObjectShould {
         spaghetti = new FoodItemRecord("Spaghetti", testTime, testDateAsInt2);
         light = new WeightMeasurement(120, testTime, testDateAsInt1);
         heavy = new WeightMeasurement(175, testTime, testDateAsInt2);
+        apple = new FoodItemRecord("Apple", testTime, testDateAsInt1);
+        testFoodItemWithNutrients = new FoodItemWithNutrients("Apple", "9", "15", "0.5", "45", "1145");
+        testFoodItemWithNutrients2 = new FoodItemWithNutrients("Pizza", "21", "25", "11.5", "205", "2255");
     }
 
     @After
@@ -232,5 +238,108 @@ public class DayLogObjectShould {
         testObject.deleteWeightRecord(120, testTime);
         int numberAfterDeletion = testObject.deleteWeightRecord(175, testTime).size();
         assertEquals(0, numberAfterDeletion);
+    }
+
+    @Test
+    public void returnsTheCorrectValueForFatWhenGetFatDailyTotalIsCalled(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        testObject.addNewFoodRecord(apple);
+        double result = testObject.getFatDayTotal();
+        assertEquals(0.5, result, 0.1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForProteinWhenGetProteinDailyTotalIsCalled(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        testObject.addNewFoodRecord(apple);
+        double result = testObject.getProteinDayTotal();
+        assertEquals(9, result, 1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForCarbohydrateWhenGetCarbohydrateDailyTotalIsCalled(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        testObject.addNewFoodRecord(apple);
+        double result = testObject.getCarbohydrateDayTotal();
+        assertEquals(15, result, 1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForKiloCaloriesWhenGetKiloCalorieDailyTotalIsCalled(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        testObject.addNewFoodRecord(apple);
+        double result = testObject.getKiloCalDayTotal();
+        assertEquals(45, result, 1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForKiloJoulesWhenGetKiloJOuleDailyTotalIsCalled(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        testObject.addNewFoodRecord(apple);
+        double result = testObject.getKiloJoulesDayTotal();
+        assertEquals(1145, result, 1);
+    }
+
+    @Test
+    public void returnsTheCorrectValueForFatWhenGetFatDailyTotalIsCalledWithTwoItems(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        pizza.setDetailedFoodItem(testFoodItemWithNutrients2);
+        testObject.addNewFoodRecord(apple);
+        testObject.addNewFoodRecord(pizza);
+        double result = testObject.getFatDayTotal();
+        assertEquals(12.0, result, 1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForProteinWhenGetProteinDailyTotalIsCalledWithTwoItems(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        pizza.setDetailedFoodItem(testFoodItemWithNutrients2);
+        testObject.addNewFoodRecord(apple);
+        testObject.addNewFoodRecord(pizza);
+        double result = testObject.getProteinDayTotal();
+        assertEquals(30, result, 1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForCarbohydrateWhenGetCarbohydrateDailyTotalIsCalledWithTwoItems(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        pizza.setDetailedFoodItem(testFoodItemWithNutrients2);
+        testObject.addNewFoodRecord(apple);
+        testObject.addNewFoodRecord(pizza);
+        double result = testObject.getCarbohydrateDayTotal();
+        assertEquals(40, result, 1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForKiloCaloriesWhenGetKiloCalorieDailyTotalIsCalledWithTwoItems(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        pizza.setDetailedFoodItem(testFoodItemWithNutrients2);
+        testObject.addNewFoodRecord(apple);
+        testObject.addNewFoodRecord(pizza);
+        double result = testObject.getKiloCalDayTotal();
+        assertEquals(250, result, 1);
+    }
+
+    @Test
+    public void returnTheCorrectValueForKiloJoulesWhenGetKiloJOuleDailyTotalIsCalledWithTwoItems(){
+        apple.setDetailedFoodItem(testFoodItemWithNutrients);
+        pizza.setDetailedFoodItem(testFoodItemWithNutrients2);
+        testObject.addNewFoodRecord(apple);
+        testObject.addNewFoodRecord(pizza);
+        double result = testObject.getKiloJoulesDayTotal();
+        assertEquals(3400, result, 1);
+    }
+
+    @Test
+    public void returnAListSizeOfOneWhenAddTakenMedicationIsCalledOnce(){
+        int result  = testObject.addTakenMedication(glucophage).size();
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void returnAListSizeOfTwoWhenAddTakenMedicationHasBeenCalledTwice(){
+        testObject.addTakenMedication(glucophage);
+        int result = testObject.addTakenMedication(metformin).size();
+        assertEquals(2, result);
     }
 }
