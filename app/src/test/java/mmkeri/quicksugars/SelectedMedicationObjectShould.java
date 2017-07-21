@@ -17,6 +17,7 @@ public class SelectedMedicationObjectShould {
 
     private SelectedMedicationObject testSelectedMedicationObject;
     private SelectedMedicationObject testSelectedMedicationObject2;
+    private SelectedMedicationObject testSelectedMedicationObject3;
     private String testDose = "125";
     private ArrayList<String> testTimes;
     private String testRoute = "orally";
@@ -30,6 +31,7 @@ public class SelectedMedicationObjectShould {
         testMedicationObject = new MedicationObject();
         testSelectedMedicationObject = new SelectedMedicationObject(testMedicationObject);
         testSelectedMedicationObject2 = new SelectedMedicationObject(testMedicationObject);
+        testSelectedMedicationObject3 = new SelectedMedicationObject(testMedicationObject);
         testTimes = new ArrayList<>();
         testTimes.add("121212");
         secondList = new ArrayList<>();
@@ -56,6 +58,12 @@ public class SelectedMedicationObjectShould {
     }
 
     @Test
+    public void returnAnEptyStringWhenNoDoseHasBeenSet(){
+        String result = testSelectedMedicationObject3.getDose();
+        assertEquals("", result);
+    }
+
+    @Test
     public void changeTheDoseCorrectlyWhensetDoseIsCalled(){
         testSelectedMedicationObject.setDose("150");
         String result = testSelectedMedicationObject.getDose();
@@ -66,6 +74,12 @@ public class SelectedMedicationObjectShould {
     public void returnTheCorrectFrequencyWhenGetFrequencyIsCalled(){
         String result = testSelectedMedicationObject.getFrequency();
         assertEquals("daily", result);
+    }
+
+    @Test
+    public void returnAnEmptyStringWhenNoFrequencyHasBeenSet(){
+        String result = testSelectedMedicationObject3.getFrequency();
+        assertEquals("", result);
     }
 
     @Test
@@ -82,6 +96,12 @@ public class SelectedMedicationObjectShould {
     }
 
     @Test
+    public void returnAnEmptyStringWhenRouteHasNotBeenSet(){
+        String result = testSelectedMedicationObject3.getRoute();
+        assertEquals("", result);
+    }
+
+    @Test
     public void changeTheRouteCorrectlyWhenSetRouteIsCalled(){
         testSelectedMedicationObject.setRoute("IM");
         String result = testSelectedMedicationObject.getRoute();
@@ -92,6 +112,12 @@ public class SelectedMedicationObjectShould {
     public void returnTheCorrectListOfTimesWhenGetTimesIsCalled(){
         List<String> result = testSelectedMedicationObject.getTimes();
         assertEquals(testTimes, result);
+    }
+
+    @Test
+    public void returnAnEmptyListIfNoTimesHaveBeenSet(){
+        int result = testSelectedMedicationObject3.getTimes().size();
+        assertEquals(0, result);
     }
 
     @Test
