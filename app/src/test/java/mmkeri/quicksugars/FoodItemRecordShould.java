@@ -78,4 +78,16 @@ public class FoodItemRecordShould {
         String result = testFoodItemRecord.getKilojoules();
         assertEquals("1145", result);
     }
+
+    @Test
+    public void returnTheCorrectTimeWhenGetInputTimeIsCalled(){
+        LocalTime result = testFoodItemRecord.getInputTime();
+        assertEquals(testTime, result);
+    }
+
+    @Test
+    public void returnTheCorrectDateAsIntWhenGetDateAsIntIsCalled(){
+        int result = testFoodItemRecord.getDateAsInt();
+        assertEquals(20170601, result);
+    }
 }
