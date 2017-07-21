@@ -52,6 +52,10 @@ public class MyDBHandlerShould {
     private FoodItemWithNutrients testFoodItem3;
     private int firstDateAsInt = 20170401;
     private int secondDateAsInt = 20170612;
+    private Gson gson;
+    private MedicationObject testMedObject1;
+    private MedicationObject testMedObject2;
+    private MedicationObject testMedObject3;
 
     @Before
     public void setUp() throws Exception{
@@ -64,6 +68,7 @@ public class MyDBHandlerShould {
         SQLiteDatabase db = testDBHandler.getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS);
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS);
         testDBHandler.onCreate(db);
 
         //RenamingDelegatingContext context
@@ -82,6 +87,10 @@ public class MyDBHandlerShould {
         testFoodItem = new FoodItemWithNutrients("apple", "1.2", "2.3", "3.4", "45", "55");
         testFoodItem2 = new FoodItemWithNutrients("orange", "2.3", "3.4", "4.5", "56", "67");
         testFoodItem3 = new FoodItemWithNutrients("Bramley_apple", "1.1", "2.2", "3.3", "44", "55");
+        gson = new Gson();
+        testMedObject1 = new MedicationObject();
+        testMedObject2 = new MedicationObject();
+        testMedObject3 = new MedicationObject();
     }
 
     @After
@@ -98,7 +107,7 @@ public class MyDBHandlerShould {
     }
 
     @Test
-    public void returnTheCorrectCountOfRecordsInTheDatabaseUsingAddLogRecordIfOnlyOneRecordAdded(){
+    public void returnTheCorrectCountOfRecordsInTheDatabaseUsingPutLogRecordIfOnlyOneRecordAdded(){
         SQLiteDatabase returnedDatabase = testDBHandler.putLogRecord(logObject);
         int result = returnedDatabase.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
@@ -115,7 +124,7 @@ public class MyDBHandlerShould {
     }
 
     @Test
-    public void returnTheSameRecordAddedUsingAddLogRecord(){
+    public void returnTheSameRecordAddedUsingPutLogRecord(){
         logObject.addNewBSMeasurement(bsMeasure);
         SQLiteDatabase returnedDatabase = testDBHandler.putLogRecord(logObject);
         Cursor cursor = returnedDatabase.rawQuery("SELECT * FROM logRecords", null);
@@ -130,7 +139,6 @@ public class MyDBHandlerShould {
 
     @Test
     public void returnCorrectRecordsWhenTwoLogObjectsAddedToDatabase(){
-        Gson gson = new Gson();
         logObject.addNewBSMeasurement(bsMeasure);
         testPastLogObject.addNewBSMeasurement(testPastBSMeasure);
         testDBHandler.putLogRecord(logObject);
@@ -146,6 +154,85 @@ public class MyDBHandlerShould {
         assertEquals(testPastLogObject.getCurrentDate(), firstRecordResult.getCurrentDate());
         assertEquals(logObject.getId(), secondRecordResult.getId());
         assertEquals(logObject.getCurrentDate(), secondRecordResult.getCurrentDate());
+    }
+
+    @Test
+    public void returnACountOfThreeWhenGetAllDayLogObjectsIsCalled(){
+        testDBHandler.putLogRecord(logObject);
+        testDBHandler.putLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(testFutureLogObject);
+        Cursor returnedCursor = testDBHandler.getAllDayLogObjects();
+        int result = returnedCursor.getCount();
+        assertEquals(3, result);
+    }
+
+    @Test
+    public void returnACountOfZeroWhenGetAllDayLogObjectsIsCalledOnAnEmptyDatabase(){
+        Cursor returnedCursor = testDBHandler.getAllDayLogObjects();
+        int result = returnedCursor.getCount();
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void returnTheExpectedObjectsWhenGetAllDayLOgObjectsIsCalled(){
+        testDBHandler.putLogRecord(logObject);
+        testDBHandler.putLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(testFutureLogObject);
+        Cursor returnedCursor = testDBHandler.getAllDayLogObjects();
+        returnedCursor.moveToFirst();
+        DayLogObject result1 = gson.fromJson(returnedCursor.getString(1), DayLogObject.class);
+        returnedCursor.moveToNext();
+        DayLogObject result2 = gson.fromJson(returnedCursor.getString(1), DayLogObject.class);
+        returnedCursor.moveToNext();
+        DayLogObject result3 = gson.fromJson(returnedCursor.getString(1), DayLogObject.class);
+        assertEquals(result1.getId(), testPastLogObject.getId());
+        assertEquals(result2.getId(), logObject.getId());
+        assertEquals(result3.getId(), testFutureLogObject.getId());
+    }
+
+    @Test
+    public void correctlyUpdateTheDatabaseWhenUpdateDayLogObjectIsCalled(){
+        WeightMeasurement testWeight = new WeightMeasurement(125, testTime, firstDateAsInt);
+        logObject.addNewBSMeasurement(bsMeasure);
+        testDBHandler.putLogRecord(logObject);
+        DayLogObject returnedDLO = testDBHandler.getDayLogObject(logObject.getId());
+        returnedDLO.addWeightRecord(testWeight);
+        SQLiteDatabase returnedDB = testDBHandler.updateDayLogObject(returnedDLO);
+        Cursor returnedCursor = returnedDB.rawQuery("SELECT * FROM logRecords", null);
+        returnedCursor.moveToFirst();
+        DayLogObject secondReturnedDLO = gson.fromJson(returnedCursor.getString(1), DayLogObject.class);
+        assertEquals(testWeight.getWeightValue(), secondReturnedDLO.getWeightRecord().get(0).getWeightValue(), 1);
+        assertEquals(returnedDLO.getId(), secondReturnedDLO.getId());
+    }
+
+    @Test
+    public void returnTheRequestedDayLogObjetWhenGetDayLogObjectIsCalled(){
+        testDBHandler.putLogRecord(logObject);
+        DayLogObject result = testDBHandler.getDayLogObject(logObject.getId());
+        assertEquals(logObject.getCurrentDate(), result.getCurrentDate());
+    }
+
+    @Test
+    public void returnTheCorrectObjectWhenMultipleDayLogObjectsAddedAndGetDayLogObjectIsCalled(){
+        testDBHandler.putLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(testFutureLogObject);
+        testDBHandler.putLogRecord(logObject);
+        DayLogObject result = testDBHandler.getDayLogObject(testPastLogObject.getId());
+        assertEquals(testPastLogObject.getCurrentDate(), result.getCurrentDate());
+    }
+
+    @Test
+    public void returnAnEmptyDayLogObjectWhenGetDayLOgObjectIsCalledOnRecordThatDoesntExist(){
+        WeightMeasurement testWeight = new WeightMeasurement(125, testTime, firstDateAsInt);
+        testPastLogObject.addWeightRecord(testWeight);
+        testFutureLogObject.addWeightRecord(testWeight);
+        logObject.addWeightRecord(testWeight);
+        testDBHandler.putLogRecord(testPastLogObject);
+        testDBHandler.putLogRecord(testFutureLogObject);
+        testDBHandler.putLogRecord(logObject);
+        DayLogObject result = testDBHandler.getDayLogObject(20150201);
+        assertEquals(20150201, result.getId());
+        assertEquals(0, result.getWeightRecord().size());
     }
 
     @Test
@@ -236,5 +323,136 @@ public class MyDBHandlerShould {
         assertEquals("4.5", returnedList.get(0).getFat());
         assertEquals("56", returnedList.get(0).getKilocals());
         assertEquals("67", returnedList.get(0).getKilojoules());
+    }
+
+    @Test
+    public void returnACountOfOneWhenASingleMedicationIsAddedToDBUsingPutMedicationRecord(){
+        testMedObject1.setTradeName("Lipitor");
+        SQLiteDatabase returnedDB = testDBHandler
+                .putMedicationRecord(20170601, "121212", gson.toJson(testMedObject1));
+        Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        assertEquals(1, cursor.getCount());
+    }
+
+    @Test
+    public void returnACountOfTwoWhenPutMedicationRecordIsUsedToAddTwoRecordsToTheDB(){
+        testDBHandler.putMedicationRecord(20170601, "121212", gson.toJson(testMedObject1));
+        SQLiteDatabase returnedDB = testDBHandler.putMedicationRecord(20170701, "141414", gson.toJson(testMedObject2));
+        Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        assertEquals(2, cursor.getCount());
+    }
+
+    @Test
+    public void storeTheCorrectRecordInTheDBWhenPutMedicationIsCalled(){
+        testMedObject1.setTradeName("Lipitor");
+        SQLiteDatabase returnedDB = testDBHandler.putMedicationRecord(20170601, "121212", gson.toJson(testMedObject1));
+        Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        cursor.moveToFirst();
+        assertEquals(testMedObject1.getTradeName(), gson.fromJson(cursor.getString(2), MedicationObject.class).getTradeName());
+    }
+
+    @Test
+    public void storeTheCorrectRecordsInTheDBWhenPutMedicationIsCalledAndTwoRecordsHaveBeenAdded(){
+        testMedObject1.setTradeName("Lipitor");
+        testMedObject2.setTradeName("Tylenol");
+        testDBHandler.putMedicationRecord(20170701, "141414", gson.toJson(testMedObject2));
+        SQLiteDatabase returnedDB = testDBHandler.putMedicationRecord(20170601, "121212", gson.toJson(testMedObject1));
+        Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        cursor.moveToFirst();
+        assertEquals(testMedObject1.getTradeName(), gson.fromJson(cursor.getString(2), MedicationObject.class).getTradeName());
+        cursor.moveToNext();
+        assertEquals(testMedObject2.getTradeName(), gson.fromJson(cursor.getString(2), MedicationObject.class).getTradeName());
+    }
+
+    @Test
+    public void returnTheCorrectRecordWhenGetMedicationRecordIsCalled(){
+        testMedObject1.setTradeName("Lipitor");
+        testDBHandler.putMedicationRecord(20170601, "121212", gson.toJson(testMedObject1));
+        Cursor cursor = testDBHandler.getMedicationRecord(20170601);
+        int count = cursor.getCount();
+        cursor.moveToFirst();
+        assertEquals(1, count);
+        assertEquals(testMedObject1.getTradeName(), gson.fromJson(cursor.getString(2), MedicationObject.class).getTradeName());
+    }
+
+    @Test
+    public void returnAnEmptyCursorWhenGetMedicationIsCalledAndRecordDoesNotExist(){
+        Cursor cursor = testDBHandler.getMedicationRecord(20170801);
+        int count = cursor.getCount();
+        assertEquals(0, count);
+    }
+
+    @Test
+    public void correctlyReturnAllRecordsInTheDBWhenGetAllMedicationRecordsIsCalled(){
+        testMedObject1.setTradeName("Lipitor");
+        testMedObject2.setTradeName("Januvia");
+        testMedObject3.setTradeName("Lispro");
+        testDBHandler.putMedicationRecord(20170501, "121212", gson.toJson(testMedObject1));
+        testDBHandler.putMedicationRecord(20170601, "141414", gson.toJson(testMedObject2));
+        testDBHandler.putMedicationRecord(20170701, "161616", gson.toJson(testMedObject3));
+        Cursor cursor = testDBHandler.getAllMedicationRecords();
+        int count = cursor.getCount();
+        cursor.moveToFirst();
+        MedicationObject result1 = gson.fromJson(cursor.getString(2), MedicationObject.class);
+        cursor.moveToNext();
+        MedicationObject result2 = gson.fromJson(cursor.getString(2), MedicationObject.class);
+        cursor.moveToNext();
+        MedicationObject result3 = gson.fromJson(cursor.getString(2), MedicationObject.class);
+        assertEquals(3, count);
+        assertEquals(testMedObject1.getTradeName(), result1.getTradeName());
+        assertEquals(testMedObject2.getTradeName(), result2.getTradeName());
+        assertEquals(testMedObject3.getTradeName(), result3.getTradeName());
+    }
+
+    @Test
+    public void returnAnEmptyCursorIfTheDBIsEmptyAndGetAllMedicationRecordsIsCalled(){
+        Cursor cursor = testDBHandler.getAllMedicationRecords();
+        int count = cursor.getCount();
+        assertEquals(0, count);
+    }
+
+    @Test
+    public void returnTwoWhenWhenDeleteScheduledMedicationRecordIsCalledOnADBWithThreeRecords(){
+        testMedObject1.setTradeName("Lipitor");
+        testMedObject2.setTradeName("Januvia");
+        testMedObject3.setTradeName("Lispro");
+        testDBHandler.putMedicationRecord(20170501, "121212", gson.toJson(testMedObject1));
+        testDBHandler.putMedicationRecord(20170601, "141414", gson.toJson(testMedObject2));
+        SQLiteDatabase returnedDB = testDBHandler
+                .putMedicationRecord(20170701, "161616", gson.toJson(testMedObject3));
+        Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        int countBeforeDeletion = cursor.getCount();
+        returnedDB = testDBHandler.deleteScheduledMedicationRecord(20170501);
+        cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        int countAfterDeletion = cursor.getCount();
+    }
+
+    @Test
+    public void deleteTheCorrectRecordWhenDeleteScheduledMedicationRecordIsCalled(){
+        testMedObject1.setTradeName("Lipitor");
+        testMedObject2.setTradeName("Januvia");
+        testMedObject3.setTradeName("Lispro");
+        testDBHandler.putMedicationRecord(20170501, "121212", gson.toJson(testMedObject1));
+        testDBHandler.putMedicationRecord(20170601, "141414", gson.toJson(testMedObject2));
+        testDBHandler.putMedicationRecord(20170701, "161616", gson.toJson(testMedObject3));
+        SQLiteDatabase returnedDB = testDBHandler.deleteScheduledMedicationRecord(20170501);
+        Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        cursor.moveToFirst();
+        assertEquals(testMedObject2.getTradeName(), gson.fromJson(cursor.getString(2), MedicationObject.class).getTradeName());
+        cursor.moveToNext();
+        assertEquals(testMedObject3.getTradeName(), gson.fromJson(cursor.getString(2), MedicationObject.class).getTradeName());
+    }
+
+    @Test
+    public void notDeleteAnyRecordsIfTheIDNumberPassedToDeleteScheduledMedicationRecordsDoesNotExist(){
+        testMedObject1.setTradeName("Lipitor");
+        testMedObject2.setTradeName("Januvia");
+        testMedObject3.setTradeName("Lispro");
+        testDBHandler.putMedicationRecord(20170501, "121212", gson.toJson(testMedObject1));
+        testDBHandler.putMedicationRecord(20170601, "141414", gson.toJson(testMedObject2));
+        testDBHandler.putMedicationRecord(20170701, "161616", gson.toJson(testMedObject3));
+        SQLiteDatabase returnedDB = testDBHandler.deleteScheduledMedicationRecord(20160203);
+        Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
+        assertEquals(3, cursor.getCount());
     }
 }

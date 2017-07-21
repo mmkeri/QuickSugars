@@ -34,6 +34,7 @@ public class MedicationEditingPageShould {
 
         Context context = InstrumentationRegistry.getTargetContext();
     }
+    /*
     @Test
     public void returnTheSelectedTimeFromTheTimespinner(){
         onView(withId(R.id.timeSpinner)).perform(click());
@@ -41,4 +42,5 @@ public class MedicationEditingPageShould {
         onView(withId(R.id.timeSpinner))
                 .check(matches(withText(containsString("0100"))));
     }
+    */
 }

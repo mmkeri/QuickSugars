@@ -56,7 +56,7 @@ public class WeightRecordEntryShould {
         // cause the database to be opened or created
         SQLiteDatabase db = testHandler.getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
-        testHandler.onCreate(db);
+        //testHandler.onCreate(db);
 
         mWeightRecordActivity = mActivityRule.getActivity();
 
