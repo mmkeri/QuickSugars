@@ -8,88 +8,170 @@
     tools:context="mmkeri.quicksugars.BloodSugarEntry"
     tools:showIn="@layout/activity_blood_sugar_entry">
 
-    <EditText
-        android:id="@+id/entryText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:gravity="center_vertical|center_horizontal"
-        android:inputType="numberDecimal"
-        android:hint="Enter reading here"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+    <LinearLayout
+        android:id="@+id/currentBSEntryLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="." />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/entryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/entryText"
+        android:layout_below="@+id/currentBSEntryLinearLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:onClick="saveTodayEntry"
-        android:text="Tap to enter reading" />
+        android:text="Tap to enter reading"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/changeToPreviousBSEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp"
         android:onClick="changeToPreviousBSEntry"
         android:layout_below="@id/entryButton"
         android:text="Tap to enter a reading from a previous day/time"
         android:visibility="visible" />
 
-    <EditText
-        android:id="@+id/previousBloodSugarEntry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Enter Blood Sugar here"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/previousBSEntryLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
-    <EditText
-        android:id="@+id/previousBSEntryTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Time: HHmmSS"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/previousBloodSugarEntry"
-        android:visibility="invisible"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="."/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsEntryp8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/previousBSEntryDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Date: YYYYmmDD"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/previousBSEntryTime"
-        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/previousBSTimeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/previousBSEntryLinearLayout"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsTimep9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsTimep10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/previousBSDateLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/previousBSTimeLinearLayout"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsDatep11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsDatep12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/bsDatep13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
     <Button
         android:id="@+id/previousBSEntryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="savePreviousBSEntry"
         android:text="Tap to enter historical blood sugar reading"
+        android:layout_below="@+id/previousBSDateLinearLayout"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/previousBSEntryDate"
-        android:layout_marginTop="40dp"
         android:visibility="invisible"/>
 
     <Button
@@ -98,7 +180,6 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/graph"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
         android:onClick="changeToCurrentBSEntry"
         android:layout_below="@id/previousBSEntryButton"
         android:text="Tap to change to todays blood sugar entry page"
@@ -108,8 +189,7 @@
         android:id="@+id/setDelayedBSCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/changeToCurrentBSEntry"
         android:text="Tap to set a reminder to check blood sugar" />
 </RelativeLayout>
