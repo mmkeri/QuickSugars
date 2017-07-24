@@ -15,78 +15,115 @@
         android:ems="10"
         android:hint="Enter symptom experienced today"
         android:inputType="textPersonName"
-        android:layout_above="@+id/todayTimeEntry"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="13dp" />
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/currentTimeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/todaySymptom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/todaySymptomButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tap to enter symptom for today"
-        android:layout_alignBottom="@+id/previousSymptom"
-        android:layout_alignRight="@+id/previousSymptomButton"
-        android:layout_alignEnd="@+id/previousSymptomButton"
+        android:layout_below="@id/currentTimeLinearLayout"
+        android:layout_centerHorizontal="true"
         android:layout_marginRight="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="58dp" />
+        android:layout_marginEnd="12dp" />
 
     <EditText
         android:id="@+id/previousSymptom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_below="@id/todaySymptomButton"
         android:hint="Enter symptom for previous day"
         android:inputType="textPersonName"
-        android:layout_marginBottom="17dp"
-        android:layout_above="@+id/previousTimeEntry"
         android:layout_alignLeft="@+id/todaySymptom"
         android:layout_alignStart="@+id/todaySymptom"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp" />
 
-    <EditText
-        android:id="@+id/previousDateEntry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/previousSymptom"
-        android:layout_alignStart="@+id/previousSymptom"
-        android:layout_below="@+id/previousSymptom"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:hint="Enter date: YYYYmmDD"
-        android:inputType="date" />
+    <LinearLayout
+        android:id="@+id/previousTimeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/previousSymptom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/previousDateLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/previousTimeLinearLayout"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/p6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/p7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
     <Button
         android:id="@+id/previousSymptomButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/previousDateLinearLayout"
         android:text="Tap to enter symptom from previously"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="23dp" />
-
-    <EditText
-        android:id="@+id/previousTimeEntry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/previousSymptomButton"
-        android:layout_alignLeft="@+id/previousSymptom"
-        android:layout_alignStart="@+id/previousSymptom"
-        android:layout_marginBottom="78dp"
-        android:ems="10"
-        android:hint="Enter time symptom experienced"
-        android:inputType="time" />
-
-    <EditText
-        android:id="@+id/todayTimeEntry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/todaySymptomButton"
-        android:layout_alignLeft="@+id/todaySymptom"
-        android:layout_alignStart="@+id/todaySymptom"
-        android:layout_marginBottom="13dp"
-        android:ems="10"
-        android:hint="Enter time symptom experienced"
-        android:inputType="time" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

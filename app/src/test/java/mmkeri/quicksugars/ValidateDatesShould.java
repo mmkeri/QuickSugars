@@ -1,5 +1,6 @@
 package mmkeri.quicksugars;
 
+import org.joda.time.LocalDate;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -14,6 +15,7 @@ public class ValidateDatesShould {
 
     private String[] months = {"January", "February", "March", "April", "May", "June", "July",
             "August", "September", "October", "November", "December"};
+    private LocalDate testDate = new LocalDate(2017, 2, 27);
 
     @Test
     public void convertFebruaryToTwoUsingConvertMonthToInt(){
@@ -34,5 +36,16 @@ public class ValidateDatesShould {
     @Test
     public void returnFalseForFebruary31UsingTestValidDate(){
         assertFalse(ValidateDate.testValidDate(2017, 2, 31));
+    }
+
+    @Test
+    public void returnTrueForFebruary27UsingTestValidDate(){
+        assertTrue(ValidateDate.testValidDate(2017, 2, 27));
+    }
+
+    @Test
+    public void correctlyConverUsingConvertIntegerDatesToLocalDate(){
+        LocalDate result = ValidateDate.convertIntegerDatesToLocalDate(2017, 2, 27);
+        assertEquals(testDate, result);
     }
 }
