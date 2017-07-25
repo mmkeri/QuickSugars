@@ -11,7 +11,8 @@
         android:layout_toEndOf="@+id/editText"
         android:layout_toRightOf="@+id/editText"
         android:text="TextView"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/editText"
@@ -22,10 +23,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@android:color/transparent"
-        android:ems="10"
         android:inputType="textPersonName"
         android:text="Food Item"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/editText2"
@@ -35,10 +36,9 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editText"
         android:background="@android:color/transparent"
-        android:ems="10"
         android:inputType="textPersonName"
         android:text="Carbs"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/carbsView"
@@ -48,7 +48,7 @@
         android:layout_toEndOf="@+id/editText2"
         android:layout_toRightOf="@+id/editText2"
         android:text="TextView"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/editText3"
@@ -58,10 +58,9 @@
         android:layout_toEndOf="@+id/carbsView"
         android:layout_toRightOf="@+id/carbsView"
         android:background="@android:color/transparent"
-        android:ems="10"
         android:inputType="textPersonName"
         android:text="Protein"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/proteinView"
@@ -71,7 +70,7 @@
         android:layout_toEndOf="@+id/editText3"
         android:layout_toRightOf="@+id/editText3"
         android:text="TextView"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/editText4"
@@ -81,10 +80,9 @@
         android:layout_toEndOf="@+id/proteinView"
         android:layout_toRightOf="@+id/proteinView"
         android:background="@android:color/transparent"
-        android:ems="10"
         android:inputType="textPersonName"
         android:text="Fat"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/fatView"
@@ -94,5 +92,5 @@
         android:layout_toEndOf="@+id/editText4"
         android:layout_toRightOf="@+id/editText4"
         android:text="TextView"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 </RelativeLayout>
