@@ -11,13 +11,14 @@
 
     <Button
         android:id="@+id/goToSearch"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToSearchPage"
         android:text="Tap to search for food item"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <TextView
         android:id="@+id/foodSearchResult"
@@ -30,13 +31,14 @@
 
     <Button
         android:id="@+id/manualFoodInput"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/foodSearchResult"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
         android:onClick="goToManualInput"
-        android:text="Tap to enter food info manually" />
+        android:text="Tap to enter food info manually"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <TextView
         android:id="@+id/foodItemEntry"
@@ -64,25 +66,27 @@
 
     <Button
         android:id="@+id/foodItemEntryButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="saveTodayEntry"
         android:text="Tap to enter food item"
         android:layout_below="@+id/foodItemEntry"
         android:visibility="visible"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/changeToPreviousFoodItem"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="changeToPreviousFoodItemEntry"
         android:text="Tap to enter food item from previous day"
         android:visibility="visible"
         android:layout_below="@+id/foodItemEntryButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="64dp" />
+        android:layout_marginBottom="64dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
 
     <LinearLayout
@@ -117,18 +121,19 @@
 
     <Button
         android:id="@+id/previousFoodItemEntryButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/previousFoodItemEntry"
         android:layout_alignLeft="@+id/foodItemEntryButton"
         android:layout_alignStart="@+id/foodItemEntryButton"
         android:onClick="savePreviousEntry"
         android:text="Tap to enter food item"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/changeToCurrentFoodItemEntry"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="changeToCurrentFoodItemEntry"
         android:text="Tap to change to todays food item entry page"
@@ -136,7 +141,8 @@
         android:gravity="center_horizontal"
         android:layout_below="@+id/foodItemLinearLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="22dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
 
 

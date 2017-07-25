@@ -16,12 +16,13 @@
 
     <Button
         android:id="@+id/avgBloodSugarButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Show graph of blood sugars" />
+        android:text="Show graph of blood sugars"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <TextView
         android:id="@+id/HgbA1C"
@@ -34,22 +35,24 @@
 
     <Button
         android:id="@+id/weightGraphButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/avgBloodSugarButton"
         android:layout_alignStart="@+id/avgBloodSugarButton"
         android:layout_below="@+id/HgbA1C"
         android:layout_marginTop="25dp"
         android:onClick="graphWeights"
-        android:text="Show graph of weights" />
+        android:text="Show graph of weights"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/deitaryGraphButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/weightGraphButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Show graph of deitary intake" />
+        android:text="Show graph of deitary intake"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
 </RelativeLayout>

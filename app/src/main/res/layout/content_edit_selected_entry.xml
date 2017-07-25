@@ -17,9 +17,10 @@
 
     <Button
         android:id="@+id/deleteEntryButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editEntryListView"
         android:layout_centerHorizontal="true"
-        android:text="Tap to delete entry" />
+        android:text="Tap to delete entry"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </RelativeLayout>

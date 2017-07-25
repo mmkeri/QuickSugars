@@ -10,39 +10,43 @@
 
     <Button
         android:id="@+id/editBSEntries"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
-        android:text="Tap to edit blood sugar entries" />
+        android:text="Tap to edit blood sugar entries"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/editWeightEntries"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editBSEntries"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
-        android:text="Tap to edit weight entries" />
+        android:text="Tap to edit weight entries"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/editSymptomEntries"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/editWeightEntries"
         android:layout_alignRight="@+id/editWeightEntries"
         android:layout_below="@+id/editWeightEntries"
         android:layout_marginTop="65dp"
-        android:text="Tap to edit Symptom entries" />
+        android:text="Tap to edit Symptom entries"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/editFoodItemEntries"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/editSymptomEntries"
         android:layout_alignRight="@+id/editSymptomEntries"
         android:layout_below="@+id/editSymptomEntries"
         android:layout_marginTop="56dp"
-        android:text="Tap to edit food item entries" />
+        android:text="Tap to edit food item entries"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </RelativeLayout>

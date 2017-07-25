@@ -10,19 +10,21 @@
 
     <Button
         android:id="@+id/setMedTakenButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="177dp"
-        android:text="Medication taken" />
+        android:text="Medication taken"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/setDelayButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/setMedTakenButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
-        android:text="Delay taking medication" />
+        android:text="Delay taking medication"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </RelativeLayout>

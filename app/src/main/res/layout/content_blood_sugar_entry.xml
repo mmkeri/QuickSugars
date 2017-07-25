@@ -187,7 +187,7 @@
             <kankan.wheel.widget.WheelView
                 android:id="@+id/bsDatep11"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
             <kankan.wheel.widget.WheelView
                 android:id="@+id/bsDatep12"
                 android:layout_width="wrap_content"

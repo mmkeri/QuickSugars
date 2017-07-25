@@ -10,12 +10,13 @@
 
     <EditText
         android:id="@+id/todaySymptom"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter symptom experienced today"
         android:inputType="textPersonName"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:layout_alignParentTop="true"/>
 
     <LinearLayout
@@ -45,17 +46,18 @@
 
     <Button
         android:id="@+id/todaySymptomButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tap to enter symptom for today"
         android:layout_below="@id/currentTimeLinearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="12dp"
-        android:layout_marginEnd="12dp" />
+        android:layout_marginEnd="12dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <EditText
         android:id="@+id/previousSymptom"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_below="@id/todaySymptomButton"
@@ -64,7 +66,8 @@
         android:layout_alignLeft="@+id/todaySymptom"
         android:layout_alignStart="@+id/todaySymptom"
         android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp" />
+        android:layout_marginStart="12dp"
+        android:gravity="center"/>
 
     <LinearLayout
         android:id="@+id/previousTimeLinearLayout"
@@ -121,9 +124,10 @@
     </LinearLayout>
     <Button
         android:id="@+id/previousSymptomButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/previousDateLinearLayout"
         android:text="Tap to enter symptom from previously"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </RelativeLayout>
