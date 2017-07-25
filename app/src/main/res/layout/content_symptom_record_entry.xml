@@ -17,14 +17,16 @@
         android:inputType="textPersonName"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"/>
 
     <LinearLayout
         android:id="@+id/currentTimeLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/todaySymptom"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -53,7 +55,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginRight="12dp"
         android:layout_marginEnd="12dp"
-        style="@style/Widget.AppCompat.Button.Colored"/>
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/previousSymptom"
@@ -67,6 +70,7 @@
         android:layout_alignStart="@+id/todaySymptom"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"/>
 
     <LinearLayout
@@ -74,7 +78,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/previousSymptom"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -98,7 +103,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/previousTimeLinearLayout"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -129,5 +135,6 @@
         android:layout_below="@id/previousDateLinearLayout"
         android:text="Tap to enter symptom from previously"
         android:layout_centerHorizontal="true"
-        style="@style/Widget.AppCompat.Button.Colored"/>
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="20dp"/>
 </RelativeLayout>

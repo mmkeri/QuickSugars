@@ -14,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/listViewArea"
         android:layout_centerHorizontal="true"
         android:text="Tap here to stop alarms for medication"
         style="@style/Widget.AppCompat.Button.Colored"/>
