@@ -27,7 +27,7 @@
             <kankan.wheel.widget.WheelView
                 android:id="@+id/bsEntryp1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
 
             <kankan.wheel.widget.WheelView
                 android:id="@+id/bsEntryp2"
@@ -49,28 +49,46 @@
                 android:id="@+id/bsEntryp4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/dl"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:id="@+id/entryButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/currentBSEntryLinearLayout"
         android:layout_centerHorizontal="true"
         android:onClick="saveTodayEntry"
         android:text="Tap to enter reading"
-        android:visibility="visible"/>
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:id="@+id/changeToPreviousBSEntry"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:onClick="changeToPreviousBSEntry"
         android:layout_below="@id/entryButton"
         android:text="Tap to enter a reading from a previous day/time"
-        android:visibility="visible" />
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/setDelayedBSCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/changeToCurrentBSEntry"
+        android:text="Tap to set a reminder to check blood sugar"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <LinearLayout
         android:id="@+id/previousBSEntryLinearLayout"
@@ -108,6 +126,11 @@
                 android:id="@+id/bsEntryp8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/dl"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -115,6 +138,7 @@
         android:id="@+id/previousBSTimeLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/previousBSEntryLinearLayout"
         android:orientation="vertical">
         <LinearLayout
@@ -129,23 +153,34 @@
                 android:id="@+id/bsTimep9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H"
+                android:layout_gravity="center"/>
             <kankan.wheel.widget.WheelView
                 android:id="@+id/bsTimep10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/previousBSDateLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/previousBSTimeLinearLayout"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/wheel_bg"
+            android:background="@drawable/wheel_val"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
 
@@ -166,30 +201,27 @@
     </LinearLayout>
     <Button
         android:id="@+id/previousBSEntryButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="savePreviousBSEntry"
         android:text="Tap to enter historical blood sugar reading"
         android:layout_below="@+id/previousBSDateLinearLayout"
         android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/changeToCurrentBSEntry"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/graph"
         android:layout_centerHorizontal="true"
         android:onClick="changeToCurrentBSEntry"
         android:layout_below="@id/previousBSEntryButton"
         android:text="Tap to change to todays blood sugar entry page"
-        android:visibility="invisible" />
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
-    <Button
-        android:id="@+id/setDelayedBSCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/changeToCurrentBSEntry"
-        android:text="Tap to set a reminder to check blood sugar" />
 </RelativeLayout>
