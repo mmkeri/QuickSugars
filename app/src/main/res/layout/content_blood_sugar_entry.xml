@@ -81,6 +81,16 @@
         android:visibility="visible"
         style="@style/Widget.AppCompat.Button.Colored"/>
     <Button
+        android:id="@+id/btn_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap to enter reading by voice"
+        android:layout_below="@+id/changeToPreviousBSEntry"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
         android:id="@+id/setDelayedBSCheck"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
