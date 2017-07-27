@@ -69,6 +69,7 @@ public class MyDBHandlerShould {
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS);
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS);
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_WEIGHTS);
         testDBHandler.onCreate(db);
 
         //RenamingDelegatingContext context
@@ -454,5 +455,33 @@ public class MyDBHandlerShould {
         SQLiteDatabase returnedDB = testDBHandler.deleteScheduledMedicationRecord(20160203);
         Cursor cursor = returnedDB.rawQuery("SELECT * FROM scheduledMedications", null);
         assertEquals(3, cursor.getCount());
+    }
+
+    @Test
+    public void showOneRecordSavedWhenOnlyOneSetOfValuesPassedToPutWeightRecord(){
+        SQLiteDatabase db = testDBHandler.putWeightRecord(20170101, 125.5);
+        Cursor cursor = db.rawQuery("SELECT * FROM weightRecords", null);
+        assertEquals(1, cursor.getCount());
+    }
+
+    @Test
+    public void showTwoRecordsSavedWhenTwoSetsOfValuesPassedToPutWeightRecord(){
+        testDBHandler.putWeightRecord(20170101, 125.5);
+        SQLiteDatabase db = testDBHandler.putWeightRecord(20170202, 130);
+        Cursor cursor = db.rawQuery("SELECT * FROM weightRecords", null);
+        assertEquals(2, cursor.getCount());
+    }
+
+    @Test
+    public void returnTheExpectedResultsWhenGetWeightRecordsIsCalled(){
+        testDBHandler.putWeightRecord(20170101, 125.5);
+        testDBHandler.putWeightRecord(20170202, 130);
+        Cursor cursor = testDBHandler.getWeightRecords();
+        cursor.moveToFirst();
+        assertEquals(20170101, cursor.getInt(0));
+        assertEquals(125.5, cursor.getDouble(1), 0.5);
+        cursor.moveToNext();
+        assertEquals(20170202, cursor.getInt(0));
+        assertEquals(130, cursor.getDouble(1), 0.5);
     }
 }
