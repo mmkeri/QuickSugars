@@ -79,4 +79,6 @@
     <string name="title_activity_symptom_record_entry">SymptomRecordEntry</string>
     <string name="title_activity_edit_entries">EditEntries</string>
     <string name="title_activity_edit_selected_entry">EditSelectedEntry</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_set_up_screen">SetUpScreen</string>
 </resources>

@@ -25,16 +25,17 @@ import static org.hamcrest.Matchers.is;
 
 public class MedicationEditingPageShould {
 
+    /*
     @Rule
-    public ActivityTestRule<BloodSugarEntry> mActivityRule =
-            new ActivityTestRule(MedicationEditingPage.class);
-
+    public ActivityTestRule<CustomMedicationEdittingRowAdapter> mActivityRule =
+            new ActivityTestRule(CustomMedicationEdittingRowAdapter.class);
+       */
     @Before
     public void setUp() throws Exception {
 
         Context context = InstrumentationRegistry.getTargetContext();
     }
-    /*
+
     @Test
     public void returnTheSelectedTimeFromTheTimespinner(){
         onView(withId(R.id.timeSpinner)).perform(click());
@@ -42,5 +43,5 @@ public class MedicationEditingPageShould {
         onView(withId(R.id.timeSpinner))
                 .check(matches(withText(containsString("0100"))));
     }
-    */
+
 }

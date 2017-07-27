@@ -1,8 +1,11 @@
 package mmkeri.quicksugars;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.speech.RecognizerIntent;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.espresso.intent.rule.IntentsTestRule;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -18,7 +21,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.intent.Intents.intended;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.hasAction;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.hasData;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.toPackage;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.intent.Intents.intended;
 import static junit.framework.Assert.assertEquals;
+import static org.hamcrest.Matchers.allOf;
 
 @RunWith(AndroidJUnit4.class)
 public class BloodSugarEntryShould {
@@ -26,6 +38,10 @@ public class BloodSugarEntryShould {
     @Rule
     public ActivityTestRule<BloodSugarEntry> mActivityRule =
             new ActivityTestRule(BloodSugarEntry.class);
+
+    @Rule
+    public IntentsTestRule<BloodSugarEntry> mmActivityRule =
+            new IntentsTestRule<>(BloodSugarEntry.class);
 
     private BloodSugarEntry mBloodSugarEntry;
 
@@ -142,4 +158,13 @@ public class BloodSugarEntryShould {
         assertEquals(expected.get(1).getBloodSugarReading(), result.get(1).getBloodSugarReading());
         assertEquals(expected.get(1).getTimeOfBloodSugarCheck(), result.get(1).getTimeOfBloodSugarCheck());
     }
+    /*
+    @Test
+    public void sendAndIntentToTheVoiceRecognizerWhenVoiceButtonTapped(){
+        onView(withId(R.id.btn_speak)).perform(click());
+        intended(allOf(
+                hasAction(Intent.ACTION_CALL),
+                toPackage(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)));
+    }
+    */
 }

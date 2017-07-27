@@ -24,4 +24,7 @@
         android:title="Scheduled Medication List"/>
     <item android:id="@+id/select_entries_to_edit"
         android:title="Edit Previous Entries"/>
+    <item android:id="@+id/edit_gender"
+        android:title="Edit gender"/>
+
 </menu>

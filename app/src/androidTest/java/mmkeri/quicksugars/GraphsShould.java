@@ -45,6 +45,8 @@ public class GraphsShould {
         SQLiteDatabase db = testHandler.getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
         db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS);
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_WEIGHTS);
+        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS);
         testHandler.onCreate(db);
     }
 

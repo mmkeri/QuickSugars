@@ -1,7 +1,6 @@
 package mmkeri.quicksugars;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 
@@ -23,19 +22,19 @@ public class CompletionOfMedicationNotificationShould {
     public ActivityTestRule<CompletionOfMedicationNotification> mActivityRule =
             new ActivityTestRule(CompletionOfMedicationNotification.class);
 
-    private CompletionOfMedicationNotification mCompletionOfMEdicationNotification;
+    private CompletionOfMedicationNotification mCompletionOfMedicationNotification;
     @Before
     public void setUp(){
 
         Context context = InstrumentationRegistry.getTargetContext();
 
-        mCompletionOfMEdicationNotification = mActivityRule.getActivity();
+        mCompletionOfMedicationNotification = mActivityRule.getActivity();
     }
 
     @After
     public void cleanUp(){
 
-        mCompletionOfMEdicationNotification = null;
+        mCompletionOfMedicationNotification = null;
     }
 
     @Test
