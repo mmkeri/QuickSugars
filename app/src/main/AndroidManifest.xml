@@ -27,7 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MedicationSelectionPage">
+        <activity
+            android:name=".MedicationSelectionPage"
+            android:label="MedicationSelectionPage">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -38,7 +40,7 @@
         </activity>
         <activity
             android:name=".WeightRecordEntry"
-            android:label="@string/title_activity_weight_record_entry"
+            android:label="WeightRecordEntry"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MedicationEditingPage"
