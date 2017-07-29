@@ -42,8 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignEnd="@+id/tradeName"
-        android:layout_alignRight="@+id/tradeName"
+        android:layout_alignStart="@+id/tradeName"
+        android:layout_alignLeft="@+id/tradeName"
         android:text="TextView" />
 
 </RelativeLayout>
