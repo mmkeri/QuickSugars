@@ -70,7 +70,8 @@
         android:onClick="saveTodayEntry"
         android:text="Tap to enter reading"
         android:layout_marginTop="20dp"
-        android:visibility="visible" />
+        android:visibility="visible"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/changeToPreviousBSEntry"
@@ -81,7 +82,8 @@
         android:layout_below="@id/entryButton"
         android:text="Tap to enter a reading from a previous day/time"
         android:layout_marginTop="20dp"
-        android:visibility="visible" />
+        android:visibility="visible"
+        style="@style/Widget.AppCompat.Button.Colored"/>
     <Button
         android:id="@+id/btn_speak"
         android:layout_width="match_parent"
@@ -90,7 +92,8 @@
         android:layout_below="@+id/changeToPreviousBSEntry"
         android:layout_marginTop="20dp"
         android:visibility="visible"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
     <Button
         android:id="@+id/setDelayedBSCheck"
         android:layout_width="match_parent"
@@ -98,7 +101,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/changeToCurrentBSEntry"
         android:text="Tap to set a reminder to check blood sugar"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <LinearLayout
         android:id="@+id/previousBSEntryLinearLayout"
