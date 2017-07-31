@@ -8,6 +8,30 @@
         <item name="colorAccent">@android:color/holo_blue_bright</item>
     </style>
 
+    <style name="AppSpinnerTheme" parent="AppTheme">
+
+        <!-- For the resting Spinner style -->
+        <item name="android:spinnerItemStyle">
+            @style/spinnerItemStyle
+        </item>
+
+        <!-- For each individual Spinner list item once clicked on -->
+        <item name="android:spinnerDropDownItemStyle">
+            @style/spinnerDropDownItemStyle
+        </item>
+
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:textSize">300dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:textSize">300dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
