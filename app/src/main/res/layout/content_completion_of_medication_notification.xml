@@ -27,4 +27,13 @@
         android:layout_marginTop="52dp"
         android:text="Delay taking medication"
         style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <TextView
+        android:id="@+id/takenMedicationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setDelayButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:text="TextView" />
 </RelativeLayout>

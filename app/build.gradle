@@ -43,4 +43,7 @@ dependencies {
     compile 'com.jjoe64:graphview:4.2.1'
     testCompile 'junit:junit:4.12'
     testCompile 'org.robolectric:robolectric:3.0'
+    compile 'com.itextpdf:itext-pdfa:5.5.11'
+    compile files('libs/itextpdf-5.5.11.jar')
+    compile 'org.apache.ant:ant:1.8.0'
 }
