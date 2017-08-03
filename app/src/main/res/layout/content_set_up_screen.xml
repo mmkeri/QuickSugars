@@ -25,7 +25,8 @@
         android:layout_marginTop="17dp"
         android:layout_below="@+id/textView17"
         android:layout_toLeftOf="@+id/textView17"
-        android:layout_toStartOf="@+id/textView17" />
+        android:layout_toStartOf="@+id/textView17"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/femaleButton"
@@ -34,7 +35,8 @@
         android:layout_alignTop="@+id/maleButton"
         android:layout_toEndOf="@+id/textView17"
         android:layout_toRightOf="@+id/textView17"
-        android:text="Female" />
+        android:text="Female"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <TextView
         android:id="@+id/dateOfLastEyeExam"
@@ -121,18 +123,20 @@
 
     <Button
         android:id="@+id/setEyeExamAlarmsButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tap to set alarm for eye exam"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/setAnnualExamButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/enterDateOfLastAnnualExam"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
-        android:text="Tap to set alarm for annual exam" />
+        android:text="Tap to set alarm for annual exam"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </RelativeLayout>
