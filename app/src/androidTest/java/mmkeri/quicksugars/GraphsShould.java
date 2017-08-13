@@ -12,6 +12,8 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
+import mmkeri.quicksugars.utils.DBTestUtils;
+
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -39,15 +41,7 @@ public class GraphsShould {
 
         //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
-        testHandler = new MyDBHandler(context);
-
-        // cause the database to be opened or created
-        SQLiteDatabase db = testHandler.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS);
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_WEIGHTS);
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS);
-        testHandler.onCreate(db);
+        testHandler = DBTestUtils.resetDatabase(context);
     }
 
     @After

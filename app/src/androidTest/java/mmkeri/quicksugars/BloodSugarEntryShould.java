@@ -21,6 +21,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import mmkeri.quicksugars.utils.DBTestUtils;
+
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.intent.Intents.intended;
@@ -36,12 +38,12 @@ import static org.hamcrest.Matchers.allOf;
 public class BloodSugarEntryShould {
 
     @Rule
-    public ActivityTestRule<BloodSugarEntry> mActivityRule =
+    public final ActivityTestRule<BloodSugarEntry> mActivityRule =
             new ActivityTestRule(BloodSugarEntry.class);
 
-    @Rule
-    public IntentsTestRule<BloodSugarEntry> mmActivityRule =
-            new IntentsTestRule<>(BloodSugarEntry.class);
+//    @Rule
+//    public IntentsTestRule<BloodSugarEntry> mmActivityRule =
+  //          new IntentsTestRule<>(BloodSugarEntry.class);
 
     private BloodSugarEntry mBloodSugarEntry;
 
@@ -69,14 +71,7 @@ public class BloodSugarEntryShould {
 
         //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
-        testHandler = new MyDBHandler(context);
-
-        // cause the database to be opened or created
-        SQLiteDatabase db = testHandler.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS + ";");
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS + ";");
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS + ";");
-        //testHandler.onCreate(db);
+        testHandler = DBTestUtils.resetDatabase(context);
 
         mBloodSugarEntry = mActivityRule.getActivity();
         bsEntry1 = new BloodSugarMeasurement(12.2, testTime, firstDateAsInt);
@@ -85,7 +80,7 @@ public class BloodSugarEntryShould {
 
     @After
     public void cleanUp(){
-        mActivityRule = null;
+        //mActivityRule = null;
         testHandler.deleteDatabase();
         testDB = null;
     }

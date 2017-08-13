@@ -14,6 +14,8 @@ import org.junit.Test;
 
 import java.util.List;
 
+import mmkeri.quicksugars.utils.DBTestUtils;
+
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -41,7 +43,6 @@ public class SymptomRecordEntryShould {
     private int secondDateAsInt = 20170201;
     private int thirdDateAsInt = 20170301;
     private LocalTime testTime = new LocalTime(12, 12, 12);
-    private MyDBHandler testHandler;
     private SQLiteDatabase testDB;
     private SymptomRecord testSymptomRecord1;
     private SymptomRecord testSymptomRecord2;
@@ -52,14 +53,7 @@ public class SymptomRecordEntryShould {
 
         //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
-        testHandler = new MyDBHandler(context);
-
-        // cause the database to be opened or created
-        SQLiteDatabase db = testHandler.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS + ";");
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS + ";");
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS + ";");
-        //testHandler.onCreate(db);
+        DBTestUtils.resetDatabase(context);
 
         mSymptomRecordEntry = mActivityRule.getActivity();
 

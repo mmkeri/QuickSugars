@@ -44,7 +44,7 @@ public class ValidateDatesShould {
     }
 
     @Test
-    public void correctlyConverUsingConvertIntegerDatesToLocalDate(){
+    public void correctlyConvertUsingConvertIntegerDatesToLocalDate(){
         LocalDate result = ValidateDate.convertIntegerDatesToLocalDate(2017, 2, 27);
         assertEquals(testDate, result);
     }

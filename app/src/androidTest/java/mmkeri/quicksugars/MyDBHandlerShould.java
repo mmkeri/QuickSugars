@@ -22,6 +22,8 @@ import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 
+import mmkeri.quicksugars.utils.DBTestUtils;
+
 /**
  * Instrumentation test, which will execute on an Android device.
  *
@@ -62,15 +64,7 @@ public class MyDBHandlerShould {
 
         //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
-        testDBHandler = new MyDBHandler(context);
-
-        // cause the database to be opened or created
-        SQLiteDatabase db = testDBHandler.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_FOODS);
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_MEDICATIONS);
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_WEIGHTS);
-        testDBHandler.onCreate(db);
+        testDBHandler = DBTestUtils.resetDatabase(context);
 
         //RenamingDelegatingContext context
         //        = new RenamingDelegatingContext(getContext(), TEST_FILE_PREFIX);

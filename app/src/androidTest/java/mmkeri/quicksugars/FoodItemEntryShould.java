@@ -3,6 +3,7 @@ package mmkeri.quicksugars;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.annotation.UiThreadTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -17,6 +18,8 @@ import org.junit.runner.RunWith;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import mmkeri.quicksugars.utils.DBTestUtils;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -47,12 +50,7 @@ public class FoodItemEntryShould {
 
         //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
-        testHandler = new MyDBHandler(context);
-
-        // cause the database to be opened or created
-        SQLiteDatabase db = testHandler.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS " + MyDBHandler.TABLE_LOGS);
-        testHandler.onCreate(db);
+        testHandler = DBTestUtils.resetDatabase(context);
 
         mFoodRecordActivity = mActivityRule.getActivity();
 
@@ -74,6 +72,7 @@ public class FoodItemEntryShould {
     }
 
     @Test
+    @UiThreadTest
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddTodaysRecordToDB(){
         mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
         testDB = mFoodRecordActivity.addTodaysRecordToDB(20170106, item2, defaultTime);
@@ -86,6 +85,7 @@ public class FoodItemEntryShould {
     }
 
     @Test
+    @UiThreadTest
     public void returnCountOfOneWhenASingleRecordIsAddedUsingAddTodaysRecordToDB(){
         testDB = mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
@@ -95,6 +95,7 @@ public class FoodItemEntryShould {
     }
 
     @Test
+    @UiThreadTest
     public void returnCountOfOneWhenTwoRecordsEnteredOnTheSameDayUsingAddTodaysRecordToDB(){
         mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
         testDB = mFoodRecordActivity.addTodaysRecordToDB(20170105, item2, defaultTime);
@@ -105,6 +106,7 @@ public class FoodItemEntryShould {
     }
 
     @Test
+    @UiThreadTest
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddPreviousRecordToDB(){
         mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
         testDB = mFoodRecordActivity.addPreviousRecordToDB(20170106, item2, defaultTime);
@@ -143,6 +145,7 @@ public class FoodItemEntryShould {
     }
 
     @Test
+    @UiThreadTest
     public void returnAnAccurateListOfWeightMeasurementsWhenGetWeightMeasureIsCalled(){
         ArrayList<FoodItemRecord> expected = new ArrayList<>();
         expected.add(foodItemRecord1);
