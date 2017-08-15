@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="385dp"
-    android:layout_height="485dp"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="8dp">
-    tools:context="mmkeri.quicksugars.MedicationSelectionPage">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="385dp"
+        android:layout_height="485dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        tools:context="mmkeri.quicksugars.MedicationSelectionPage">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/changeToMedicationSchedule"
-        android:text="@string/entries_complete"
-        android:onClick="handleSelections"
-        android:layout_alignParentBottom="true"
-        style="@style/Widget.AppCompat.Button.Colored"/>
-    <ListView
-        android:id="@+id/medicationEditting"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_above="@id/changeToMedicationSchedule"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/changeToMedicationSchedule"
+            android:text="@string/entries_complete"
+            android:onClick="handleSelections"
+            android:layout_alignParentBottom="true"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+        <ListView
+            android:id="@+id/medicationEditting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/changeToMedicationSchedule"/>
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
