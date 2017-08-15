@@ -26,7 +26,7 @@
         android:layout_below="@+id/textView17"
         android:layout_toLeftOf="@+id/textView17"
         android:layout_toStartOf="@+id/textView17"
-        style="@style/Widget.AppCompat.Button.Colored"/>
+        android:background="@drawable/buttonselector"/>
 
     <Button
         android:id="@+id/femaleButton"
@@ -36,7 +36,7 @@
         android:layout_toEndOf="@+id/textView17"
         android:layout_toRightOf="@+id/textView17"
         android:text="Female"
-        style="@style/Widget.AppCompat.Button.Colored"/>
+        android:background="@drawable/buttonselector"/>
 
     <TextView
         android:id="@+id/dateOfLastEyeExam"

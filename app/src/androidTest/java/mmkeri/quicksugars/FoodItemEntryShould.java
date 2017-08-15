@@ -26,29 +26,25 @@ import static junit.framework.Assert.assertEquals;
 public class FoodItemEntryShould {
 
     @Rule
-    public ActivityTestRule<FoodItemEntry> mActivityRule =
+    public final ActivityTestRule<FoodItemEntry> mActivityRule =
             new ActivityTestRule(FoodItemEntry.class);
 
     private FoodItemEntry mFoodRecordActivity;
+    private final String item1 = "Bannana";
+    private final String item2 = "Apple";
+    private final LocalDate firstDate = new LocalDate(2017, 1, 1);
+    private final LocalTime defaultTime = new LocalTime(12, 01, 01);
+    private final int testDateAsInt = 20170501;
 
-    private LocalDate firstDate = new LocalDate(2017, 1, 1);
-    private LocalDate secondDate = new LocalDate(2017, 2, 1);
-    private LocalDate thirdDate = new LocalDate(2017, 3, 1);
-    private String item1 = "Bannana";
-    private String item2 = "Apple";
-    private String item3 = "Orange";
-    private LocalTime defaultTime = new LocalTime(12, 01, 01);
     private MyDBHandler testHandler;
-    private SQLiteDatabase testDB;
     private FoodItemRecord foodItemRecord1;
     private FoodItemRecord foodItemRecord2;
-    private int testDateAsInt = 20170501;
+
 
 
     @Before
     public void setUp(){
 
-        //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
         testHandler = DBTestUtils.resetDatabase(context);
 
@@ -60,9 +56,7 @@ public class FoodItemEntryShould {
 
     @After
     public void cleanUp(){
-        mActivityRule = null;
         testHandler.deleteDatabase();
-        testDB = null;
     }
 
     @Test
@@ -75,7 +69,7 @@ public class FoodItemEntryShould {
     @UiThreadTest
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddTodaysRecordToDB(){
         mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
-        testDB = mFoodRecordActivity.addTodaysRecordToDB(20170106, item2, defaultTime);
+        SQLiteDatabase testDB = mFoodRecordActivity.addTodaysRecordToDB(20170106, item2, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
         List<FoodItemRecord> resultList1 = mFoodRecordActivity.getFoodItems(new LocalDate(2017, 01, 05));
@@ -87,7 +81,7 @@ public class FoodItemEntryShould {
     @Test
     @UiThreadTest
     public void returnCountOfOneWhenASingleRecordIsAddedUsingAddTodaysRecordToDB(){
-        testDB = mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
+        SQLiteDatabase testDB = mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
         List<FoodItemRecord> resultList1 = mFoodRecordActivity.getFoodItems(new LocalDate(2017, 01, 05));
@@ -98,7 +92,7 @@ public class FoodItemEntryShould {
     @UiThreadTest
     public void returnCountOfOneWhenTwoRecordsEnteredOnTheSameDayUsingAddTodaysRecordToDB(){
         mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
-        testDB = mFoodRecordActivity.addTodaysRecordToDB(20170105, item2, defaultTime);
+        SQLiteDatabase testDB = mFoodRecordActivity.addTodaysRecordToDB(20170105, item2, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords;", null).getCount();
         assertEquals(1, result);
         List<FoodItemRecord> resultList1 = mFoodRecordActivity.getFoodItems(new LocalDate(2017, 01, 05));
@@ -109,7 +103,7 @@ public class FoodItemEntryShould {
     @UiThreadTest
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddPreviousRecordToDB(){
         mFoodRecordActivity.addTodaysRecordToDB(20170105, item1, defaultTime);
-        testDB = mFoodRecordActivity.addPreviousRecordToDB(20170106, item2, defaultTime);
+        SQLiteDatabase testDB = mFoodRecordActivity.addPreviousRecordToDB(20170106, item2, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
         List<FoodItemRecord> resultList1 = mFoodRecordActivity.getFoodItems(new LocalDate(2017, 01, 05));
@@ -120,7 +114,7 @@ public class FoodItemEntryShould {
 
     @Test
     public void returnCountOfOneWhenASingleRecordIsAddedUsingAddPreviousRecordToDB(){
-        testDB = mFoodRecordActivity.addPreviousRecordToDB(20170105, item1, defaultTime);
+        SQLiteDatabase testDB = mFoodRecordActivity.addPreviousRecordToDB(20170105, item1, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
         List<FoodItemRecord> resultList1 = mFoodRecordActivity.getFoodItems(new LocalDate(2017, 01, 05));

@@ -23,26 +23,18 @@ import static junit.framework.Assert.assertEquals;
 public class EditSelectedEntryShould {
 
     @Rule
-    public ActivityTestRule<EditSelectedEntry> mActivityRule =
+    public final ActivityTestRule<EditSelectedEntry> mActivityRule =
             new ActivityTestRule(EditSelectedEntry.class);
+
+    private final int testDateAsInt = 20170601;
+    private final LocalTime testTime = new LocalTime();
+    private final ArrayList<DayLogObject> testDayLogObjectList1 = new ArrayList<>();
+    private final ArrayList<DayLogObject> testDayLogObjectList2 = new ArrayList<>();
 
     private MyDBHandler testHandler;
     private EditSelectedEntry mEditSelectedEntry;
     private DayLogObject testDayLogObject;
-    private BloodSugarMeasurement testBloodSugarMeasurement1;
-    private BloodSugarMeasurement testTestBloodSugarMeasurement2;
-    private WeightMeasurement testWeightMeasurement1;
-    private WeightMeasurement testWeightMeasurement2;
-    private SymptomRecord testSymptomRecord1;
-    private SymptomRecord testSymptomRecord2;
-    private FoodItemRecord testFoodItemRecord1;
-    private FoodItemRecord testFoodItemRecord2;
-    private LocalDate testDate;
-    private LocalTime testTime;
-    private int testDateAsInt = 20170601;
     private SQLiteDatabase sqLiteDatabase;
-    private ArrayList<DayLogObject> testDayLogObjectList1 = new ArrayList<>();
-    private ArrayList<DayLogObject> testDayLogObjectList2 = new ArrayList<>();
 
     @Before
     public void setUp(){
@@ -58,17 +50,16 @@ public class EditSelectedEntryShould {
 
         mEditSelectedEntry = mActivityRule.getActivity();
 
-        testDate = new LocalDate();
-        testTime = new LocalTime();
+        LocalDate testDate = new LocalDate();
         testDayLogObject = new DayLogObject(testDate);
-        testBloodSugarMeasurement1 = new BloodSugarMeasurement(12.5,testTime, testDateAsInt);
-        testTestBloodSugarMeasurement2 = new BloodSugarMeasurement(10, testTime, testDateAsInt);
-        testWeightMeasurement1 = new WeightMeasurement(65, testTime, testDateAsInt);
-        testWeightMeasurement2 = new WeightMeasurement(70, testTime, testDateAsInt);
-        testSymptomRecord1 = new SymptomRecord("Pain", testTime, testDateAsInt);
-        testSymptomRecord2 = new SymptomRecord("Dizziness", testTime, testDateAsInt);
-        testFoodItemRecord1 = new FoodItemRecord("Apple", testTime, testDateAsInt);
-        testFoodItemRecord2 = new FoodItemRecord("Orange", testTime, testDateAsInt);
+        BloodSugarMeasurement testBloodSugarMeasurement1 = new BloodSugarMeasurement(12.5,testTime, testDateAsInt);
+        BloodSugarMeasurement testTestBloodSugarMeasurement2 = new BloodSugarMeasurement(10, testTime, testDateAsInt);
+        WeightMeasurement testWeightMeasurement1 = new WeightMeasurement(65, testTime, testDateAsInt);
+        WeightMeasurement testWeightMeasurement2 = new WeightMeasurement(70, testTime, testDateAsInt);
+        SymptomRecord testSymptomRecord1 = new SymptomRecord("Pain", testTime, testDateAsInt);
+        SymptomRecord testSymptomRecord2 = new SymptomRecord("Dizziness", testTime, testDateAsInt);
+        FoodItemRecord testFoodItemRecord1 = new FoodItemRecord("Apple", testTime, testDateAsInt);
+        FoodItemRecord testFoodItemRecord2 = new FoodItemRecord("Orange", testTime, testDateAsInt);
         testDayLogObject.addNewBSMeasurement(testBloodSugarMeasurement1);
         testDayLogObject.addNewBSMeasurement(testTestBloodSugarMeasurement2);
         testDayLogObject.addWeightRecord(testWeightMeasurement1);
@@ -83,7 +74,6 @@ public class EditSelectedEntryShould {
 
     @After
     public void cleanUp(){
-        mActivityRule = null;
         testHandler.deleteDatabase();
         testDayLogObject = null;
     }

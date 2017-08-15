@@ -41,27 +41,10 @@ public class BloodSugarEntryShould {
     public final ActivityTestRule<BloodSugarEntry> mActivityRule =
             new ActivityTestRule(BloodSugarEntry.class);
 
-//    @Rule
-//    public IntentsTestRule<BloodSugarEntry> mmActivityRule =
-  //          new IntentsTestRule<>(BloodSugarEntry.class);
+    private final LocalTime testTime = new LocalTime(12, 12, 12);
 
     private BloodSugarEntry mBloodSugarEntry;
-
-    private LocalDate firstDate = new LocalDate(2017, 1, 1);
-    private LocalDate secondDate = new LocalDate(2017, 2, 1);
-    private LocalDate thirdDate = new LocalDate(2017, 3, 1);
-    private int firstDateAsInt = 20170101;
-    private int secondDateAsInt = 20170201;
-    private int thirdDateAsInt = 20170301;
-    private Date date1 = firstDate.toDate();
-    private Date date2 = secondDate.toDate();
-    private Date date3 = thirdDate.toDate();
-    private double sugar1 = 12.2;
-    private double sugar2 = 14.4;
-    private double sugar3 = 16.6;
-    private LocalTime testTime = new LocalTime(12, 12, 12);
     private MyDBHandler testHandler;
-    private SQLiteDatabase testDB;
     private BloodSugarMeasurement bsEntry1;
     private BloodSugarMeasurement bsEntry2;
 
@@ -69,10 +52,11 @@ public class BloodSugarEntryShould {
     @Before
     public void setUp(){
 
-        //Context context = InstrumentationRegistry.getContext();
-        Context context = InstrumentationRegistry.getTargetContext();
-        testHandler = DBTestUtils.resetDatabase(context);
+        final int firstDateAsInt = 20170101;
+        final int secondDateAsInt = 20170201;
+        final Context context = InstrumentationRegistry.getTargetContext();
 
+        testHandler = DBTestUtils.resetDatabase(context);
         mBloodSugarEntry = mActivityRule.getActivity();
         bsEntry1 = new BloodSugarMeasurement(12.2, testTime, firstDateAsInt);
         bsEntry2 = new BloodSugarMeasurement(14.4, testTime, secondDateAsInt);
@@ -80,16 +64,17 @@ public class BloodSugarEntryShould {
 
     @After
     public void cleanUp(){
-        //mActivityRule = null;
         testHandler.deleteDatabase();
-        testDB = null;
+        mBloodSugarEntry = null;
+        bsEntry1 = null;
+        bsEntry2 = null;
     }
 
     @Test
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddTodaysRecordToDB(){
         mBloodSugarEntry.addTodaysReadingToDB(20170105, 12.2, testTime);
         mBloodSugarEntry.addTodaysReadingToDB(20170106, 14.4, testTime);
-        testDB = mBloodSugarEntry.addTodaysReadingToDB(20170203, 15.2, testTime);
+        SQLiteDatabase testDB = mBloodSugarEntry.addTodaysReadingToDB(20170203, 15.2, testTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(3, result);
         List<BloodSugarMeasurement> resultList1 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 05));
@@ -100,7 +85,7 @@ public class BloodSugarEntryShould {
 
     @Test
     public void returnCountOfOneWhenASingleRecordIsAddedUsingAddTodaysRecordToDB(){
-        testDB = mBloodSugarEntry.addTodaysReadingToDB(20170105, 12.2, testTime);
+        SQLiteDatabase testDB = mBloodSugarEntry.addTodaysReadingToDB(20170105, 12.2, testTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
         List<BloodSugarMeasurement> resultList1 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 05));
@@ -110,7 +95,7 @@ public class BloodSugarEntryShould {
     @Test
     public void returnCountOfOneWhenTwoRecordsEnteredOnTheSameDayUsingAddTodaysRecordToDB(){
         mBloodSugarEntry.addTodaysReadingToDB(20170105, 12.2, testTime);
-        testDB = mBloodSugarEntry.addTodaysReadingToDB(20170105, 14.4, testTime);
+        SQLiteDatabase testDB = mBloodSugarEntry.addTodaysReadingToDB(20170105, 14.4, testTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords;", null).getCount();
         assertEquals(1, result);
         List<BloodSugarMeasurement> resultList1 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 05));
@@ -120,7 +105,7 @@ public class BloodSugarEntryShould {
     @Test
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddPreviousRecordToDB(){
         mBloodSugarEntry.addPreviousReadingToDB(20170105, 12.2, testTime);
-        testDB = mBloodSugarEntry.addPreviousReadingToDB(20170106, 14.4, testTime);
+        SQLiteDatabase testDB = mBloodSugarEntry.addPreviousReadingToDB(20170106, 14.4, testTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
         List<BloodSugarMeasurement> resultList1 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 05));
@@ -131,7 +116,7 @@ public class BloodSugarEntryShould {
 
     @Test
     public void returnCountOfOneWhenASingleRecordIsAddedUsingAddPreviousRecordToDB(){
-        testDB = mBloodSugarEntry.addPreviousReadingToDB(20170105, 12.2, testTime);
+        SQLiteDatabase testDB = mBloodSugarEntry.addPreviousReadingToDB(20170105, 12.2, testTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
         List<BloodSugarMeasurement> resultList1 = mBloodSugarEntry.getBSReading(new LocalDate(2017, 01, 05));

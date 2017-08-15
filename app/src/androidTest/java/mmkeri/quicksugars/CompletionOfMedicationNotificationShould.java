@@ -19,14 +19,12 @@ import static junit.framework.Assert.assertTrue;
 public class CompletionOfMedicationNotificationShould {
 
     @Rule
-    public ActivityTestRule<CompletionOfMedicationNotification> mActivityRule =
+    public final ActivityTestRule<CompletionOfMedicationNotification> mActivityRule =
             new ActivityTestRule(CompletionOfMedicationNotification.class);
 
     private CompletionOfMedicationNotification mCompletionOfMedicationNotification;
     @Before
     public void setUp(){
-
-        Context context = InstrumentationRegistry.getTargetContext();
 
         mCompletionOfMedicationNotification = mActivityRule.getActivity();
     }

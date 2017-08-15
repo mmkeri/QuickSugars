@@ -33,59 +33,43 @@ import mmkeri.quicksugars.utils.DBTestUtils;
 public class MyDBHandlerShould {
 
     @Rule
-    public ActivityTestRule<BloodSugarEntry> mActivityRule =
+    public final ActivityTestRule<BloodSugarEntry> mActivityRule =
             new ActivityTestRule(BloodSugarEntry.class);
+
+    private final LocalDate testDate = new LocalDate();
+    private final LocalDate testPastDate = new LocalDate(2016, 01, 01);
+    private final LocalDate testFutureDate = new LocalDate(2018, 06, 06);
+    private final LocalTime testTime = new LocalTime();
+    private final LocalTime testPastTime = new LocalTime(12, 01, 01);
+    private LocalTime testFutureTime = new LocalTime(15, 15, 15);
+    private final int firstDateAsInt = 20170401;
+    private final int secondDateAsInt = 20170612;
+    private final FoodItemWithNutrients testFoodItem = new FoodItemWithNutrients("apple", "1.2", "2.3", "3.4", "45", "55");
+    private final FoodItemWithNutrients testFoodItem2 = new FoodItemWithNutrients("orange", "2.3", "3.4", "4.5", "56", "67");
+    private final FoodItemWithNutrients testFoodItem3 = new FoodItemWithNutrients("Bramley_apple", "1.1", "2.2", "3.3", "44", "55");
+    private final Gson gson = new Gson();
+    private final MedicationObject testMedObject1 = new MedicationObject();
+    private final MedicationObject testMedObject2 = new MedicationObject();
+    private final MedicationObject testMedObject3 = new MedicationObject();
 
     private MyDBHandler testDBHandler;
     private DayLogObject testPastLogObject;
     private DayLogObject testFutureLogObject;
-    private LocalDate testDate;
-    private LocalDate testPastDate;
-    private LocalDate testFutureDate;
-    private LocalTime testTime;
-    private LocalTime testPastTime;
-    private LocalTime testFutureTime;
-    private SQLiteDatabase.CursorFactory cursorFactory;
     private BloodSugarMeasurement bsMeasure;
     private BloodSugarMeasurement testPastBSMeasure;
     private DayLogObject logObject;
-    private FoodItemWithNutrients testFoodItem;
-    private FoodItemWithNutrients testFoodItem2;
-    private FoodItemWithNutrients testFoodItem3;
-    private int firstDateAsInt = 20170401;
-    private int secondDateAsInt = 20170612;
-    private Gson gson;
-    private MedicationObject testMedObject1;
-    private MedicationObject testMedObject2;
-    private MedicationObject testMedObject3;
 
     @Before
     public void setUp() throws Exception{
 
-        //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
-        testDBHandler = DBTestUtils.resetDatabase(context);
 
-        //RenamingDelegatingContext context
-        //        = new RenamingDelegatingContext(getContext(), TEST_FILE_PREFIX);
-        testDate = new LocalDate();
-        testPastDate = new LocalDate(2016, 01, 01);
-        testFutureDate = new LocalDate(2018, 06, 06);
-        testTime = new LocalTime();
-        testPastTime = new LocalTime(12, 01, 01);
-        testFutureTime = new LocalTime(15, 15, 15);
+        testDBHandler = DBTestUtils.resetDatabase(context);
         testPastLogObject = new DayLogObject(testPastDate);
         testFutureLogObject = new DayLogObject(testFutureDate);
         bsMeasure = new BloodSugarMeasurement(12.5, testTime, firstDateAsInt);
         testPastBSMeasure = new BloodSugarMeasurement(10.5, testPastTime, secondDateAsInt);
         logObject = new DayLogObject(testDate);
-        testFoodItem = new FoodItemWithNutrients("apple", "1.2", "2.3", "3.4", "45", "55");
-        testFoodItem2 = new FoodItemWithNutrients("orange", "2.3", "3.4", "4.5", "56", "67");
-        testFoodItem3 = new FoodItemWithNutrients("Bramley_apple", "1.1", "2.2", "3.3", "44", "55");
-        gson = new Gson();
-        testMedObject1 = new MedicationObject();
-        testMedObject2 = new MedicationObject();
-        testMedObject3 = new MedicationObject();
     }
 
     @After
@@ -95,7 +79,6 @@ public class MyDBHandlerShould {
 
     @Test
     public void useAppContext() throws Exception {
-        // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("mmkeri.quicksugars", appContext.getPackageName());
