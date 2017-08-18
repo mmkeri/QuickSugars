@@ -31,41 +31,33 @@ public class WeightRecordEntryShould {
 
     private WeightRecordEntry mWeightRecordActivity;
 
-    private LocalDate firstDate = new LocalDate(2017, 1, 1);
-    private LocalDate secondDate = new LocalDate(2017, 2, 1);
-    private LocalDate thirdDate = new LocalDate(2017, 3, 1);
-    private Date date1 = firstDate.toDate();
-    private Date date2 = secondDate.toDate();
-    private Date date3 = thirdDate.toDate();
-    private double weight1 = 65;
-    private double weight2 = 70;
-    private double weight3 = 40;
-    private LocalTime defaultTime = new LocalTime(12, 01, 01);
+    private static final LocalDate firstDate = new LocalDate(2017, 1, 1);
+    private static final LocalDate secondDate = new LocalDate(2017, 2, 1);
+    private static final LocalDate thirdDate = new LocalDate(2017, 3, 1);
+    private static final double weight1 = 65;
+    private static final double weight2 = 70;
+    private static final double weight3 = 40;
+    private static final LocalTime defaultTime = new LocalTime(12, 01, 01);
+    private static final int testDateAsInt = 20170501;
     private MyDBHandler testHandler;
-    private SQLiteDatabase testDB;
-    private WeightMeasurement weightRecord1;
-    private WeightMeasurement weightRecord2;
-    private int testDateAsInt = 20170501;
+    private WeightMeasurement weightRecord1 = new WeightMeasurement(65, defaultTime, testDateAsInt);
+    private WeightMeasurement weightRecord2 = new WeightMeasurement(70, defaultTime, testDateAsInt);;
+
 
 
     @Before
     public void setUp(){
 
-        //Context context = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
         testHandler = DBTestUtils.resetDatabase(context);
 
         mWeightRecordActivity = mActivityRule.getActivity();
-
-        weightRecord1 = new WeightMeasurement(65, defaultTime, testDateAsInt);
-        weightRecord2 = new WeightMeasurement(70, defaultTime, testDateAsInt);
     }
 
     @After
     public void cleanUp(){
         mActivityRule = null;
         testHandler.deleteDatabase();
-        testDB = null;
     }
 
     @Test
@@ -87,7 +79,7 @@ public class WeightRecordEntryShould {
     @Test
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddTodaysRecordToDB(){
         mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
-        testDB = mWeightRecordActivity.addTodaysRecordToDB(20170106, 70, defaultTime);
+        SQLiteDatabase testDB = mWeightRecordActivity.addTodaysRecordToDB(20170106, 70, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
         List<WeightMeasurement> resultList1 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 05));
@@ -98,7 +90,7 @@ public class WeightRecordEntryShould {
 
     @Test
     public void returnCountOfOneWhenASingleRecordIsAddedUsingAddTodaysRecordToDB(){
-        testDB = mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
+        SQLiteDatabase testDB = mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
         List<WeightMeasurement> resultList1 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 05));
@@ -108,7 +100,7 @@ public class WeightRecordEntryShould {
     @Test
     public void returnCountOfOneWhenTwoRecordsEnteredOnTheSameDayUsingAddTodaysRecordToDB(){
         mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
-        testDB = mWeightRecordActivity.addTodaysRecordToDB(20170105, 70, defaultTime);
+        SQLiteDatabase testDB = mWeightRecordActivity.addTodaysRecordToDB(20170105, 70, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords;", null).getCount();
         assertEquals(1, result);
         List<WeightMeasurement> resultList1 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 05));
@@ -118,7 +110,7 @@ public class WeightRecordEntryShould {
     @Test
     public void returnTheCorrectCountWhenTwoRecordsAddedUsingAddPreviousRecordToDB(){
         mWeightRecordActivity.addTodaysRecordToDB(20170105, 65, defaultTime);
-        testDB = mWeightRecordActivity.addPreviousRecordToDB(20170106, 70, defaultTime);
+        SQLiteDatabase testDB = mWeightRecordActivity.addPreviousRecordToDB(20170106, 70, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(2, result);
         List<WeightMeasurement> resultList1 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 05));
@@ -129,7 +121,7 @@ public class WeightRecordEntryShould {
 
     @Test
     public void returnCountOfOneWhenASingleRecordIsAddedUsingAddPreviousRecordToDB(){
-        testDB = mWeightRecordActivity.addPreviousRecordToDB(20170105, 65, defaultTime);
+        SQLiteDatabase testDB = mWeightRecordActivity.addPreviousRecordToDB(20170105, 65, defaultTime);
         int result = testDB.rawQuery("SELECT * FROM logRecords", null).getCount();
         assertEquals(1, result);
         List<WeightMeasurement> resultList1 = mWeightRecordActivity.getWeightMeasure(new LocalDate(2017, 01, 05));
