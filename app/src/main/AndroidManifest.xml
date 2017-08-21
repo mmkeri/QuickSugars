@@ -33,7 +33,7 @@
         </activity>
         <activity
             android:name=".MedicationSelectionPage"
-            android:label="MedicationSelectionPage"
+            android:label="@string/MedicationSelectionPage"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -45,7 +45,7 @@
         </activity>
         <activity
             android:name=".WeightRecordEntry"
-            android:label="WeightRecordEntry"
+            android:label="@string/WeightRecordEntry"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

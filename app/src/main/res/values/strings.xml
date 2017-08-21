@@ -65,22 +65,24 @@
         <item>2300</item>
         <item>2330</item>
     </string-array>
-    <string name="title_activity_food_item_entry">FoodItemEntry</string>
-    <string name="title_activity_search_food_items">SearchFoodItems</string>
-    <string name="title_activity_manual_food_input">ManualFoodInput</string>
-    <string name="title_activity_alarm_receiver">AlarmReceiver</string>
+    <string name="title_activity_food_item_entry">Food Item Entry</string>
+    <string name="title_activity_search_food_items">Search Food Items</string>
+    <string name="title_activity_manual_food_input">Manual Food Input</string>
+    <string name="title_activity_alarm_receiver">Alarm Receiver</string>
     <string name="title_activity_completion_of_medication_notification">
-        CompletionOfMedicationNotification
+        Completion Of Medication Notification
     </string>
-    <string name="title_activity_delayed_medication_timer">DelayedMedicationTimer</string>
+    <string name="title_activity_delayed_medication_timer">Delayed Medication Timer</string>
     <string name="title_activity_graphs">Graphs</string>
-    <string name="title_activity_blood_sugar_check_reminder">BloodSugarCheckReminder</string>
-    <string name="title_activity_scheduled_medications_list">ScheduledMedicationsList</string>
-    <string name="title_activity_symptom_record_entry">SymptomRecordEntry</string>
-    <string name="title_activity_edit_entries">EditEntries</string>
-    <string name="title_activity_edit_selected_entry">EditSelectedEntry</string>
+    <string name="title_activity_blood_sugar_check_reminder">BloodSugar Check Reminder</string>
+    <string name="title_activity_scheduled_medications_list">Scheduled Medications List</string>
+    <string name="title_activity_symptom_record_entry">Symptom Record Entry</string>
+    <string name="title_activity_edit_entries">Edit Entries</string>
+    <string name="title_activity_edit_selected_entry">Edit Selected Entry</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_set_up_screen">SetUpScreen</string>
-    <string name="title_activity_send_records_by_email">SendRecordsByEmail</string>
+    <string name="title_activity_set_up_screen">Set Up Screen</string>
+    <string name="title_activity_send_records_by_email">Send Records By Email</string>
     <string name="title_activity_create_pdf">CreatePDF</string>
+    <string name="MedicationSelectionPage">Medication Selection Page</string>
+    <string name="WeightRecordEntry">Weight Record Entry</string>
 </resources>
