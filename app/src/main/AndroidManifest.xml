@@ -60,6 +60,7 @@
         <activity
             android:name=".SearchFoodItems"
             android:label="@string/title_activity_search_food_items"
+            android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
