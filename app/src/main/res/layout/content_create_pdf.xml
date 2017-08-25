@@ -103,7 +103,34 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Button"
-        android:layout_below="@+id/endOfTimeInterval"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="100dp"
         style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <CheckBox
+        android:id="@+id/includeBSRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Include Blood Sugar Records"
+        android:layout_above="@+id/makePDF"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22" />
+    <CheckBox
+        android:id="@+id/includeWeightRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Include Weight Records"
+        android:layout_below="@+id/includeBSRecords"
+        android:layout_alignLeft="@+id/includeBSRecords"
+        android:layout_alignStart="@+id/includeBSRecords" />
+    <CheckBox
+        android:id="@+id/includeFoodRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/includeWeightRecords"
+        android:layout_alignStart="@+id/includeWeightRecords"
+        android:layout_below="@+id/includeWeightRecords"
+        android:layout_marginTop="16dp"
+        android:text="Include Food Records" />
 </RelativeLayout>
