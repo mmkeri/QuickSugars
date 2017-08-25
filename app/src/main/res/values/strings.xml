@@ -85,4 +85,5 @@
     <string name="title_activity_create_pdf">CreatePDF</string>
     <string name="MedicationSelectionPage">Medication Selection Page</string>
     <string name="WeightRecordEntry">Weight Record Entry</string>
+    <string name="create_md_report">Create Report to MD</string>
 </resources>

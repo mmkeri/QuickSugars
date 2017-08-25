@@ -128,7 +128,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CreatePDF"
-            android:label="@string/title_activity_create_pdf"
+            android:label="@string/create_md_report"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

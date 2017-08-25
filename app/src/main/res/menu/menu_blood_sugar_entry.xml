@@ -27,6 +27,6 @@
     <item android:id="@+id/edit_gender"
         android:title="Edit Setup Entries"/>
     <item android:id="@+id/makePdfFile"
-        android:title="Create Pdf to Send"/>
+        android:title="Send Report to MD"/>
 
 </menu>

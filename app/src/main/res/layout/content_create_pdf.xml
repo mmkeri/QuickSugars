@@ -8,14 +8,102 @@
     tools:context="mmkeri.quicksugars.CreatePDF"
     tools:showIn="@layout/activity_create_pdf">
 
-    <Button
-        android:id="@+id/makePDF"
+    <TextView
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="221dp"
+        android:layout_marginTop="19dp"
+        android:text="Select the timeframe for which to send a report to your physician. "
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView20"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:text="Start of interval"/>
+
+    <LinearLayout
+        android:id="@+id/startOfTimeInterval"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView21"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/reportp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/reportp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/reportp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startOfTimeInterval"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:text="End of interval"/>
+
+    <LinearLayout
+        android:id="@+id/endOfTimeInterval"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView22"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wheel_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/reportp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/reportp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/reportp6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/makePDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Button"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="182dp" />
+        android:layout_below="@+id/endOfTimeInterval"
+        android:layout_marginTop="100dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </RelativeLayout>
