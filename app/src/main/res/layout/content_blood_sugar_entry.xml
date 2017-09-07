@@ -238,4 +238,15 @@
         android:visibility="invisible"
         style="@style/Widget.AppCompat.Button.Colored"/>
 
+    <Button
+        android:id="@+id/bluetoothButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tap to enter reading with Bluetooth"
+        android:layout_below="@+id/btn_speak"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
 </RelativeLayout>

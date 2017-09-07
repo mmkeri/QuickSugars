@@ -9,8 +9,13 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
-    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
 
     <application
         android:allowBackup="true"
@@ -127,7 +132,12 @@
         <activity
             android:name=".CreatePDF"
             android:label="@string/create_md_report"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeviceScanActivity"
+            android:label="@string/title_activity_device_scan"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <service android:name=".BluetoothLeService" android:enabled="true"/>
     </application>
 
 </manifest>
